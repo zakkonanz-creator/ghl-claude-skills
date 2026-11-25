@@ -1,0 +1,79 @@
+{
+ "doc": "../raw/actions/add-owner-to-opportunity.md",
+ "kind": "action",
+ "workflowId": "00000000-0000-4000-8000-000000000190",
+ "nodeId": "00000000-0000-4000-8000-000000000292",
+ "source": "https://firebasestorage.googleapis.com/v0/b/<bucket>/o/<path>?alt=media&token=<token><bucket>/o/<path>?alt=media&token=<token>",
+ "pass": true,
+ "rows": [
+  {
+   "path": "id",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000292\"",
+   "real": "\"00000000-0000-4000-8000-000000000292\""
+  },
+  {
+   "path": "order",
+   "status": "OK",
+   "doc": "1",
+   "real": "1"
+  },
+  {
+   "path": "attributes.user",
+   "status": "OK",
+   "doc": "\"<userId>\"",
+   "real": "\"<userId>\""
+  },
+  {
+   "path": "attributes.onlyUnAssigned",
+   "status": "OK",
+   "doc": "true",
+   "real": "true"
+  },
+  {
+   "path": "attributes.type",
+   "status": "OK",
+   "doc": "\"internal-add-opportunity-owner\"",
+   "real": "\"internal-add-opportunity-owner\""
+  },
+  {
+   "path": "name",
+   "status": "OK",
+   "doc": "\"Add owner to opportunity\"",
+   "real": "\"Add owner to opportunity\""
+  },
+  {
+   "path": "type",
+   "status": "OK",
+   "doc": "\"internal-add-opportunity-owner\"",
+   "real": "\"internal-add-opportunity-owner\""
+  },
+  {
+   "path": "workflowsActionType",
+   "status": "OK",
+   "doc": "\"INTERNAL\"",
+   "real": "\"INTERNAL\""
+  },
+  {
+   "path": "parentKey",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000291\"",
+   "real": "\"00000000-0000-4000-8000-000000000291\""
+  }
+ ],
+ "realNode": {
+  "id": "00000000-0000-4000-8000-000000000292",
+  "order": 1,
+  "attributes": {
+   "user": "<userId>",
+   "onlyUnAssigned": true,
+   "type": "internal-add-opportunity-owner",
+   "__customInputs__": {}
+  },
+  "name": "Add owner to opportunity",
+  "type": "internal-add-opportunity-owner",
+  "workflowsActionType": "INTERNAL",
+  "parentKey": "00000000-0000-4000-8000-000000000291",
+  "next": "00000000-0000-4000-8000-000000000311"
+ }
+}

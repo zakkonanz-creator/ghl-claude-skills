@@ -1,0 +1,57 @@
+{
+ "doc": "../raw/actions/revoke-group-access.md",
+ "kind": "action",
+ "workflowId": "00000000-0000-4000-8000-000000000181",
+ "nodeId": "00000000-0000-4000-8000-000000000218",
+ "source": "https://firebasestorage.googleapis.com/v0/b/<bucket>/o/<path>?alt=media&token=<token><bucket>/o/<path>?alt=media&token=<token>",
+ "pass": true,
+ "rows": [
+  {
+   "path": "id",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000218\"",
+   "real": "\"00000000-0000-4000-8000-000000000218\""
+  },
+  {
+   "path": "order",
+   "status": "OK",
+   "doc": "3",
+   "real": "3"
+  },
+  {
+   "path": "attributes.type",
+   "status": "OK",
+   "doc": "\"revoke-group-access\"",
+   "real": "\"revoke-group-access\""
+  },
+  {
+   "path": "name",
+   "status": "OK",
+   "doc": "\"Revoke group access\"",
+   "real": "\"Revoke group access\""
+  },
+  {
+   "path": "type",
+   "status": "OK",
+   "doc": "\"revoke-group-access\"",
+   "real": "\"revoke-group-access\""
+  },
+  {
+   "path": "parentKey",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000284\"",
+   "real": "\"00000000-0000-4000-8000-000000000284\""
+  }
+ ],
+ "realNode": {
+  "id": "00000000-0000-4000-8000-000000000218",
+  "order": 3,
+  "attributes": {
+   "type": "revoke-group-access"
+  },
+  "name": "Revoke group access",
+  "type": "revoke-group-access",
+  "parentKey": "00000000-0000-4000-8000-000000000284",
+  "next": "00000000-0000-4000-8000-000000000217"
+ }
+}

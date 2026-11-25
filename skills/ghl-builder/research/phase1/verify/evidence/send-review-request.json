@@ -1,0 +1,53 @@
+{
+ "doc": "../raw/actions/send-review-request.md",
+ "kind": "action",
+ "workflowId": "00000000-0000-4000-8000-000000000171",
+ "nodeId": "00000000-0000-4000-8000-000000000276",
+ "source": "https://firebasestorage.googleapis.com/v0/b/<bucket>/o/<path>?alt=media&token=<token><bucket>/o/<path>?alt=media&token=<token>",
+ "pass": true,
+ "rows": [
+  {
+   "path": "name",
+   "status": "OK",
+   "doc": "\"Send review request\"",
+   "real": "\"Send review request\""
+  },
+  {
+   "path": "type",
+   "status": "OK",
+   "doc": "\"review_request\"",
+   "real": "\"review_request\""
+  },
+  {
+   "path": "attributes.type",
+   "status": "OK",
+   "doc": "\"review_request\"",
+   "real": "\"review_request\""
+  },
+  {
+   "path": "attributes.review_type",
+   "status": "OK",
+   "doc": "\"sms\"",
+   "real": "\"sms\""
+  },
+  {
+   "path": "attributes.overrideReviewLink",
+   "status": "OK",
+   "doc": "\"default\"",
+   "real": "\"default\""
+  }
+ ],
+ "realNode": {
+  "id": "00000000-0000-4000-8000-000000000276",
+  "order": 9,
+  "attributes": {
+   "type": "review_request",
+   "overrideReviewLink": "default",
+   "review_type": "sms"
+  },
+  "name": "Send review request",
+  "type": "review_request",
+  "parentKey": "00000000-0000-4000-8000-000000000239",
+  "next": "00000000-0000-4000-8000-000000000244"
+ }
+}

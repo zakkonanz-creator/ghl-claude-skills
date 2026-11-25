@@ -1,0 +1,113 @@
+{
+ "doc": "../raw/triggers/stale-opportunities.md",
+ "kind": "trigger",
+ "workflowId": "00000000-0000-4000-8000-000000000190",
+ "nodeId": "<id012>",
+ "source": "GET /workflow/<locationId>/trigger?workflowId=00000000-0000-4000-8000-000000000190",
+ "pass": true,
+ "rows": [
+  {
+   "path": "id",
+   "status": "OK",
+   "doc": "\"<id012>\"",
+   "real": "\"<id012>\""
+  },
+  {
+   "path": "active",
+   "status": "OK",
+   "doc": "false",
+   "real": "false"
+  },
+  {
+   "path": "actions",
+   "status": "OK",
+   "doc": "array[1]",
+   "real": "array[1]"
+  },
+  {
+   "path": "conditions",
+   "status": "OK",
+   "doc": "array[3]",
+   "real": "array[3]"
+  },
+  {
+   "path": "type",
+   "status": "OK",
+   "doc": "\"opportunity_decay\"",
+   "real": "\"opportunity_decay\""
+  },
+  {
+   "path": "masterType",
+   "status": "OK",
+   "doc": "\"highlevel\"",
+   "real": "\"highlevel\""
+  },
+  {
+   "path": "workflow_id",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000190\"",
+   "real": "\"00000000-0000-4000-8000-000000000190\""
+  },
+  {
+   "path": "location_id",
+   "status": "OK",
+   "doc": "\"<locationId>\"",
+   "real": "\"<locationId>\""
+  },
+  {
+   "path": "name",
+   "status": "OK",
+   "doc": "\"Stale Opportunities\"",
+   "real": "\"Stale Opportunities\""
+  },
+  {
+   "path": "belongs_to",
+   "status": "OK",
+   "doc": "\"workflow\"",
+   "real": "\"workflow\""
+  }
+ ],
+ "realNode": {
+  "id": "<id012>",
+  "date_updated": "2026-07-17T01:25:29.756Z",
+  "date_added": "2026-07-17T01:25:29.756Z",
+  "deleted": false,
+  "active": false,
+  "actions": [
+   {
+    "workflow_id": "00000000-0000-4000-8000-000000000190",
+    "type": "add_to_workflow"
+   }
+  ],
+  "conditions": [
+   {
+    "operator": "time-diff-now-gte",
+    "field": "opportunity.lastActionDate",
+    "value": 3,
+    "title": "Duration in days",
+    "type": "number"
+   },
+   {
+    "operator": "==",
+    "field": "opportunity.pipelineId",
+    "value": "<pipelineId>",
+    "title": "In pipeline",
+    "type": "select"
+   },
+   {
+    "operator": "==",
+    "field": "opportunity.pipelineStageId",
+    "value": "00000000-0000-4000-8000-000000000168",
+    "title": "Pipeline stage",
+    "type": "select"
+   }
+  ],
+  "type": "opportunity_decay",
+  "masterType": "highlevel",
+  "workflow_id": "00000000-0000-4000-8000-000000000190",
+  "location_id": "<locationId>",
+  "name": "Stale Opportunities",
+  "belongs_to": "workflow",
+  "schedule_config": {}
+ }
+}

@@ -1,0 +1,94 @@
+{
+ "doc": "research/phase1/raw/triggers/quiz-submitted.md",
+ "kind": "trigger",
+ "workflowId": "00000000-0000-4000-8000-000000000177",
+ "nodeId": "<id068>",
+ "source": "GET /workflow/<locationId>/trigger?workflowId=00000000-0000-4000-8000-000000000177",
+ "pass": true,
+ "rows": [
+  {
+   "path": "id",
+   "status": "OK",
+   "doc": "\"<id068>\"",
+   "real": "\"<id068>\""
+  },
+  {
+   "path": "active",
+   "status": "OK",
+   "doc": "false",
+   "real": "false"
+  },
+  {
+   "path": "conditions",
+   "status": "OK",
+   "doc": "array[1]",
+   "real": "array[1]"
+  },
+  {
+   "path": "type",
+   "status": "OK",
+   "doc": "\"quiz_submitted\"",
+   "real": "\"quiz_submitted\""
+  },
+  {
+   "path": "masterType",
+   "status": "OK",
+   "doc": "\"internal\"",
+   "real": "\"internal\""
+  },
+  {
+   "path": "name",
+   "status": "OK",
+   "doc": "\"Quiz Submitted\"",
+   "real": "\"Quiz Submitted\""
+  },
+  {
+   "path": "actions",
+   "status": "OK",
+   "doc": "array[1]",
+   "real": "array[1]"
+  },
+  {
+   "path": "location_id",
+   "status": "OK",
+   "doc": "\"<locationId>\"",
+   "real": "\"<locationId>\""
+  },
+  {
+   "path": "workflowsTriggerType",
+   "status": "OK",
+   "doc": "\"INTERNAL\"",
+   "real": "\"INTERNAL\""
+  }
+ ],
+ "realNode": {
+  "id": "<id068>",
+  "date_updated": "2026-07-17T01:27:57.499Z",
+  "date_added": "2026-07-17T01:27:57.499Z",
+  "deleted": false,
+  "active": false,
+  "actions": [
+   {
+    "workflow_id": "00000000-0000-4000-8000-000000000177",
+    "type": "add_to_workflow"
+   }
+  ],
+  "conditions": [
+   {
+    "operator": "has_value",
+    "field": "quizId",
+    "title": "Quiz Name",
+    "type": "select_with_pagination",
+    "id": "quizId"
+   }
+  ],
+  "type": "quiz_submitted",
+  "masterType": "internal",
+  "workflow_id": "00000000-0000-4000-8000-000000000177",
+  "location_id": "<locationId>",
+  "name": "Quiz Submitted",
+  "belongs_to": "workflow",
+  "workflowsTriggerType": "INTERNAL",
+  "schedule_config": {}
+ }
+}

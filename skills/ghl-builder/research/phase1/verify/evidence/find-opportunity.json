@@ -1,0 +1,149 @@
+{
+ "doc": "../raw/actions/find-opportunity.md",
+ "kind": "action",
+ "workflowId": "00000000-0000-4000-8000-000000000190",
+ "nodeId": "00000000-0000-4000-8000-000000000310",
+ "source": "https://firebasestorage.googleapis.com/v0/b/<bucket>/o/<path>?alt=media&token=<token><bucket>/o/<path>?alt=media&token=<token>",
+ "pass": true,
+ "rows": [
+  {
+   "path": "id",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000310\"",
+   "real": "\"00000000-0000-4000-8000-000000000310\""
+  },
+  {
+   "path": "parentKey",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000311\"",
+   "real": "\"00000000-0000-4000-8000-000000000311\""
+  },
+  {
+   "path": "type",
+   "status": "OK",
+   "doc": "\"find_opportunity\"",
+   "real": "\"find_opportunity\""
+  },
+  {
+   "path": "name",
+   "status": "OK",
+   "doc": "\"Find opportunity\"",
+   "real": "\"Find opportunity\""
+  },
+  {
+   "path": "attributes.sorting",
+   "status": "OK",
+   "doc": "\"latest\"",
+   "real": "\"latest\""
+  },
+  {
+   "path": "attributes.type",
+   "status": "OK",
+   "doc": "\"find_opportunity\"",
+   "real": "\"find_opportunity\""
+  },
+  {
+   "path": "attributes.__customInputFields__",
+   "status": "OK",
+   "doc": "array[1]",
+   "real": "array[1]"
+  },
+  {
+   "path": "attributes.cat",
+   "status": "OK",
+   "doc": "\"multi-path\"",
+   "real": "\"multi-path\""
+  },
+  {
+   "path": "attributes.convertToMultipath",
+   "status": "OK",
+   "doc": "true",
+   "real": "true"
+  },
+  {
+   "path": "attributes.transitions",
+   "status": "OK",
+   "doc": "array[2]",
+   "real": "array[2]"
+  },
+  {
+   "path": "attributes.__name__",
+   "status": "OK",
+   "doc": "\"Find opportunity\"",
+   "real": "\"Find opportunity\""
+  },
+  {
+   "path": "order",
+   "status": "OK",
+   "doc": "3",
+   "real": "3"
+  },
+  {
+   "path": "cat",
+   "status": "OK",
+   "doc": "\"multi-path\"",
+   "real": "\"multi-path\""
+  },
+  {
+   "path": "workflowsActionType",
+   "status": "OK",
+   "doc": "\"INTERNAL\"",
+   "real": "\"INTERNAL\""
+  },
+  {
+   "path": "next",
+   "status": "OK",
+   "doc": "array[2]",
+   "real": "array[2]"
+  }
+ ],
+ "realNode": {
+  "id": "00000000-0000-4000-8000-000000000310",
+  "parentKey": "00000000-0000-4000-8000-000000000311",
+  "type": "find_opportunity",
+  "name": "Find opportunity",
+  "attributes": {
+   "sorting": "latest",
+   "type": "find_opportunity",
+   "__customInputFields__": [
+    {
+     "__customInputs__": {},
+     "filterField": "pipeline_id",
+     "value": "eq",
+     "secondValue": "<pipelineId>"
+    }
+   ],
+   "__customInputs__": {},
+   "cat": "multi-path",
+   "convertToMultipath": true,
+   "transitions": [
+    {
+     "id": "00000000-0000-4000-8000-000000000312",
+     "name": "Opportunity Found",
+     "fields": [],
+     "meta": {
+      "__branchKey__": "predefined_Opportunity Found"
+     },
+     "conditionType": "pre-defined"
+    },
+    {
+     "id": "00000000-0000-4000-8000-000000000192",
+     "name": "Opportunity Not Found",
+     "fields": [],
+     "meta": {
+      "__branchKey__": "predefined_Opportunity Not Found"
+     },
+     "conditionType": "pre-defined"
+    }
+   ],
+   "__name__": "Find opportunity"
+  },
+  "order": 3,
+  "cat": "multi-path",
+  "workflowsActionType": "INTERNAL",
+  "next": [
+   "00000000-0000-4000-8000-000000000312",
+   "00000000-0000-4000-8000-000000000192"
+  ]
+ }
+}

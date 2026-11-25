@@ -1,0 +1,104 @@
+{
+ "doc": "../raw/actions/send-email.md",
+ "kind": "action",
+ "workflowId": "00000000-0000-4000-8000-000000000171",
+ "nodeId": "00000000-0000-4000-8000-000000000267",
+ "source": "https://firebasestorage.googleapis.com/v0/b/<bucket>/o/<path>?alt=media&token=<token><bucket>/o/<path>?alt=media&token=<token>",
+ "pass": true,
+ "rows": [
+  {
+   "path": "name",
+   "status": "OK",
+   "doc": "\"Email\"",
+   "real": "\"Email\""
+  },
+  {
+   "path": "type",
+   "status": "OK",
+   "doc": "\"email\"",
+   "real": "\"email\""
+  },
+  {
+   "path": "order",
+   "status": "OK",
+   "doc": "1",
+   "real": "1"
+  },
+  {
+   "path": "attributes.isCloned",
+   "status": "OK",
+   "doc": "false",
+   "real": "false"
+  },
+  {
+   "path": "attributes.trackingOptions.hasTrackingLinks",
+   "status": "OK",
+   "doc": "false",
+   "real": "false"
+  },
+  {
+   "path": "attributes.trackingOptions.hasUtmTracking",
+   "status": "OK",
+   "doc": "false",
+   "real": "false"
+  },
+  {
+   "path": "attributes.trackingOptions.hasTags",
+   "status": "OK",
+   "doc": "false",
+   "real": "false"
+  },
+  {
+   "path": "attributes.trackingOptions.sourceId",
+   "status": "OK",
+   "doc": "<placeholder>",
+   "real": "string"
+  },
+  {
+   "path": "attributes.conditions",
+   "status": "OK",
+   "doc": "array[0]",
+   "real": "array[0]"
+  },
+  {
+   "path": "attributes.html",
+   "status": "OK",
+   "doc": "<placeholder>",
+   "real": "string"
+  },
+  {
+   "path": "attributes.subject",
+   "status": "OK",
+   "doc": "\"Harvest subject {{contact.first_name}}\"",
+   "real": "\"Harvest subject {{contact.first_name}}\""
+  },
+  {
+   "path": "attributes.attachments",
+   "status": "OK",
+   "doc": "array[0]",
+   "real": "array[0]"
+  }
+ ],
+ "realNode": {
+  "id": "00000000-0000-4000-8000-000000000267",
+  "order": 1,
+  "attributes": {
+   "isCloned": false,
+   "fieldDefaults": {},
+   "trackingOptions": {
+    "hasTrackingLinks": false,
+    "hasUtmTracking": false,
+    "hasTags": false,
+    "sourceId": "00000000-0000-4000-8000-000000000171:00000000-0000-4000-8000-000000000267"
+   },
+   "conditions": [],
+   "html": "<p style=\"margin:0px;font-family:verdana,geneva,sans-serif;font-size:16px; padding-left: 0px!important;\">Harvest email body</p>",
+   "subject": "Harvest subject {{contact.first_name}}",
+   "attachments": []
+  },
+  "name": "Email",
+  "type": "email",
+  "parentKey": "00000000-0000-4000-8000-000000000266",
+  "next": "00000000-0000-4000-8000-000000000280"
+ }
+}

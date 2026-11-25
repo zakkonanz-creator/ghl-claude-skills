@@ -1,0 +1,71 @@
+{
+ "doc": "research/phase1/raw/actions/set-event-start-date.md",
+ "kind": "action",
+ "workflowId": "00000000-0000-4000-8000-000000000202",
+ "nodeId": "00000000-0000-4000-8000-000000000259",
+ "source": "https://firebasestorage.googleapis.com/v0/b/<bucket>/o/<path>?alt=media&token=<token><bucket>/o/<path>?alt=media&token=<token>",
+ "pass": true,
+ "rows": [
+  {
+   "path": "id",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000259\"",
+   "real": "\"00000000-0000-4000-8000-000000000259\""
+  },
+  {
+   "path": "order",
+   "status": "OK",
+   "doc": "7",
+   "real": "7"
+  },
+  {
+   "path": "attributes.type",
+   "status": "OK",
+   "doc": "\"event_start_date\"",
+   "real": "\"event_start_date\""
+  },
+  {
+   "path": "attributes.event_start_type",
+   "status": "OK",
+   "doc": "\"custom_field\"",
+   "real": "\"custom_field\""
+  },
+  {
+   "path": "attributes.value",
+   "status": "OK",
+   "doc": "\"{{contact.zzzspikedate}}\"",
+   "real": "\"{{contact.zzzspikedate}}\""
+  },
+  {
+   "path": "name",
+   "status": "OK",
+   "doc": "\"Set event start time\"",
+   "real": "\"Set event start time\""
+  },
+  {
+   "path": "type",
+   "status": "OK",
+   "doc": "\"event_start_date\"",
+   "real": "\"event_start_date\""
+  },
+  {
+   "path": "parentKey",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000257\"",
+   "real": "\"00000000-0000-4000-8000-000000000257\""
+  }
+ ],
+ "realNode": {
+  "id": "00000000-0000-4000-8000-000000000259",
+  "order": 7,
+  "attributes": {
+   "type": "event_start_date",
+   "event_start_type": "custom_field",
+   "value": "{{contact.zzzspikedate}}"
+  },
+  "name": "Set event start time",
+  "type": "event_start_date",
+  "parentKey": "00000000-0000-4000-8000-000000000257",
+  "next": "00000000-0000-4000-8000-000000000322"
+ }
+}

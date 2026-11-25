@@ -1,0 +1,85 @@
+{
+ "doc": "../raw/triggers/group-post-created.md",
+ "kind": "trigger",
+ "workflowId": "00000000-0000-4000-8000-000000000181",
+ "nodeId": "<id088>",
+ "source": "GET /workflow/<locationId>/trigger?workflowId=00000000-0000-4000-8000-000000000181",
+ "pass": true,
+ "rows": [
+  {
+   "path": "id",
+   "status": "OK",
+   "doc": "\"<id088>\"",
+   "real": "\"<id088>\""
+  },
+  {
+   "path": "active",
+   "status": "OK",
+   "doc": "false",
+   "real": "false"
+  },
+  {
+   "path": "actions",
+   "status": "OK",
+   "doc": "array[1]",
+   "real": "array[1]"
+  },
+  {
+   "path": "conditions",
+   "status": "OK",
+   "doc": "array[0]",
+   "real": "array[0]"
+  },
+  {
+   "path": "type",
+   "status": "OK",
+   "doc": "\"group_post_created\"",
+   "real": "\"group_post_created\""
+  },
+  {
+   "path": "masterType",
+   "status": "OK",
+   "doc": "\"highlevel\"",
+   "real": "\"highlevel\""
+  },
+  {
+   "path": "workflow_id",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000181\"",
+   "real": "\"00000000-0000-4000-8000-000000000181\""
+  },
+  {
+   "path": "location_id",
+   "status": "OK",
+   "doc": "\"<locationId>\"",
+   "real": "\"<locationId>\""
+  },
+  {
+   "path": "name",
+   "status": "OK",
+   "doc": "\"Group Post Created\"",
+   "real": "\"Group Post Created\""
+  }
+ ],
+ "realNode": {
+  "id": "<id088>",
+  "date_updated": "2026-07-17T01:33:59.530Z",
+  "date_added": "2026-07-17T01:33:59.530Z",
+  "deleted": false,
+  "active": false,
+  "actions": [
+   {
+    "workflow_id": "00000000-0000-4000-8000-000000000181",
+    "type": "add_to_workflow"
+   }
+  ],
+  "conditions": [],
+  "type": "group_post_created",
+  "masterType": "highlevel",
+  "workflow_id": "00000000-0000-4000-8000-000000000181",
+  "location_id": "<locationId>",
+  "name": "Group Post Created",
+  "belongs_to": "workflow",
+  "schedule_config": {}
+ }
+}

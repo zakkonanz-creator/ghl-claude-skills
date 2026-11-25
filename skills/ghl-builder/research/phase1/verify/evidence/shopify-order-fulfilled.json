@@ -1,0 +1,73 @@
+{
+ "doc": "research/phase1/raw/triggers/shopify-order-fulfilled.md",
+ "kind": "trigger",
+ "workflowId": "00000000-0000-4000-8000-000000000195",
+ "nodeId": "<id075>",
+ "source": "GET /workflow/<locationId>/trigger?workflowId=00000000-0000-4000-8000-000000000195",
+ "pass": true,
+ "rows": [
+  {
+   "path": "id",
+   "status": "OK",
+   "doc": "\"<id075>\"",
+   "real": "\"<id075>\""
+  },
+  {
+   "path": "active",
+   "status": "OK",
+   "doc": "false",
+   "real": "false"
+  },
+  {
+   "path": "conditions",
+   "status": "OK",
+   "doc": "array[0]",
+   "real": "array[0]"
+  },
+  {
+   "path": "type",
+   "status": "OK",
+   "doc": "\"shopify_order_fulfilled\"",
+   "real": "\"shopify_order_fulfilled\""
+  },
+  {
+   "path": "masterType",
+   "status": "OK",
+   "doc": "\"highlevel\"",
+   "real": "\"highlevel\""
+  },
+  {
+   "path": "name",
+   "status": "OK",
+   "doc": "\"Shopify Order Fulfilled (deprecating So",
+   "real": "\"Shopify Order Fulfilled (deprecating So"
+  },
+  {
+   "path": "actions",
+   "status": "OK",
+   "doc": "array[1]",
+   "real": "array[1]"
+  }
+ ],
+ "realNode": {
+  "id": "<id075>",
+  "date_updated": "2026-07-17T02:10:12.522Z",
+  "date_added": "2026-07-17T02:10:12.522Z",
+  "deleted": false,
+  "active": false,
+  "actions": [
+   {
+    "workflow_id": "00000000-0000-4000-8000-000000000195",
+    "type": "add_to_workflow"
+   }
+  ],
+  "conditions": [],
+  "type": "shopify_order_fulfilled",
+  "masterType": "highlevel",
+  "workflow_id": "00000000-0000-4000-8000-000000000195",
+  "location_id": "<locationId>",
+  "name": "Shopify Order Fulfilled (deprecating Soon)",
+  "belongs_to": "workflow",
+  "schedule_config": {}
+ }
+}

@@ -1,0 +1,85 @@
+{
+ "doc": "../raw/actions/book-appointment.md",
+ "kind": "action",
+ "workflowId": "00000000-0000-4000-8000-000000000196",
+ "nodeId": "00000000-0000-4000-8000-000000000209",
+ "source": "https://firebasestorage.googleapis.com/v0/b/<bucket>/o/<path>?alt=media&token=<token><bucket>/o/<path>?alt=media&token=<token>",
+ "pass": true,
+ "rows": [
+  {
+   "path": "name",
+   "status": "OK",
+   "doc": "\"Book appointment\"",
+   "real": "\"Book appointment\""
+  },
+  {
+   "path": "type",
+   "status": "OK",
+   "doc": "\"appointment_booking\"",
+   "real": "\"appointment_booking\""
+  },
+  {
+   "path": "attributes.title",
+   "status": "OK",
+   "doc": "\"ZZZ spike appointment\"",
+   "real": "\"ZZZ spike appointment\""
+  },
+  {
+   "path": "attributes.calendarId",
+   "status": "OK",
+   "doc": "\"<calendarId>\"",
+   "real": "\"<calendarId>\""
+  },
+  {
+   "path": "attributes.timezone",
+   "status": "OK",
+   "doc": "\"America/Los_Angeles\"",
+   "real": "\"America/Los_Angeles\""
+  },
+  {
+   "path": "attributes.startDateTime",
+   "status": "OK",
+   "doc": "\"2026-07-24T19:00:00.000Z\"",
+   "real": "\"2026-07-24T19:00:00.000Z\""
+  },
+  {
+   "path": "attributes.assignedUserId",
+   "status": "OK",
+   "doc": "\"<userId>\"",
+   "real": "\"<userId>\""
+  },
+  {
+   "path": "attributes.ignoreFreeSlots",
+   "status": "OK",
+   "doc": "false",
+   "real": "false"
+  },
+  {
+   "path": "attributes.type",
+   "status": "OK",
+   "doc": "\"appointment_booking\"",
+   "real": "\"appointment_booking\""
+  }
+ ],
+ "realNode": {
+  "id": "00000000-0000-4000-8000-000000000209",
+  "stepIndex": 2,
+  "parent": "00000000-0000-4000-8000-000000000208",
+  "order": 0,
+  "attributes": {
+   "title": "ZZZ spike appointment",
+   "calendarId": "<calendarId>",
+   "timezone": "America/Los_Angeles",
+   "startDateTime": "2026-07-24T19:00:00.000Z",
+   "assignedUserId": "<userId>",
+   "ignoreFreeSlots": false,
+   "type": "appointment_booking",
+   "__customInputs__": {}
+  },
+  "name": "Book appointment",
+  "type": "appointment_booking",
+  "workflowsActionType": "INTERNAL",
+  "parentKey": "00000000-0000-4000-8000-000000000208",
+  "next": "00000000-0000-4000-8000-000000000207"
+ }
+}

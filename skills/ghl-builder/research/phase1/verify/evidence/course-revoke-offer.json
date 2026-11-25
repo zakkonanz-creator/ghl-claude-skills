@@ -1,0 +1,57 @@
+{
+ "doc": "../raw/actions/course-revoke-offer.md",
+ "kind": "action",
+ "workflowId": "00000000-0000-4000-8000-000000000181",
+ "nodeId": "00000000-0000-4000-8000-000000000270",
+ "source": "https://firebasestorage.googleapis.com/v0/b/<bucket>/o/<path>?alt=media&token=<token><bucket>/o/<path>?alt=media&token=<token>",
+ "pass": true,
+ "rows": [
+  {
+   "path": "id",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000270\"",
+   "real": "\"00000000-0000-4000-8000-000000000270\""
+  },
+  {
+   "path": "order",
+   "status": "OK",
+   "doc": "7",
+   "real": "7"
+  },
+  {
+   "path": "attributes.type",
+   "status": "OK",
+   "doc": "\"membership_revoke_offer\"",
+   "real": "\"membership_revoke_offer\""
+  },
+  {
+   "path": "name",
+   "status": "OK",
+   "doc": "\"Course revoke offer\"",
+   "real": "\"Course revoke offer\""
+  },
+  {
+   "path": "type",
+   "status": "OK",
+   "doc": "\"membership_revoke_offer\"",
+   "real": "\"membership_revoke_offer\""
+  },
+  {
+   "path": "parentKey",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000271\"",
+   "real": "\"00000000-0000-4000-8000-000000000271\""
+  }
+ ],
+ "realNode": {
+  "id": "00000000-0000-4000-8000-000000000270",
+  "order": 7,
+  "attributes": {
+   "type": "membership_revoke_offer"
+  },
+  "name": "Course revoke offer",
+  "type": "membership_revoke_offer",
+  "parentKey": "00000000-0000-4000-8000-000000000271",
+  "next": "00000000-0000-4000-8000-000000000272"
+ }
+}

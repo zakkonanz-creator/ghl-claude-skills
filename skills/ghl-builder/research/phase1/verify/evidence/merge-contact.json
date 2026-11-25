@@ -1,0 +1,142 @@
+{
+ "doc": "research/phase1/raw/actions/merge-contact.md",
+ "kind": "action",
+ "workflowId": "00000000-0000-4000-8000-000000000182",
+ "nodeId": "00000000-0000-4000-8000-000000000298",
+ "source": "https://firebasestorage.googleapis.com/v0/b/<bucket>/o/<path>?alt=media&token=<token><bucket>/o/<path>?alt=media&token=<token>",
+ "pass": true,
+ "rows": [
+  {
+   "path": "id",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000298\"",
+   "real": "\"00000000-0000-4000-8000-000000000298\""
+  },
+  {
+   "path": "parentKey",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000299\"",
+   "real": "\"00000000-0000-4000-8000-000000000299\""
+  },
+  {
+   "path": "parent",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000299\"",
+   "real": "\"00000000-0000-4000-8000-000000000299\""
+  },
+  {
+   "path": "type",
+   "status": "OK",
+   "doc": "\"lc_merge_contact\"",
+   "real": "\"lc_merge_contact\""
+  },
+  {
+   "path": "name",
+   "status": "OK",
+   "doc": "\"Merge contact\"",
+   "real": "\"Merge contact\""
+  },
+  {
+   "path": "attributes.match_by",
+   "status": "OK",
+   "doc": "\"email\"",
+   "real": "\"email\""
+  },
+  {
+   "path": "attributes.type",
+   "status": "OK",
+   "doc": "\"lc_merge_contact\"",
+   "real": "\"lc_merge_contact\""
+  },
+  {
+   "path": "attributes.cat",
+   "status": "OK",
+   "doc": "\"multi-path\"",
+   "real": "\"multi-path\""
+  },
+  {
+   "path": "attributes.convertToMultipath",
+   "status": "OK",
+   "doc": "true",
+   "real": "true"
+  },
+  {
+   "path": "attributes.transitions",
+   "status": "OK",
+   "doc": "array[1]",
+   "real": "array[2]"
+  },
+  {
+   "path": "attributes.__name__",
+   "status": "OK",
+   "doc": "\"Merge contact\"",
+   "real": "\"Merge contact\""
+  },
+  {
+   "path": "order",
+   "status": "OK",
+   "doc": "0",
+   "real": "0"
+  },
+  {
+   "path": "cat",
+   "status": "OK",
+   "doc": "\"multi-path\"",
+   "real": "\"multi-path\""
+  },
+  {
+   "path": "workflowsActionType",
+   "status": "OK",
+   "doc": "\"INTERNAL\"",
+   "real": "\"INTERNAL\""
+  },
+  {
+   "path": "next",
+   "status": "OK",
+   "doc": "array[2]",
+   "real": "array[2]"
+  }
+ ],
+ "realNode": {
+  "id": "00000000-0000-4000-8000-000000000298",
+  "parentKey": "00000000-0000-4000-8000-000000000299",
+  "parent": "00000000-0000-4000-8000-000000000299",
+  "type": "lc_merge_contact",
+  "name": "Merge contact",
+  "attributes": {
+   "match_by": "email",
+   "type": "lc_merge_contact",
+   "__customInputs__": {},
+   "cat": "multi-path",
+   "convertToMultipath": true,
+   "transitions": [
+    {
+     "id": "00000000-0000-4000-8000-000000000300",
+     "name": "Duplicate Contact Found",
+     "fields": {},
+     "meta": {
+      "__branchKey__": "00000000-0000-4000-8000-000000000301"
+     },
+     "conditionType": "pre-defined"
+    },
+    {
+     "id": "00000000-0000-4000-8000-000000000185",
+     "name": "Duplicate Contact Not Found",
+     "fields": {},
+     "meta": {
+      "__branchKey__": "00000000-0000-4000-8000-000000000302"
+     },
+     "conditionType": "pre-defined"
+    }
+   ],
+   "__name__": "Merge contact"
+  },
+  "order": 0,
+  "cat": "multi-path",
+  "workflowsActionType": "INTERNAL",
+  "next": [
+   "00000000-0000-4000-8000-000000000300",
+   "00000000-0000-4000-8000-000000000185"
+  ]
+ }
+}

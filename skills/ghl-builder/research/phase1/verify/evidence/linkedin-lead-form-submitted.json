@@ -1,0 +1,86 @@
+{
+ "doc": "research/phase1/raw/triggers/linkedin-lead-form-submitted.md",
+ "kind": "trigger",
+ "workflowId": "00000000-0000-4000-8000-000000000177",
+ "nodeId": "<id098>",
+ "source": "GET /workflow/<locationId>/trigger?workflowId=00000000-0000-4000-8000-000000000177",
+ "pass": true,
+ "rows": [
+  {
+   "path": "id",
+   "status": "OK",
+   "doc": "\"<id098>\"",
+   "real": "\"<id098>\""
+  },
+  {
+   "path": "active",
+   "status": "OK",
+   "doc": "false",
+   "real": "false"
+  },
+  {
+   "path": "conditions",
+   "status": "OK",
+   "doc": "array[0]",
+   "real": "array[0]"
+  },
+  {
+   "path": "type",
+   "status": "OK",
+   "doc": "\"linkedin_form_submitted\"",
+   "real": "\"linkedin_form_submitted\""
+  },
+  {
+   "path": "masterType",
+   "status": "OK",
+   "doc": "\"internal\"",
+   "real": "\"internal\""
+  },
+  {
+   "path": "name",
+   "status": "OK",
+   "doc": "\"LinkedIn Lead Form Submitted\"",
+   "real": "\"LinkedIn Lead Form Submitted\""
+  },
+  {
+   "path": "actions",
+   "status": "OK",
+   "doc": "array[1]",
+   "real": "array[1]"
+  },
+  {
+   "path": "location_id",
+   "status": "OK",
+   "doc": "\"<locationId>\"",
+   "real": "\"<locationId>\""
+  },
+  {
+   "path": "workflowsTriggerType",
+   "status": "OK",
+   "doc": "\"INTERNAL\"",
+   "real": "\"INTERNAL\""
+  }
+ ],
+ "realNode": {
+  "id": "<id098>",
+  "date_updated": "2026-07-17T01:14:20.181Z",
+  "date_added": "2026-07-17T01:14:20.181Z",
+  "deleted": false,
+  "active": false,
+  "actions": [
+   {
+    "workflow_id": "00000000-0000-4000-8000-000000000177",
+    "type": "add_to_workflow"
+   }
+  ],
+  "conditions": [],
+  "type": "linkedin_form_submitted",
+  "masterType": "internal",
+  "workflow_id": "00000000-0000-4000-8000-000000000177",
+  "location_id": "<locationId>",
+  "name": "LinkedIn Lead Form Submitted",
+  "belongs_to": "workflow",
+  "workflowsTriggerType": "INTERNAL",
+  "schedule_config": {}
+ }
+}

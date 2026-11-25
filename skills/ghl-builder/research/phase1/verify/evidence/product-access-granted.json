@@ -1,0 +1,85 @@
+{
+ "doc": "../raw/triggers/product-access-granted.md",
+ "kind": "trigger",
+ "workflowId": "00000000-0000-4000-8000-000000000181",
+ "nodeId": "<id011>",
+ "source": "GET /workflow/<locationId>/trigger?workflowId=00000000-0000-4000-8000-000000000181",
+ "pass": true,
+ "rows": [
+  {
+   "path": "id",
+   "status": "OK",
+   "doc": "\"<id011>\"",
+   "real": "\"<id011>\""
+  },
+  {
+   "path": "active",
+   "status": "OK",
+   "doc": "false",
+   "real": "false"
+  },
+  {
+   "path": "actions",
+   "status": "OK",
+   "doc": "array[1]",
+   "real": "array[1]"
+  },
+  {
+   "path": "conditions",
+   "status": "OK",
+   "doc": "array[0]",
+   "real": "array[0]"
+  },
+  {
+   "path": "type",
+   "status": "OK",
+   "doc": "\"product_access_granted\"",
+   "real": "\"product_access_granted\""
+  },
+  {
+   "path": "masterType",
+   "status": "OK",
+   "doc": "\"highlevel\"",
+   "real": "\"highlevel\""
+  },
+  {
+   "path": "workflow_id",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000181\"",
+   "real": "\"00000000-0000-4000-8000-000000000181\""
+  },
+  {
+   "path": "location_id",
+   "status": "OK",
+   "doc": "\"<locationId>\"",
+   "real": "\"<locationId>\""
+  },
+  {
+   "path": "name",
+   "status": "OK",
+   "doc": "\"Product Access Granted\"",
+   "real": "\"Product Access Granted\""
+  }
+ ],
+ "realNode": {
+  "id": "<id011>",
+  "date_updated": "2026-07-17T02:29:04.612Z",
+  "date_added": "2026-07-17T02:29:04.612Z",
+  "deleted": false,
+  "active": false,
+  "actions": [
+   {
+    "workflow_id": "00000000-0000-4000-8000-000000000181",
+    "type": "add_to_workflow"
+   }
+  ],
+  "conditions": [],
+  "type": "product_access_granted",
+  "masterType": "highlevel",
+  "workflow_id": "00000000-0000-4000-8000-000000000181",
+  "location_id": "<locationId>",
+  "name": "Product Access Granted",
+  "belongs_to": "workflow",
+  "schedule_config": {}
+ }
+}

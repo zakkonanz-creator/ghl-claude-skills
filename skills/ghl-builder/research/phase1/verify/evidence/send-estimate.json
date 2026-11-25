@@ -1,0 +1,99 @@
+{
+ "doc": "research/phase1/raw/actions/send-estimate.md",
+ "kind": "action",
+ "workflowId": "00000000-0000-4000-8000-000000000195",
+ "nodeId": "00000000-0000-4000-8000-000000000321",
+ "source": "https://firebasestorage.googleapis.com/v0/b/<bucket>/o/<path>?alt=media&token=<token><bucket>/o/<path>?alt=media&token=<token>",
+ "pass": true,
+ "rows": [
+  {
+   "path": "id",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000321\"",
+   "real": "\"00000000-0000-4000-8000-000000000321\""
+  },
+  {
+   "path": "order",
+   "status": "OK",
+   "doc": "4",
+   "real": "4"
+  },
+  {
+   "path": "attributes.userId",
+   "status": "OK",
+   "doc": "\"<userId>\"",
+   "real": "\"<userId>\""
+  },
+  {
+   "path": "attributes.templateId",
+   "status": "OK",
+   "doc": "\"000000000000000000000007\"",
+   "real": "\"000000000000000000000007\""
+  },
+  {
+   "path": "attributes.liveMode",
+   "status": "OK",
+   "doc": "\"true\"",
+   "real": "\"true\""
+  },
+  {
+   "path": "attributes.sendMode",
+   "status": "OK",
+   "doc": "\"sendDirectly\"",
+   "real": "\"sendDirectly\""
+  },
+  {
+   "path": "attributes.action",
+   "status": "OK",
+   "doc": "\"sms_and_email\"",
+   "real": "\"sms_and_email\""
+  },
+  {
+   "path": "attributes.type",
+   "status": "OK",
+   "doc": "\"payments_create_estimate\"",
+   "real": "\"payments_create_estimate\""
+  },
+  {
+   "path": "name",
+   "status": "OK",
+   "doc": "\"Send estimate\"",
+   "real": "\"Send estimate\""
+  },
+  {
+   "path": "type",
+   "status": "OK",
+   "doc": "\"payments_create_estimate\"",
+   "real": "\"payments_create_estimate\""
+  },
+  {
+   "path": "workflowsActionType",
+   "status": "OK",
+   "doc": "\"INTERNAL\"",
+   "real": "\"INTERNAL\""
+  },
+  {
+   "path": "parentKey",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000309\"",
+   "real": "\"00000000-0000-4000-8000-000000000309\""
+  }
+ ],
+ "realNode": {
+  "id": "00000000-0000-4000-8000-000000000321",
+  "order": 4,
+  "attributes": {
+   "userId": "<userId>",
+   "templateId": "000000000000000000000007",
+   "liveMode": "true",
+   "sendMode": "sendDirectly",
+   "action": "sms_and_email",
+   "type": "payments_create_estimate",
+   "__customInputs__": {}
+  },
+  "name": "Send estimate",
+  "type": "payments_create_estimate",
+  "workflowsActionType": "INTERNAL",
+  "parentKey": "00000000-0000-4000-8000-000000000309"
+ }
+}

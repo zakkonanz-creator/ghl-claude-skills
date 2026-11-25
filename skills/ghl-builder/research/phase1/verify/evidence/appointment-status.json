@@ -1,0 +1,109 @@
+{
+ "doc": "../raw/triggers/appointment-status.md",
+ "kind": "trigger",
+ "workflowId": "00000000-0000-4000-8000-000000000174",
+ "nodeId": "<id094>",
+ "source": "GET /workflow/<locationId>/trigger?workflowId=00000000-0000-4000-8000-000000000174",
+ "pass": true,
+ "rows": [
+  {
+   "path": "id",
+   "status": "OK",
+   "doc": "\"<id094>\"",
+   "real": "\"<id094>\""
+  },
+  {
+   "path": "active",
+   "status": "OK",
+   "doc": "false",
+   "real": "false"
+  },
+  {
+   "path": "conditions",
+   "status": "OK",
+   "doc": "array[3]",
+   "real": "array[3]"
+  },
+  {
+   "path": "type",
+   "status": "OK",
+   "doc": "\"appointment\"",
+   "real": "\"appointment\""
+  },
+  {
+   "path": "masterType",
+   "status": "OK",
+   "doc": "\"highlevel\"",
+   "real": "\"highlevel\""
+  },
+  {
+   "path": "name",
+   "status": "OK",
+   "doc": "\"Appointment Status\"",
+   "real": "\"Appointment Status\""
+  },
+  {
+   "path": "actions",
+   "status": "OK",
+   "doc": "array[1]",
+   "real": "array[1]"
+  },
+  {
+   "path": "workflow_id",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000174\"",
+   "real": "\"00000000-0000-4000-8000-000000000174\""
+  },
+  {
+   "path": "location_id",
+   "status": "OK",
+   "doc": "\"<locationId>\"",
+   "real": "\"<locationId>\""
+  }
+ ],
+ "realNode": {
+  "id": "<id094>",
+  "date_updated": "2026-07-16T23:26:56.894Z",
+  "date_added": "2026-07-16T23:26:56.894Z",
+  "deleted": false,
+  "active": false,
+  "actions": [
+   {
+    "workflow_id": "00000000-0000-4000-8000-000000000174",
+    "type": "add_to_workflow"
+   }
+  ],
+  "conditions": [
+   {
+    "operator": "==",
+    "field": "appointment.eventType",
+    "value": "normal",
+    "title": "Event type",
+    "type": "select"
+   },
+   {
+    "operator": "is-any-of",
+    "field": "contactMode",
+    "value": [
+     "contact",
+     "guest"
+    ],
+    "type": "input"
+   },
+   {
+    "operator": "==",
+    "field": "appointment.status",
+    "value": "confirmed",
+    "title": "Appointment status is",
+    "type": "select"
+   }
+  ],
+  "type": "appointment",
+  "masterType": "highlevel",
+  "workflow_id": "00000000-0000-4000-8000-000000000174",
+  "location_id": "<locationId>",
+  "name": "Appointment Status",
+  "belongs_to": "workflow",
+  "schedule_config": {}
+ }
+}

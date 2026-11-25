@@ -1,0 +1,94 @@
+{
+ "doc": "EXAMPLE-trigger-contact-tag.md",
+ "kind": "trigger",
+ "workflowId": "00000000-0000-4000-8000-000000000174",
+ "nodeId": "<id003>",
+ "source": "GET /workflow/<locationId>/trigger?workflowId=00000000-0000-4000-8000-000000000174",
+ "pass": true,
+ "rows": [
+  {
+   "path": "id",
+   "status": "OK",
+   "doc": "\"<id003>\"",
+   "real": "\"<id003>\""
+  },
+  {
+   "path": "type",
+   "status": "OK",
+   "doc": "\"contact_tag\"",
+   "real": "\"contact_tag\""
+  },
+  {
+   "path": "masterType",
+   "status": "OK",
+   "doc": "\"highlevel\"",
+   "real": "\"highlevel\""
+  },
+  {
+   "path": "name",
+   "status": "OK",
+   "doc": "\"Contact Tag\"",
+   "real": "\"Contact Tag\""
+  },
+  {
+   "path": "actions",
+   "status": "OK",
+   "doc": "array[1]",
+   "real": "array[1]"
+  },
+  {
+   "path": "conditions",
+   "status": "OK",
+   "doc": "array[1]",
+   "real": "array[3]"
+  }
+ ],
+ "realNode": {
+  "id": "<id003>",
+  "date_added": "2026-07-16T23:17:46.403Z",
+  "deleted": false,
+  "active": false,
+  "actions": [
+   {
+    "workflow_id": "00000000-0000-4000-8000-000000000174",
+    "type": "add_to_workflow"
+   }
+  ],
+  "type": "contact_tag",
+  "masterType": "highlevel",
+  "workflow_id": "00000000-0000-4000-8000-000000000174",
+  "location_id": "<locationId>",
+  "name": "Contact Tag",
+  "belongs_to": "workflow",
+  "schedule_config": {},
+  "date_updated": "2026-07-16T23:37:37.254Z",
+  "conditions": [
+   {
+    "operator": "index-of-true",
+    "field": "tagsAdded",
+    "value": "zzz-spike-tag",
+    "title": "Tag added",
+    "type": "select",
+    "id": "tag-added"
+   },
+   {
+    "operator": "index-of-true",
+    "field": "tagsRemoved",
+    "value": "zzz-spike-tag",
+    "title": "Tag removed",
+    "type": "select",
+    "id": "tag-removed"
+   },
+   {
+    "operator": "string-matches-any-of",
+    "field": "contact.<customFieldId>",
+    "value": [
+     "spike-value"
+    ],
+    "title": "zzz_spike_field",
+    "type": "string",
+    "id": "<customFieldId>"
+   }
+  ]
+ }
+}

@@ -1,0 +1,92 @@
+{
+ "doc": "../raw/triggers/client-portal-file-uploaded.md",
+ "kind": "trigger",
+ "workflowId": "00000000-0000-4000-8000-000000000181",
+ "nodeId": "<id040>",
+ "source": "GET /workflow/<locationId>/trigger?workflowId=00000000-0000-4000-8000-000000000181",
+ "pass": true,
+ "rows": [
+  {
+   "path": "id",
+   "status": "OK",
+   "doc": "\"<id040>\"",
+   "real": "\"<id040>\""
+  },
+  {
+   "path": "active",
+   "status": "OK",
+   "doc": "false",
+   "real": "false"
+  },
+  {
+   "path": "actions",
+   "status": "OK",
+   "doc": "array[1]",
+   "real": "array[1]"
+  },
+  {
+   "path": "conditions",
+   "status": "OK",
+   "doc": "array[0]",
+   "real": "array[0]"
+  },
+  {
+   "path": "type",
+   "status": "OK",
+   "doc": "\"client_portal_file_uploaded\"",
+   "real": "\"client_portal_file_uploaded\""
+  },
+  {
+   "path": "masterType",
+   "status": "VALUE",
+   "doc": "\"highlevel\"",
+   "real": "\"internal\""
+  },
+  {
+   "path": "workflow_id",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000181\"",
+   "real": "\"00000000-0000-4000-8000-000000000181\""
+  },
+  {
+   "path": "location_id",
+   "status": "OK",
+   "doc": "\"<locationId>\"",
+   "real": "\"<locationId>\""
+  },
+  {
+   "path": "name",
+   "status": "OK",
+   "doc": "\"Client Portal File Uploaded\"",
+   "real": "\"Client Portal File Uploaded\""
+  },
+  {
+   "path": "workflowsTriggerType",
+   "status": "OK",
+   "doc": "\"INTERNAL\"",
+   "real": "\"INTERNAL\""
+  }
+ ],
+ "realNode": {
+  "id": "<id040>",
+  "date_updated": "2026-07-17T02:32:03.371Z",
+  "date_added": "2026-07-17T02:32:03.371Z",
+  "deleted": false,
+  "active": false,
+  "actions": [
+   {
+    "workflow_id": "00000000-0000-4000-8000-000000000181",
+    "type": "add_to_workflow"
+   }
+  ],
+  "conditions": [],
+  "type": "client_portal_file_uploaded",
+  "masterType": "internal",
+  "workflow_id": "00000000-0000-4000-8000-000000000181",
+  "location_id": "<locationId>",
+  "name": "Client Portal File Uploaded",
+  "belongs_to": "workflow",
+  "workflowsTriggerType": "INTERNAL",
+  "schedule_config": {}
+ }
+}

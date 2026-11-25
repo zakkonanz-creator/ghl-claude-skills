@@ -1,0 +1,93 @@
+{
+ "doc": "../raw/triggers/contact-created.md",
+ "kind": "trigger",
+ "workflowId": "00000000-0000-4000-8000-000000000174",
+ "nodeId": "<id080>",
+ "source": "GET /workflow/<locationId>/trigger?workflowId=00000000-0000-4000-8000-000000000174",
+ "pass": true,
+ "rows": [
+  {
+   "path": "id",
+   "status": "OK",
+   "doc": "\"<id080>\"",
+   "real": "\"<id080>\""
+  },
+  {
+   "path": "active",
+   "status": "OK",
+   "doc": "false",
+   "real": "false"
+  },
+  {
+   "path": "conditions",
+   "status": "OK",
+   "doc": "array[1]",
+   "real": "array[1]"
+  },
+  {
+   "path": "type",
+   "status": "OK",
+   "doc": "\"contact_created\"",
+   "real": "\"contact_created\""
+  },
+  {
+   "path": "masterType",
+   "status": "OK",
+   "doc": "\"highlevel\"",
+   "real": "\"highlevel\""
+  },
+  {
+   "path": "name",
+   "status": "OK",
+   "doc": "\"Contact Created\"",
+   "real": "\"Contact Created\""
+  },
+  {
+   "path": "actions",
+   "status": "OK",
+   "doc": "array[1]",
+   "real": "array[1]"
+  },
+  {
+   "path": "workflow_id",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000174\"",
+   "real": "\"00000000-0000-4000-8000-000000000174\""
+  },
+  {
+   "path": "location_id",
+   "status": "OK",
+   "doc": "\"<locationId>\"",
+   "real": "\"<locationId>\""
+  }
+ ],
+ "realNode": {
+  "id": "<id080>",
+  "date_updated": "2026-07-16T23:18:31.303Z",
+  "date_added": "2026-07-16T23:18:31.303Z",
+  "deleted": false,
+  "active": false,
+  "actions": [
+   {
+    "workflow_id": "00000000-0000-4000-8000-000000000174",
+    "type": "add_to_workflow"
+   }
+  ],
+  "conditions": [
+   {
+    "operator": "==",
+    "field": "contact.email",
+    "value": "sample@example.invalid",
+    "title": "Email",
+    "type": "input"
+   }
+  ],
+  "type": "contact_created",
+  "masterType": "highlevel",
+  "workflow_id": "00000000-0000-4000-8000-000000000174",
+  "location_id": "<locationId>",
+  "name": "Contact Created",
+  "belongs_to": "workflow",
+  "schedule_config": {}
+ }
+}

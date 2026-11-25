@@ -1,0 +1,95 @@
+{
+ "doc": "research/phase1/raw/actions/add-associated-records-to-workflow.md",
+ "kind": "action",
+ "workflowId": "00000000-0000-4000-8000-000000000182",
+ "nodeId": "00000000-0000-4000-8000-000000000256",
+ "source": "https://firebasestorage.googleapis.com/v0/b/<bucket>/o/<path>?alt=media&token=<token><bucket>/o/<path>?alt=media&token=<token>",
+ "pass": true,
+ "rows": [
+  {
+   "path": "id",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000256\"",
+   "real": "\"00000000-0000-4000-8000-000000000256\""
+  },
+  {
+   "path": "parent",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000185\"",
+   "real": "\"00000000-0000-4000-8000-000000000185\""
+  },
+  {
+   "path": "order",
+   "status": "OK",
+   "doc": "14",
+   "real": "14"
+  },
+  {
+   "path": "attributes.associatedObject",
+   "status": "OK",
+   "doc": "\"custom_objects.zzz_spike_b3_record\"",
+   "real": "\"custom_objects.zzz_spike_b3_record\""
+  },
+  {
+   "path": "attributes.associationLabel",
+   "status": "OK",
+   "doc": "array[1]",
+   "real": "array[1]"
+  },
+  {
+   "path": "attributes.WorkflowId",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000169\"",
+   "real": "\"00000000-0000-4000-8000-000000000169\""
+  },
+  {
+   "path": "attributes.type",
+   "status": "OK",
+   "doc": "\"add_associated_records_to_workflow\"",
+   "real": "\"add_associated_records_to_workflow\""
+  },
+  {
+   "path": "name",
+   "status": "OK",
+   "doc": "\"Add associated records to workflow\"",
+   "real": "\"Add associated records to workflow\""
+  },
+  {
+   "path": "type",
+   "status": "OK",
+   "doc": "\"add_associated_records_to_workflow\"",
+   "real": "\"add_associated_records_to_workflow\""
+  },
+  {
+   "path": "workflowsActionType",
+   "status": "OK",
+   "doc": "\"INTERNAL\"",
+   "real": "\"INTERNAL\""
+  },
+  {
+   "path": "parentKey",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000255\"",
+   "real": "\"00000000-0000-4000-8000-000000000255\""
+  }
+ ],
+ "realNode": {
+  "id": "00000000-0000-4000-8000-000000000256",
+  "parent": "00000000-0000-4000-8000-000000000185",
+  "order": 14,
+  "attributes": {
+   "associatedObject": "custom_objects.zzz_spike_b3_record",
+   "associationLabel": [
+    "000000000000000000000009"
+   ],
+   "WorkflowId": "00000000-0000-4000-8000-000000000169",
+   "type": "add_associated_records_to_workflow",
+   "__customInputs__": {}
+  },
+  "name": "Add associated records to workflow",
+  "type": "add_associated_records_to_workflow",
+  "workflowsActionType": "INTERNAL",
+  "parentKey": "00000000-0000-4000-8000-000000000255",
+  "next": "00000000-0000-4000-8000-000000000285"
+ }
+}

@@ -1,0 +1,70 @@
+{
+ "doc": "../raw/actions/go-to.md",
+ "kind": "action",
+ "workflowId": "00000000-0000-4000-8000-000000000171",
+ "nodeId": "00000000-0000-4000-8000-000000000286",
+ "source": "https://firebasestorage.googleapis.com/v0/b/<bucket>/o/<path>?alt=media&token=<token><bucket>/o/<path>?alt=media&token=<token>",
+ "pass": true,
+ "rows": [
+  {
+   "path": "id",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000286\"",
+   "real": "\"00000000-0000-4000-8000-000000000286\""
+  },
+  {
+   "path": "order",
+   "status": "OK",
+   "doc": "0",
+   "real": "0"
+  },
+  {
+   "path": "name",
+   "status": "OK",
+   "doc": "\"zzz-spike Go To\"",
+   "real": "\"zzz-spike Go To\""
+  },
+  {
+   "path": "type",
+   "status": "OK",
+   "doc": "\"goto\"",
+   "real": "\"goto\""
+  },
+  {
+   "path": "attributes.type",
+   "status": "OK",
+   "doc": "\"goto\"",
+   "real": "\"goto\""
+  },
+  {
+   "path": "attributes.targetNodeId",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000266\"",
+   "real": "\"00000000-0000-4000-8000-000000000266\""
+  },
+  {
+   "path": "parentKey",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000287\"",
+   "real": "\"00000000-0000-4000-8000-000000000287\""
+  },
+  {
+   "path": "parent",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000287\"",
+   "real": "\"00000000-0000-4000-8000-000000000287\""
+  }
+ ],
+ "realNode": {
+  "id": "00000000-0000-4000-8000-000000000286",
+  "order": 0,
+  "name": "zzz-spike Go To",
+  "type": "goto",
+  "attributes": {
+   "targetNodeId": "00000000-0000-4000-8000-000000000266",
+   "type": "goto"
+  },
+  "parentKey": "00000000-0000-4000-8000-000000000287",
+  "parent": "00000000-0000-4000-8000-000000000287"
+ }
+}

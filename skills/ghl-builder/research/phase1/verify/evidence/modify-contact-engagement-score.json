@@ -1,0 +1,86 @@
+{
+ "doc": "research/phase1/raw/actions/modify-contact-engagement-score.md",
+ "kind": "action",
+ "workflowId": "00000000-0000-4000-8000-000000000182",
+ "nodeId": "00000000-0000-4000-8000-000000000262",
+ "source": "https://firebasestorage.googleapis.com/v0/b/<bucket>/o/<path>?alt=media&token=<token><bucket>/o/<path>?alt=media&token=<token>",
+ "pass": true,
+ "rows": [
+  {
+   "path": "id",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000262\"",
+   "real": "\"00000000-0000-4000-8000-000000000262\""
+  },
+  {
+   "path": "parent",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000185\"",
+   "real": "\"00000000-0000-4000-8000-000000000185\""
+  },
+  {
+   "path": "order",
+   "status": "OK",
+   "doc": "0",
+   "real": "0"
+  },
+  {
+   "path": "attributes.operator",
+   "status": "OK",
+   "doc": "\"Add\"",
+   "real": "\"Add\""
+  },
+  {
+   "path": "attributes.points",
+   "status": "OK",
+   "doc": "5",
+   "real": "5"
+  },
+  {
+   "path": "attributes.type",
+   "status": "OK",
+   "doc": "\"contact_engagement_score\"",
+   "real": "\"contact_engagement_score\""
+  },
+  {
+   "path": "name",
+   "status": "OK",
+   "doc": "\"Modify contact engagement score\"",
+   "real": "\"Modify contact engagement score\""
+  },
+  {
+   "path": "type",
+   "status": "OK",
+   "doc": "\"contact_engagement_score\"",
+   "real": "\"contact_engagement_score\""
+  },
+  {
+   "path": "workflowsActionType",
+   "status": "OK",
+   "doc": "\"INTERNAL\"",
+   "real": "\"INTERNAL\""
+  },
+  {
+   "path": "parentKey",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000185\"",
+   "real": "\"00000000-0000-4000-8000-000000000185\""
+  }
+ ],
+ "realNode": {
+  "id": "00000000-0000-4000-8000-000000000262",
+  "parent": "00000000-0000-4000-8000-000000000185",
+  "order": 0,
+  "attributes": {
+   "operator": "Add",
+   "points": 5,
+   "type": "contact_engagement_score",
+   "__customInputs__": {}
+  },
+  "name": "Modify contact engagement score",
+  "type": "contact_engagement_score",
+  "workflowsActionType": "INTERNAL",
+  "parentKey": "00000000-0000-4000-8000-000000000185",
+  "next": "00000000-0000-4000-8000-000000000263"
+ }
+}

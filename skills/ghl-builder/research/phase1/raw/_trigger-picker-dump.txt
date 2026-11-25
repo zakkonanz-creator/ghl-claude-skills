@@ -1,0 +1,119 @@
+=== TRIGGER PICKER TEXT (Triggers tab) ===
+Add trigger
+Search triggers
+Triggers
+Apps
+Recent triggers
+Contact tag
+Contact
+Birthday reminder
+Contact changed
+Contact created
+Contact DND
+Contact tag
+Custom date reminder
+Note added
+Note changed
+Task added
+Task reminder
+Task completed
+Contact engagement score
+Events
+Inbound webhook
+Scheduler
+Call details
+Email events
+Customer replied
+Inbound email
+Conversation AI trigger
+Custom trigger
+Form submitted
+Survey submitted
+Trigger link clicked
+Facebook lead form submitted
+TikTok form submitted
+Video tracking
+Number validation
+Messaging error - SMS
+LinkedIn lead form submitted
+Funnel/website pageview
+Quiz submitted
+New review received
+Prospect generated
+Click to WhatsApp ads
+External tracking event
+User replied
+Appointments
+Appointment status
+Customer booked appointment
+Service booking
+Rental booking
+Opportunities
+Opportunity status changed
+Opportunity created
+Opportunity changed
+Pipeline stage changed
+Stale opportunities
+Affiliate
+Affiliate created
+New affiliate sales
+Affiliate enrolled in campaign
+Lead created
+Courses
+Category started
+Category completed
+Lesson started
+Lesson completed
+New signup
+Offer access granted
+Offer access removed
+Product access granted
+Product access removed
+Product started
+Product completed
+User login
+Payments
+Invoice
+Payment received
+Order form submission
+Order submitted
+Documents & contracts
+Estimates
+Subscription
+Refund
+Coupon code applied
+Coupon redemption limit reached
+Coupon code expired
+Coupon code redeemed
+Ecommerce stores
+Shopify abandoned cart (deprecating soon)
+Shopify order placed
+Shopify order fulfilled (deprecating soon)
+Order fulfilled
+Product review submitted
+Abandoned checkout
+IVR
+Start IVR trigger
+Facebook/Instagram events
+Facebook - Comment(s) on a post
+Instagram - Comment(s) on a post
+Membership
+Client portal file uploaded
+Communities
+Private channel access revoked
+Group access revoked
+Private channel access granted
+Group access granted
+Community group member leaderboard level changed
+Group joining request rejected
+Member registered for group event
+Group comment created
+Group post created
+Certificates
+Certificates issued
+Google ads
+Google lead form submitted
+Communication
+TikTok - comment(s) on a video
+Transcript generated
+Conversations SLA

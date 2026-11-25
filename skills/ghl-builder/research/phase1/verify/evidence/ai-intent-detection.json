@@ -1,0 +1,158 @@
+{
+ "doc": "research/phase1/raw/actions/ai-intent-detection.md",
+ "kind": "action",
+ "workflowId": "00000000-0000-4000-8000-000000000211",
+ "nodeId": "00000000-0000-4000-8000-000000000293",
+ "source": "https://firebasestorage.googleapis.com/v0/b/<bucket>/o/<path>?alt=media&token=<token><bucket>/o/<path>?alt=media&token=<token>",
+ "pass": true,
+ "rows": [
+  {
+   "path": "id",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000293\"",
+   "real": "\"00000000-0000-4000-8000-000000000293\""
+  },
+  {
+   "path": "parentKey",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000294\"",
+   "real": "\"00000000-0000-4000-8000-000000000294\""
+  },
+  {
+   "path": "parent",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000228\"",
+   "real": "\"00000000-0000-4000-8000-000000000228\""
+  },
+  {
+   "path": "type",
+   "status": "OK",
+   "doc": "\"workflow_ai_intent_detection\"",
+   "real": "\"workflow_ai_intent_detection\""
+  },
+  {
+   "path": "name",
+   "status": "OK",
+   "doc": "\"AI intent detection\"",
+   "real": "\"AI intent detection\""
+  },
+  {
+   "path": "attributes.inputText",
+   "status": "OK",
+   "doc": "\"John is a very good person\"",
+   "real": "\"John is a very good person\""
+  },
+  {
+   "path": "attributes.type",
+   "status": "OK",
+   "doc": "\"workflow_ai_intent_detection\"",
+   "real": "\"workflow_ai_intent_detection\""
+  },
+  {
+   "path": "attributes.cat",
+   "status": "OK",
+   "doc": "\"multi-path\"",
+   "real": "\"multi-path\""
+  },
+  {
+   "path": "attributes.convertToMultipath",
+   "status": "OK",
+   "doc": "true",
+   "real": "true"
+  },
+  {
+   "path": "attributes.transitions",
+   "status": "OK",
+   "doc": "array[1]",
+   "real": "array[3]"
+  },
+  {
+   "path": "attributes.__name__",
+   "status": "OK",
+   "doc": "\"AI intent detection\"",
+   "real": "\"AI intent detection\""
+  },
+  {
+   "path": "order",
+   "status": "OK",
+   "doc": "1",
+   "real": "1"
+  },
+  {
+   "path": "cat",
+   "status": "OK",
+   "doc": "\"multi-path\"",
+   "real": "\"multi-path\""
+  },
+  {
+   "path": "workflowsActionType",
+   "status": "OK",
+   "doc": "\"INTERNAL\"",
+   "real": "\"INTERNAL\""
+  },
+  {
+   "path": "next",
+   "status": "OK",
+   "doc": "array[1]",
+   "real": "array[3]"
+  }
+ ],
+ "realNode": {
+  "id": "00000000-0000-4000-8000-000000000293",
+  "parentKey": "00000000-0000-4000-8000-000000000294",
+  "parent": "00000000-0000-4000-8000-000000000228",
+  "type": "workflow_ai_intent_detection",
+  "name": "AI intent detection",
+  "attributes": {
+   "inputText": "John is a very good person",
+   "type": "workflow_ai_intent_detection",
+   "__customInputs__": {},
+   "cat": "multi-path",
+   "convertToMultipath": true,
+   "transitions": [
+    {
+     "id": "00000000-0000-4000-8000-000000000295",
+     "name": "Positive",
+     "fields": {
+      "branchKey": "POSITIVE"
+     },
+     "meta": {
+      "__branchKey__": "predefined_Positive"
+     },
+     "conditionType": "pre-defined"
+    },
+    {
+     "id": "00000000-0000-4000-8000-000000000296",
+     "name": "Negative",
+     "fields": {
+      "branchKey": "NEGATIVE"
+     },
+     "meta": {
+      "__branchKey__": "predefined_Negative"
+     },
+     "conditionType": "pre-defined"
+    },
+    {
+     "id": "00000000-0000-4000-8000-000000000213",
+     "name": "None",
+     "fields": {
+      "branchKey": "NONE"
+     },
+     "meta": {
+      "__branchKey__": "predefined_None"
+     },
+     "conditionType": "pre-defined"
+    }
+   ],
+   "__name__": "AI intent detection"
+  },
+  "order": 1,
+  "cat": "multi-path",
+  "workflowsActionType": "INTERNAL",
+  "next": [
+   "00000000-0000-4000-8000-000000000295",
+   "00000000-0000-4000-8000-000000000296",
+   "00000000-0000-4000-8000-000000000213"
+  ]
+ }
+}

@@ -1,0 +1,141 @@
+{
+ "doc": "research/phase1/raw/actions/clear-fields-of-associated-record-for-contact.md",
+ "kind": "action",
+ "workflowId": "00000000-0000-4000-8000-000000000182",
+ "nodeId": "00000000-0000-4000-8000-000000000200",
+ "source": "https://firebasestorage.googleapis.com/v0/b/<bucket>/o/<path>?alt=media&token=<token><bucket>/o/<path>?alt=media&token=<token>",
+ "pass": true,
+ "rows": [
+  {
+   "path": "id",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000200\"",
+   "real": "\"00000000-0000-4000-8000-000000000200\""
+  },
+  {
+   "path": "parent",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000185\"",
+   "real": "\"00000000-0000-4000-8000-000000000185\""
+  },
+  {
+   "path": "order",
+   "status": "OK",
+   "doc": "11",
+   "real": "11"
+  },
+  {
+   "path": "attributes.name",
+   "status": "OK",
+   "doc": "\"Clear Associated ZZZ Spike B3 Record re",
+   "real": "\"Clear Associated ZZZ Spike B3 Record re"
+  },
+  {
+   "path": "attributes.type",
+   "status": "OK",
+   "doc": "\"clear_custom_object_fields\"",
+   "real": "\"clear_custom_object_fields\""
+  },
+  {
+   "path": "attributes.requiredProperties",
+   "status": "OK",
+   "doc": "array[0]",
+   "real": "array[0]"
+  },
+  {
+   "path": "attributes.primaryDisplayProperty",
+   "status": "OK",
+   "doc": "\"\"",
+   "real": "\"\""
+  },
+  {
+   "path": "attributes.key",
+   "status": "OK",
+   "doc": "\"custom_objects.zzz_spike_b3_record\"",
+   "real": "\"custom_objects.zzz_spike_b3_record\""
+  },
+  {
+   "path": "attributes.fields",
+   "status": "OK",
+   "doc": "array[1]",
+   "real": "array[1]"
+  },
+  {
+   "path": "attributes.makeAssociation",
+   "status": "OK",
+   "doc": "false",
+   "real": "false"
+  },
+  {
+   "path": "attributes.associations",
+   "status": "OK",
+   "doc": "array[1]",
+   "real": "array[1]"
+  },
+  {
+   "path": "attributes.followers",
+   "status": "OK",
+   "doc": "array[0]",
+   "real": "array[0]"
+  },
+  {
+   "path": "attributes.clearOwner",
+   "status": "OK",
+   "doc": "false",
+   "real": "false"
+  },
+  {
+   "path": "attributes.clearFollowers",
+   "status": "OK",
+   "doc": "false",
+   "real": "false"
+  },
+  {
+   "path": "name",
+   "status": "OK",
+   "doc": "\"Clear Associated ZZZ Spike B3 Record re",
+   "real": "\"Clear Associated ZZZ Spike B3 Record re"
+  },
+  {
+   "path": "type",
+   "status": "OK",
+   "doc": "\"clear_custom_object_fields\"",
+   "real": "\"clear_custom_object_fields\""
+  },
+  {
+   "path": "parentKey",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000186\"",
+   "real": "\"00000000-0000-4000-8000-000000000186\""
+  }
+ ],
+ "realNode": {
+  "id": "00000000-0000-4000-8000-000000000200",
+  "parent": "00000000-0000-4000-8000-000000000185",
+  "order": 11,
+  "attributes": {
+   "name": "Clear Associated ZZZ Spike B3 Record records fields",
+   "type": "clear_custom_object_fields",
+   "requiredProperties": [],
+   "primaryDisplayProperty": "",
+   "key": "custom_objects.zzz_spike_b3_record",
+   "fields": [
+    {
+     "fieldKey": "<id002>",
+     "dataType": "TEXT"
+    }
+   ],
+   "makeAssociation": false,
+   "associations": [
+    "000000000000000000000009"
+   ],
+   "followers": [],
+   "clearOwner": false,
+   "clearFollowers": false
+  },
+  "name": "Clear Associated ZZZ Spike B3 Record records fields",
+  "type": "clear_custom_object_fields",
+  "parentKey": "00000000-0000-4000-8000-000000000186",
+  "next": "00000000-0000-4000-8000-000000000201"
+ }
+}

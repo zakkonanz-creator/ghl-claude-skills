@@ -1,0 +1,158 @@
+{
+ "doc": "../raw/actions/wait.md",
+ "kind": "action",
+ "workflowId": "00000000-0000-4000-8000-000000000175",
+ "nodeId": "00000000-0000-4000-8000-000000000176",
+ "source": "https://firebasestorage.googleapis.com/v0/b/<bucket>/o/<path>?alt=media&token=<token><bucket>/o/<path>?alt=media&token=<token>",
+ "pass": true,
+ "rows": [
+  {
+   "path": "id",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000176\"",
+   "real": "\"00000000-0000-4000-8000-000000000176\""
+  },
+  {
+   "path": "type",
+   "status": "OK",
+   "doc": "\"wait\"",
+   "real": "\"wait\""
+  },
+  {
+   "path": "name",
+   "status": "OK",
+   "doc": "\"Wait until 1 hour before appointment\"",
+   "real": "\"Wait until 1 hour before appointment\""
+  },
+  {
+   "path": "attributes.type",
+   "status": "OK",
+   "doc": "\"appointment\"",
+   "real": "\"appointment\""
+  },
+  {
+   "path": "attributes.name",
+   "status": "OK",
+   "doc": "\"Wait until 1 hour before appointment\"",
+   "real": "\"Wait until 1 hour before appointment\""
+  },
+  {
+   "path": "attributes.cat",
+   "status": "OK",
+   "doc": "\"\"",
+   "real": "\"\""
+  },
+  {
+   "path": "attributes.appointmentStartAfter.when",
+   "status": "OK",
+   "doc": "\"before\"",
+   "real": "\"before\""
+  },
+  {
+   "path": "attributes.appointmentStartAfter.type",
+   "status": "OK",
+   "doc": "\"minutes\"",
+   "real": "\"minutes\""
+  },
+  {
+   "path": "attributes.appointmentStartAfter.value",
+   "status": "OK",
+   "doc": "60",
+   "real": "60"
+  },
+  {
+   "path": "attributes.appointmentStartAfter.distributed.months",
+   "status": "OK",
+   "doc": "0",
+   "real": "0"
+  },
+  {
+   "path": "attributes.appointmentStartAfter.distributed.days",
+   "status": "OK",
+   "doc": "0",
+   "real": "0"
+  },
+  {
+   "path": "attributes.appointmentStartAfter.distributed.hours",
+   "status": "OK",
+   "doc": "1",
+   "real": "1"
+  },
+  {
+   "path": "attributes.appointmentStartAfter.distributed.minutes",
+   "status": "OK",
+   "doc": "0",
+   "real": "0"
+  },
+  {
+   "path": "attributes.appointmentCondition",
+   "status": "OK",
+   "doc": "\"next\"",
+   "real": "\"next\""
+  },
+  {
+   "path": "attributes.isHybridAction",
+   "status": "OK",
+   "doc": "true",
+   "real": "true"
+  },
+  {
+   "path": "attributes.hybridActionType",
+   "status": "OK",
+   "doc": "\"wait\"",
+   "real": "\"wait\""
+  },
+  {
+   "path": "attributes.convertToMultipath",
+   "status": "OK",
+   "doc": "false",
+   "real": "false"
+  },
+  {
+   "path": "attributes.transitions",
+   "status": "OK",
+   "doc": "array[0]",
+   "real": "array[0]"
+  },
+  {
+   "path": "order",
+   "status": "OK",
+   "doc": "0",
+   "real": "0"
+  },
+  {
+   "path": "cat",
+   "status": "OK",
+   "doc": "\"\"",
+   "real": "\"\""
+  }
+ ],
+ "realNode": {
+  "id": "00000000-0000-4000-8000-000000000176",
+  "type": "wait",
+  "name": "Wait until 1 hour before appointment",
+  "attributes": {
+   "type": "appointment",
+   "name": "Wait until 1 hour before appointment",
+   "cat": "",
+   "appointmentStartAfter": {
+    "when": "before",
+    "type": "minutes",
+    "value": 60,
+    "distributed": {
+     "months": 0,
+     "days": 0,
+     "hours": 1,
+     "minutes": 0
+    }
+   },
+   "appointmentCondition": "next",
+   "isHybridAction": true,
+   "hybridActionType": "wait",
+   "convertToMultipath": false,
+   "transitions": []
+  },
+  "order": 0,
+  "cat": ""
+ }
+}

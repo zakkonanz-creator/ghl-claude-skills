@@ -1,0 +1,87 @@
+{
+ "doc": "research/phase1/raw/actions/drip.md",
+ "kind": "action",
+ "workflowId": "00000000-0000-4000-8000-000000000202",
+ "nodeId": "00000000-0000-4000-8000-000000000248",
+ "source": "https://firebasestorage.googleapis.com/v0/b/<bucket>/o/<path>?alt=media&token=<token><bucket>/o/<path>?alt=media&token=<token>",
+ "pass": true,
+ "rows": [
+  {
+   "path": "id",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000248\"",
+   "real": "\"00000000-0000-4000-8000-000000000248\""
+  },
+  {
+   "path": "order",
+   "status": "OK",
+   "doc": "3",
+   "real": "3"
+  },
+  {
+   "path": "attributes.batchSize",
+   "status": "OK",
+   "doc": "100",
+   "real": "100"
+  },
+  {
+   "path": "attributes.interval.timeUnit",
+   "status": "OK",
+   "doc": "\"minutes\"",
+   "real": "\"minutes\""
+  },
+  {
+   "path": "attributes.interval.value",
+   "status": "OK",
+   "doc": "1",
+   "real": "1"
+  },
+  {
+   "path": "attributes.type",
+   "status": "OK",
+   "doc": "\"drip\"",
+   "real": "\"drip\""
+  },
+  {
+   "path": "attributes.configuredAt",
+   "status": "OK",
+   "doc": "\"2026-07-17T00:26:44.155Z\"",
+   "real": "\"2026-07-17T00:26:44.155Z\""
+  },
+  {
+   "path": "name",
+   "status": "OK",
+   "doc": "\"Drip mode\"",
+   "real": "\"Drip mode\""
+  },
+  {
+   "path": "type",
+   "status": "OK",
+   "doc": "\"drip\"",
+   "real": "\"drip\""
+  },
+  {
+   "path": "parentKey",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000234\"",
+   "real": "\"00000000-0000-4000-8000-000000000234\""
+  }
+ ],
+ "realNode": {
+  "id": "00000000-0000-4000-8000-000000000248",
+  "order": 3,
+  "attributes": {
+   "batchSize": 100,
+   "interval": {
+    "timeUnit": "minutes",
+    "value": 1
+   },
+   "type": "drip",
+   "configuredAt": "2026-07-17T00:26:44.155Z"
+  },
+  "name": "Drip mode",
+  "type": "drip",
+  "parentKey": "00000000-0000-4000-8000-000000000234",
+  "next": "00000000-0000-4000-8000-000000000303"
+ }
+}

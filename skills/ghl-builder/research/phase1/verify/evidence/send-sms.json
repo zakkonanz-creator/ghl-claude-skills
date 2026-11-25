@@ -1,0 +1,57 @@
+{
+ "doc": "../raw/actions/send-sms.md",
+ "kind": "action",
+ "workflowId": "00000000-0000-4000-8000-000000000171",
+ "nodeId": "00000000-0000-4000-8000-000000000266",
+ "source": "https://firebasestorage.googleapis.com/v0/b/<bucket>/o/<path>?alt=media&token=<token><bucket>/o/<path>?alt=media&token=<token>",
+ "pass": true,
+ "rows": [
+  {
+   "path": "id",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000266\"",
+   "real": "\"00000000-0000-4000-8000-000000000266\""
+  },
+  {
+   "path": "order",
+   "status": "OK",
+   "doc": "0",
+   "real": "0"
+  },
+  {
+   "path": "name",
+   "status": "OK",
+   "doc": "\"SMS\"",
+   "real": "\"SMS\""
+  },
+  {
+   "path": "type",
+   "status": "OK",
+   "doc": "\"sms\"",
+   "real": "\"sms\""
+  },
+  {
+   "path": "attributes.body",
+   "status": "OK",
+   "doc": "\"harvest sms {{contact.first_name}}\"",
+   "real": "\"harvest sms {{contact.first_name}}\""
+  },
+  {
+   "path": "attributes.attachments",
+   "status": "OK",
+   "doc": "array[0]",
+   "real": "array[0]"
+  }
+ ],
+ "realNode": {
+  "id": "00000000-0000-4000-8000-000000000266",
+  "order": 0,
+  "attributes": {
+   "body": "harvest sms {{contact.first_name}}",
+   "attachments": []
+  },
+  "name": "SMS",
+  "type": "sms",
+  "next": "00000000-0000-4000-8000-000000000267"
+ }
+}

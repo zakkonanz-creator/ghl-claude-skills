@@ -1,0 +1,61 @@
+{
+ "doc": "../raw/actions/update-contact-field.md",
+ "kind": "action",
+ "workflowId": "00000000-0000-4000-8000-000000000171",
+ "nodeId": "00000000-0000-4000-8000-000000000178",
+ "source": "https://firebasestorage.googleapis.com/v0/b/<bucket>/o/<path>?alt=media&token=<token><bucket>/o/<path>?alt=media&token=<token>",
+ "pass": true,
+ "rows": [
+  {
+   "path": "name",
+   "status": "OK",
+   "doc": "\"zzz-spike Update Field\"",
+   "real": "\"zzz-spike Update Field\""
+  },
+  {
+   "path": "type",
+   "status": "OK",
+   "doc": "\"update_contact_field\"",
+   "real": "\"update_contact_field\""
+  },
+  {
+   "path": "attributes.type",
+   "status": "OK",
+   "doc": "\"update_contact_field\"",
+   "real": "\"update_contact_field\""
+  },
+  {
+   "path": "attributes.actionType",
+   "status": "OK",
+   "doc": "\"update_field_data\"",
+   "real": "\"update_field_data\""
+  },
+  {
+   "path": "attributes.fields",
+   "status": "OK",
+   "doc": "array[1]",
+   "real": "array[1]"
+  }
+ ],
+ "realNode": {
+  "id": "00000000-0000-4000-8000-000000000178",
+  "order": 19,
+  "name": "zzz-spike Update Field",
+  "type": "update_contact_field",
+  "attributes": {
+   "type": "update_contact_field",
+   "actionType": "update_field_data",
+   "fields": [
+    {
+     "field": "<customFieldId>",
+     "value": "zzz-spike-value",
+     "title": "zzz_spike_field",
+     "type": "string",
+     "date": ""
+    }
+   ]
+  },
+  "parentKey": "00000000-0000-4000-8000-000000000179",
+  "next": "00000000-0000-4000-8000-000000000180"
+ }
+}

@@ -1,0 +1,100 @@
+{
+ "doc": "research/phase1/raw/triggers/note-changed.md",
+ "kind": "trigger",
+ "workflowId": "00000000-0000-4000-8000-000000000182",
+ "nodeId": "<id076>",
+ "source": "GET /workflow/<locationId>/trigger?workflowId=00000000-0000-4000-8000-000000000182",
+ "pass": true,
+ "rows": [
+  {
+   "path": "id",
+   "status": "OK",
+   "doc": "\"<id076>\"",
+   "real": "\"<id076>\""
+  },
+  {
+   "path": "active",
+   "status": "OK",
+   "doc": "false",
+   "real": "false"
+  },
+  {
+   "path": "actions",
+   "status": "OK",
+   "doc": "array[1]",
+   "real": "array[1]"
+  },
+  {
+   "path": "conditions",
+   "status": "OK",
+   "doc": "array[1]",
+   "real": "array[1]"
+  },
+  {
+   "path": "type",
+   "status": "OK",
+   "doc": "\"note_changed\"",
+   "real": "\"note_changed\""
+  },
+  {
+   "path": "masterType",
+   "status": "OK",
+   "doc": "\"highlevel\"",
+   "real": "\"highlevel\""
+  },
+  {
+   "path": "workflow_id",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000182\"",
+   "real": "\"00000000-0000-4000-8000-000000000182\""
+  },
+  {
+   "path": "location_id",
+   "status": "OK",
+   "doc": "\"<locationId>\"",
+   "real": "\"<locationId>\""
+  },
+  {
+   "path": "name",
+   "status": "OK",
+   "doc": "\"Note Changed\"",
+   "real": "\"Note Changed\""
+  },
+  {
+   "path": "belongs_to",
+   "status": "OK",
+   "doc": "\"workflow\"",
+   "real": "\"workflow\""
+  }
+ ],
+ "realNode": {
+  "id": "<id076>",
+  "date_updated": "2026-07-17T01:18:40.612Z",
+  "date_added": "2026-07-17T01:18:40.612Z",
+  "deleted": false,
+  "active": false,
+  "actions": [
+   {
+    "workflow_id": "00000000-0000-4000-8000-000000000182",
+    "type": "add_to_workflow"
+   }
+  ],
+  "conditions": [
+   {
+    "operator": "index-of-true",
+    "field": "contact.tags",
+    "value": "zzz-spike-tag",
+    "title": "Has tag",
+    "type": "select",
+    "id": "has-tag"
+   }
+  ],
+  "type": "note_changed",
+  "masterType": "highlevel",
+  "workflow_id": "00000000-0000-4000-8000-000000000182",
+  "location_id": "<locationId>",
+  "name": "Note Changed",
+  "belongs_to": "workflow",
+  "schedule_config": {}
+ }
+}

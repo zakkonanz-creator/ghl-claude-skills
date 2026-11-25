@@ -1,0 +1,55 @@
+{
+ "doc": "../raw/actions/voicemail.md",
+ "kind": "action",
+ "workflowId": "00000000-0000-4000-8000-000000000196",
+ "nodeId": "00000000-0000-4000-8000-000000000236",
+ "source": "https://firebasestorage.googleapis.com/v0/b/<bucket>/o/<path>?alt=media&token=<token><bucket>/o/<path>?alt=media&token=<token>",
+ "pass": true,
+ "rows": [
+  {
+   "path": "name",
+   "status": "OK",
+   "doc": "\"Voicemail\"",
+   "real": "\"Voicemail\""
+  },
+  {
+   "path": "type",
+   "status": "OK",
+   "doc": "\"voicemail\"",
+   "real": "\"voicemail\""
+  },
+  {
+   "path": "attributes.attachment.url",
+   "status": "OK",
+   "doc": "\"https://storage.googleapis.com/<bucket>/<path><bucket>/<path>",
+   "real": "\"https://storage.googleapis.com/<bucket>/<path><bucket>/<path>"
+  },
+  {
+   "path": "attributes.attachment.name",
+   "status": "OK",
+   "doc": "\"tts-george-sample.mp3\"",
+   "real": "\"tts-george-sample.mp3\""
+  },
+  {
+   "path": "attributes.attachment.size",
+   "status": "OK",
+   "doc": "429706",
+   "real": "429706"
+  }
+ ],
+ "realNode": {
+  "id": "00000000-0000-4000-8000-000000000236",
+  "order": 3,
+  "attributes": {
+   "attachment": {
+    "url": "https://storage.googleapis.com/<bucket>/<path><bucket>/<path>",
+    "name": "tts-george-sample.mp3",
+    "size": 429706
+   }
+  },
+  "name": "Voicemail",
+  "type": "voicemail",
+  "parentKey": "00000000-0000-4000-8000-000000000199",
+  "next": "00000000-0000-4000-8000-000000000237"
+ }
+}

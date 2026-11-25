@@ -1,0 +1,110 @@
+{
+ "doc": "../raw/actions/add-task.md",
+ "kind": "action",
+ "workflowId": "00000000-0000-4000-8000-000000000171",
+ "nodeId": "00000000-0000-4000-8000-000000000247",
+ "source": "https://firebasestorage.googleapis.com/v0/b/<bucket>/o/<path>?alt=media&token=<token><bucket>/o/<path>?alt=media&token=<token>",
+ "pass": true,
+ "rows": [
+  {
+   "path": "id",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000247\"",
+   "real": "\"00000000-0000-4000-8000-000000000247\""
+  },
+  {
+   "path": "order",
+   "status": "OK",
+   "doc": "13",
+   "real": "13"
+  },
+  {
+   "path": "name",
+   "status": "OK",
+   "doc": "\"Add task\"",
+   "real": "\"Add task\""
+  },
+  {
+   "path": "type",
+   "status": "OK",
+   "doc": "\"task-notification\"",
+   "real": "\"task-notification\""
+  },
+  {
+   "path": "attributes.title",
+   "status": "OK",
+   "doc": "\"Harvest task title\"",
+   "real": "\"Harvest task title\""
+  },
+  {
+   "path": "attributes.body",
+   "status": "OK",
+   "doc": "<placeholder>",
+   "real": "string"
+  },
+  {
+   "path": "attributes.assignedTo",
+   "status": "OK",
+   "doc": "\"\"",
+   "real": "\"\""
+  },
+  {
+   "path": "attributes.dueDate.duration",
+   "status": "OK",
+   "doc": "3",
+   "real": "3"
+  },
+  {
+   "path": "attributes.dueDate.unit",
+   "status": "OK",
+   "doc": "\"days\"",
+   "real": "\"days\""
+  },
+  {
+   "path": "attributes.dueDate.skipWeekends",
+   "status": "OK",
+   "doc": "false",
+   "real": "false"
+  },
+  {
+   "path": "attributes.type",
+   "status": "OK",
+   "doc": "\"task_notification\"",
+   "real": "\"task_notification\""
+  },
+  {
+   "path": "workflowsActionType",
+   "status": "OK",
+   "doc": "\"INTERNAL\"",
+   "real": "\"INTERNAL\""
+  },
+  {
+   "path": "parentKey",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000245\"",
+   "real": "\"00000000-0000-4000-8000-000000000245\""
+  }
+ ],
+ "realNode": {
+  "id": "00000000-0000-4000-8000-000000000247",
+  "stepIndex": 1,
+  "order": 13,
+  "attributes": {
+   "title": "Harvest task title",
+   "body": "<p style=\"margin:0px; padding-left: 0px!important;\">Harvest task description</p>",
+   "assignedTo": "",
+   "dueDate": {
+    "duration": 3,
+    "unit": "days",
+    "skipWeekends": false
+   },
+   "type": "task_notification",
+   "__customInputs__": {}
+  },
+  "name": "Add task",
+  "type": "task-notification",
+  "workflowsActionType": "INTERNAL",
+  "parentKey": "00000000-0000-4000-8000-000000000245",
+  "next": "00000000-0000-4000-8000-000000000290"
+ }
+}

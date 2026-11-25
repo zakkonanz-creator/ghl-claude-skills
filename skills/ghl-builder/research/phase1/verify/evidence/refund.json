@@ -1,0 +1,74 @@
+{
+ "doc": "research/phase1/raw/triggers/refund.md",
+ "kind": "trigger",
+ "workflowId": "00000000-0000-4000-8000-000000000195",
+ "nodeId": "<id022>",
+ "source": "GET /workflow/<locationId>/trigger?workflowId=00000000-0000-4000-8000-000000000195",
+ "pass": true,
+ "rows": [
+  {
+   "path": "id",
+   "status": "OK",
+   "doc": "\"<id022>\"",
+   "real": "\"<id022>\""
+  },
+  {
+   "path": "active",
+   "status": "OK",
+   "doc": "false",
+   "real": "false"
+  },
+  {
+   "path": "conditions",
+   "status": "OK",
+   "doc": "array[0]",
+   "real": "array[0]"
+  },
+  {
+   "path": "type",
+   "status": "OK",
+   "doc": "\"refund\"",
+   "real": "\"refund\""
+  },
+  {
+   "path": "masterType",
+   "status": "OK",
+   "doc": "\"internal\"",
+   "real": "\"internal\""
+  },
+  {
+   "path": "name",
+   "status": "OK",
+   "doc": "\"Refund\"",
+   "real": "\"Refund\""
+  },
+  {
+   "path": "actions",
+   "status": "OK",
+   "doc": "array[1]",
+   "real": "array[1]"
+  }
+ ],
+ "realNode": {
+  "id": "<id022>",
+  "date_updated": "2026-07-17T02:02:05.243Z",
+  "date_added": "2026-07-17T02:02:05.243Z",
+  "deleted": false,
+  "active": false,
+  "actions": [
+   {
+    "workflow_id": "00000000-0000-4000-8000-000000000195",
+    "type": "add_to_workflow"
+   }
+  ],
+  "conditions": [],
+  "type": "refund",
+  "masterType": "internal",
+  "workflow_id": "00000000-0000-4000-8000-000000000195",
+  "location_id": "<locationId>",
+  "name": "Refund",
+  "belongs_to": "workflow",
+  "workflowsTriggerType": "INTERNAL",
+  "schedule_config": {}
+ }
+}

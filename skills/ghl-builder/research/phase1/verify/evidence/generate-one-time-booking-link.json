@@ -1,0 +1,78 @@
+{
+ "doc": "research/phase1/raw/actions/generate-one-time-booking-link.md",
+ "kind": "action",
+ "workflowId": "00000000-0000-4000-8000-000000000195",
+ "nodeId": "00000000-0000-4000-8000-000000000320",
+ "source": "https://firebasestorage.googleapis.com/v0/b/<bucket>/o/<path>?alt=media&token=<token><bucket>/o/<path>?alt=media&token=<token>",
+ "pass": true,
+ "rows": [
+  {
+   "path": "id",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000320\"",
+   "real": "\"00000000-0000-4000-8000-000000000320\""
+  },
+  {
+   "path": "stepIndex",
+   "status": "OK",
+   "doc": "1",
+   "real": "1"
+  },
+  {
+   "path": "order",
+   "status": "OK",
+   "doc": "8",
+   "real": "8"
+  },
+  {
+   "path": "attributes.calendarId",
+   "status": "OK",
+   "doc": "\"<calendarId>\"",
+   "real": "\"<calendarId>\""
+  },
+  {
+   "path": "attributes.type",
+   "status": "OK",
+   "doc": "\"calendars_generate_one_time_booking_lin",
+   "real": "\"calendars_generate_one_time_booking_lin"
+  },
+  {
+   "path": "name",
+   "status": "OK",
+   "doc": "\"Generate one time booking link\"",
+   "real": "\"Generate one time booking link\""
+  },
+  {
+   "path": "type",
+   "status": "OK",
+   "doc": "\"calendars_generate_one_time_booking_lin",
+   "real": "\"calendars_generate_one_time_booking_lin"
+  },
+  {
+   "path": "workflowsActionType",
+   "status": "OK",
+   "doc": "\"INTERNAL\"",
+   "real": "\"INTERNAL\""
+  },
+  {
+   "path": "parentKey",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000268\"",
+   "real": "\"00000000-0000-4000-8000-000000000268\""
+  }
+ ],
+ "realNode": {
+  "id": "00000000-0000-4000-8000-000000000320",
+  "stepIndex": 1,
+  "order": 8,
+  "attributes": {
+   "calendarId": "<calendarId>",
+   "type": "calendars_generate_one_time_booking_link",
+   "__customInputs__": {}
+  },
+  "name": "Generate one time booking link",
+  "type": "calendars_generate_one_time_booking_link",
+  "workflowsActionType": "INTERNAL",
+  "parentKey": "00000000-0000-4000-8000-000000000268"
+ }
+}

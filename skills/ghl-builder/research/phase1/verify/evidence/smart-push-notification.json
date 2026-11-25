@@ -1,0 +1,86 @@
+{
+ "doc": "../raw/actions/smart-push-notification.md",
+ "kind": "action",
+ "workflowId": "00000000-0000-4000-8000-000000000181",
+ "nodeId": "00000000-0000-4000-8000-000000000219",
+ "source": "https://firebasestorage.googleapis.com/v0/b/<bucket>/o/<path>?alt=media&token=<token><bucket>/o/<path>?alt=media&token=<token>",
+ "pass": true,
+ "rows": [
+  {
+   "path": "id",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000219\"",
+   "real": "\"00000000-0000-4000-8000-000000000219\""
+  },
+  {
+   "path": "order",
+   "status": "OK",
+   "doc": "5",
+   "real": "5"
+  },
+  {
+   "path": "attributes.title",
+   "status": "OK",
+   "doc": "\"ZZZ spike title\"",
+   "real": "\"ZZZ spike title\""
+  },
+  {
+   "path": "attributes.body",
+   "status": "OK",
+   "doc": "\"ZZZ spike message\"",
+   "real": "\"ZZZ spike message\""
+  },
+  {
+   "path": "attributes.redirectionUrl",
+   "status": "OK",
+   "doc": "\"communities\"",
+   "real": "\"communities\""
+  },
+  {
+   "path": "attributes.type",
+   "status": "OK",
+   "doc": "\"custom-push-notification\"",
+   "real": "\"custom-push-notification\""
+  },
+  {
+   "path": "name",
+   "status": "OK",
+   "doc": "\"Smart push notification\"",
+   "real": "\"Smart push notification\""
+  },
+  {
+   "path": "type",
+   "status": "OK",
+   "doc": "\"custom-push-notification\"",
+   "real": "\"custom-push-notification\""
+  },
+  {
+   "path": "workflowsActionType",
+   "status": "OK",
+   "doc": "\"INTERNAL\"",
+   "real": "\"INTERNAL\""
+  },
+  {
+   "path": "parentKey",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000217\"",
+   "real": "\"00000000-0000-4000-8000-000000000217\""
+  }
+ ],
+ "realNode": {
+  "id": "00000000-0000-4000-8000-000000000219",
+  "order": 5,
+  "attributes": {
+   "title": "ZZZ spike title",
+   "body": "ZZZ spike message",
+   "redirectionUrl": "communities",
+   "type": "custom-push-notification",
+   "__customInputs__": {}
+  },
+  "name": "Smart push notification",
+  "type": "custom-push-notification",
+  "workflowsActionType": "INTERNAL",
+  "parentKey": "00000000-0000-4000-8000-000000000217",
+  "next": "00000000-0000-4000-8000-000000000271"
+ }
+}

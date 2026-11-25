@@ -1,0 +1,55 @@
+{
+ "doc": "../raw/actions/update-conversation-ai-bot-and-status.md",
+ "kind": "action",
+ "workflowId": "00000000-0000-4000-8000-000000000196",
+ "nodeId": "00000000-0000-4000-8000-000000000249",
+ "source": "https://firebasestorage.googleapis.com/v0/b/<bucket>/o/<path>?alt=media&token=<token><bucket>/o/<path>?alt=media&token=<token>",
+ "pass": true,
+ "rows": [
+  {
+   "path": "name",
+   "status": "OK",
+   "doc": "\"Update conversation AI bot and status\"",
+   "real": "\"Update conversation AI bot and status\""
+  },
+  {
+   "path": "type",
+   "status": "OK",
+   "doc": "\"update_conversation_ai_status\"",
+   "real": "\"update_conversation_ai_status\""
+  },
+  {
+   "path": "attributes.assignedEmployeeId",
+   "status": "OK",
+   "doc": "\"keep-same\"",
+   "real": "\"keep-same\""
+  },
+  {
+   "path": "attributes.status",
+   "status": "OK",
+   "doc": "\"active\"",
+   "real": "\"active\""
+  },
+  {
+   "path": "attributes.type",
+   "status": "OK",
+   "doc": "\"update_conversation_ai_status\"",
+   "real": "\"update_conversation_ai_status\""
+  }
+ ],
+ "realNode": {
+  "id": "00000000-0000-4000-8000-000000000249",
+  "parent": "00000000-0000-4000-8000-000000000208",
+  "order": 3,
+  "attributes": {
+   "assignedEmployeeId": "keep-same",
+   "status": "active",
+   "type": "update_conversation_ai_status",
+   "__customInputs__": {}
+  },
+  "name": "Update conversation AI bot and status",
+  "type": "update_conversation_ai_status",
+  "workflowsActionType": "INTERNAL",
+  "parentKey": "00000000-0000-4000-8000-000000000210"
+ }
+}

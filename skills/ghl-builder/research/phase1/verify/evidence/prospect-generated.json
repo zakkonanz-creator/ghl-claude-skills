@@ -1,0 +1,86 @@
+{
+ "doc": "research/phase1/raw/triggers/prospect-generated.md",
+ "kind": "trigger",
+ "workflowId": "00000000-0000-4000-8000-000000000177",
+ "nodeId": "<id039>",
+ "source": "GET /workflow/<locationId>/trigger?workflowId=00000000-0000-4000-8000-000000000177",
+ "pass": true,
+ "rows": [
+  {
+   "path": "id",
+   "status": "OK",
+   "doc": "\"<id039>\"",
+   "real": "\"<id039>\""
+  },
+  {
+   "path": "active",
+   "status": "OK",
+   "doc": "false",
+   "real": "false"
+  },
+  {
+   "path": "conditions",
+   "status": "OK",
+   "doc": "array[0]",
+   "real": "array[0]"
+  },
+  {
+   "path": "type",
+   "status": "OK",
+   "doc": "\"new_prospect_received_workflow\"",
+   "real": "\"new_prospect_received_workflow\""
+  },
+  {
+   "path": "masterType",
+   "status": "OK",
+   "doc": "\"internal\"",
+   "real": "\"internal\""
+  },
+  {
+   "path": "name",
+   "status": "OK",
+   "doc": "\"Prospect Generated\"",
+   "real": "\"Prospect Generated\""
+  },
+  {
+   "path": "actions",
+   "status": "OK",
+   "doc": "array[1]",
+   "real": "array[1]"
+  },
+  {
+   "path": "location_id",
+   "status": "OK",
+   "doc": "\"<locationId>\"",
+   "real": "\"<locationId>\""
+  },
+  {
+   "path": "workflowsTriggerType",
+   "status": "OK",
+   "doc": "\"INTERNAL\"",
+   "real": "\"INTERNAL\""
+  }
+ ],
+ "realNode": {
+  "id": "<id039>",
+  "date_updated": "2026-07-17T01:17:03.852Z",
+  "date_added": "2026-07-17T01:17:03.852Z",
+  "deleted": false,
+  "active": false,
+  "actions": [
+   {
+    "workflow_id": "00000000-0000-4000-8000-000000000177",
+    "type": "add_to_workflow"
+   }
+  ],
+  "conditions": [],
+  "type": "new_prospect_received_workflow",
+  "masterType": "internal",
+  "workflow_id": "00000000-0000-4000-8000-000000000177",
+  "location_id": "<locationId>",
+  "name": "Prospect Generated",
+  "belongs_to": "workflow",
+  "workflowsTriggerType": "INTERNAL",
+  "schedule_config": {}
+ }
+}

@@ -1,0 +1,73 @@
+{
+ "doc": "research/phase1/raw/triggers/shopify-order-placed.md",
+ "kind": "trigger",
+ "workflowId": "00000000-0000-4000-8000-000000000195",
+ "nodeId": "<id055>",
+ "source": "GET /workflow/<locationId>/trigger?workflowId=00000000-0000-4000-8000-000000000195",
+ "pass": true,
+ "rows": [
+  {
+   "path": "id",
+   "status": "OK",
+   "doc": "\"<id055>\"",
+   "real": "\"<id055>\""
+  },
+  {
+   "path": "active",
+   "status": "OK",
+   "doc": "false",
+   "real": "false"
+  },
+  {
+   "path": "conditions",
+   "status": "OK",
+   "doc": "array[0]",
+   "real": "array[0]"
+  },
+  {
+   "path": "type",
+   "status": "OK",
+   "doc": "\"shopify_order_placed\"",
+   "real": "\"shopify_order_placed\""
+  },
+  {
+   "path": "masterType",
+   "status": "OK",
+   "doc": "\"highlevel\"",
+   "real": "\"highlevel\""
+  },
+  {
+   "path": "name",
+   "status": "OK",
+   "doc": "\"Shopify Order Placed\"",
+   "real": "\"Shopify Order Placed\""
+  },
+  {
+   "path": "actions",
+   "status": "OK",
+   "doc": "array[1]",
+   "real": "array[1]"
+  }
+ ],
+ "realNode": {
+  "id": "<id055>",
+  "date_updated": "2026-07-17T02:11:06.167Z",
+  "date_added": "2026-07-17T02:11:06.167Z",
+  "deleted": false,
+  "active": false,
+  "actions": [
+   {
+    "workflow_id": "00000000-0000-4000-8000-000000000195",
+    "type": "add_to_workflow"
+   }
+  ],
+  "conditions": [],
+  "type": "shopify_order_placed",
+  "masterType": "highlevel",
+  "workflow_id": "00000000-0000-4000-8000-000000000195",
+  "location_id": "<locationId>",
+  "name": "Shopify Order Placed",
+  "belongs_to": "workflow",
+  "schedule_config": {}
+ }
+}

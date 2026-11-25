@@ -1,0 +1,59 @@
+{
+ "doc": "research/phase1/raw/actions/call.md",
+ "kind": "action",
+ "workflowId": "00000000-0000-4000-8000-000000000196",
+ "nodeId": "00000000-0000-4000-8000-000000000198",
+ "source": "https://firebasestorage.googleapis.com/v0/b/<bucket>/o/<path>?alt=media&token=<token><bucket>/o/<path>?alt=media&token=<token>",
+ "pass": true,
+ "rows": [
+  {
+   "path": "name",
+   "status": "OK",
+   "doc": "\"Call\"",
+   "real": "\"Call\""
+  },
+  {
+   "path": "type",
+   "status": "OK",
+   "doc": "\"call\"",
+   "real": "\"call\""
+  },
+  {
+   "path": "attributes.timeout",
+   "status": "OK",
+   "doc": "21",
+   "real": "21"
+  },
+  {
+   "path": "attributes.whisper_message",
+   "status": "OK",
+   "doc": "\"ZZZ spike call whisper\"",
+   "real": "\"ZZZ spike call whisper\""
+  },
+  {
+   "path": "attributes.disable_detect_voicemail",
+   "status": "OK",
+   "doc": "false",
+   "real": "false"
+  },
+  {
+   "path": "attributes.call_connect",
+   "status": "OK",
+   "doc": "true",
+   "real": "true"
+  }
+ ],
+ "realNode": {
+  "id": "00000000-0000-4000-8000-000000000198",
+  "order": 0,
+  "attributes": {
+   "timeout": 21,
+   "whisper_message": "ZZZ spike call whisper",
+   "disable_detect_voicemail": false,
+   "call_connect": true
+  },
+  "name": "Call",
+  "type": "call",
+  "next": "00000000-0000-4000-8000-000000000197"
+ }
+}

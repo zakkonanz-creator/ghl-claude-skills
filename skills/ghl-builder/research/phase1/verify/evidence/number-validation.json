@@ -1,0 +1,79 @@
+{
+ "doc": "research/phase1/raw/triggers/number-validation.md",
+ "kind": "trigger",
+ "workflowId": "00000000-0000-4000-8000-000000000177",
+ "nodeId": "<id024>",
+ "source": "GET /workflow/<locationId>/trigger?workflowId=00000000-0000-4000-8000-000000000177",
+ "pass": true,
+ "rows": [
+  {
+   "path": "id",
+   "status": "OK",
+   "doc": "\"<id024>\"",
+   "real": "\"<id024>\""
+  },
+  {
+   "path": "active",
+   "status": "OK",
+   "doc": "false",
+   "real": "false"
+  },
+  {
+   "path": "conditions",
+   "status": "OK",
+   "doc": "array[0]",
+   "real": "array[0]"
+  },
+  {
+   "path": "type",
+   "status": "OK",
+   "doc": "\"validation_error\"",
+   "real": "\"validation_error\""
+  },
+  {
+   "path": "masterType",
+   "status": "OK",
+   "doc": "\"highlevel\"",
+   "real": "\"highlevel\""
+  },
+  {
+   "path": "name",
+   "status": "OK",
+   "doc": "\"Number Validation\"",
+   "real": "\"Number Validation\""
+  },
+  {
+   "path": "actions",
+   "status": "OK",
+   "doc": "array[1]",
+   "real": "array[1]"
+  },
+  {
+   "path": "location_id",
+   "status": "OK",
+   "doc": "\"<locationId>\"",
+   "real": "\"<locationId>\""
+  }
+ ],
+ "realNode": {
+  "id": "<id024>",
+  "date_updated": "2026-07-17T01:16:38.770Z",
+  "date_added": "2026-07-17T01:16:38.770Z",
+  "deleted": false,
+  "active": false,
+  "actions": [
+   {
+    "workflow_id": "00000000-0000-4000-8000-000000000177",
+    "type": "add_to_workflow"
+   }
+  ],
+  "conditions": [],
+  "type": "validation_error",
+  "masterType": "highlevel",
+  "workflow_id": "00000000-0000-4000-8000-000000000177",
+  "location_id": "<locationId>",
+  "name": "Number Validation",
+  "belongs_to": "workflow",
+  "schedule_config": {}
+ }
+}

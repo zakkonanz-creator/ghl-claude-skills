@@ -1,0 +1,64 @@
+{
+ "doc": "research/phase1/raw/actions/google-sheets.md",
+ "kind": "action",
+ "workflowId": "00000000-0000-4000-8000-000000000202",
+ "nodeId": "00000000-0000-4000-8000-000000000203",
+ "source": "https://firebasestorage.googleapis.com/v0/b/<bucket>/o/<path>?alt=media&token=<token><bucket>/o/<path>?alt=media&token=<token>",
+ "pass": true,
+ "rows": [
+  {
+   "path": "id",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000203\"",
+   "real": "\"00000000-0000-4000-8000-000000000203\""
+  },
+  {
+   "path": "parent",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000204\"",
+   "real": "\"00000000-0000-4000-8000-000000000204\""
+  },
+  {
+   "path": "order",
+   "status": "OK",
+   "doc": "2",
+   "real": "2"
+  },
+  {
+   "path": "attributes.type",
+   "status": "OK",
+   "doc": "\"google_sheets\"",
+   "real": "\"google_sheets\""
+  },
+  {
+   "path": "name",
+   "status": "OK",
+   "doc": "\"Send data to Google Sheets\"",
+   "real": "\"Send data to Google Sheets\""
+  },
+  {
+   "path": "type",
+   "status": "OK",
+   "doc": "\"google_sheets\"",
+   "real": "\"google_sheets\""
+  },
+  {
+   "path": "parentKey",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000205\"",
+   "real": "\"00000000-0000-4000-8000-000000000205\""
+  }
+ ],
+ "realNode": {
+  "id": "00000000-0000-4000-8000-000000000203",
+  "parent": "00000000-0000-4000-8000-000000000204",
+  "order": 2,
+  "attributes": {
+   "type": "google_sheets"
+  },
+  "name": "Send data to Google Sheets",
+  "type": "google_sheets",
+  "parentKey": "00000000-0000-4000-8000-000000000205",
+  "next": "00000000-0000-4000-8000-000000000206"
+ }
+}

@@ -1,0 +1,101 @@
+{
+ "doc": "../raw/actions/update-opportunity.md",
+ "kind": "action",
+ "workflowId": "00000000-0000-4000-8000-000000000190",
+ "nodeId": "00000000-0000-4000-8000-000000000278",
+ "source": "https://firebasestorage.googleapis.com/v0/b/<bucket>/o/<path>?alt=media&token=<token><bucket>/o/<path>?alt=media&token=<token>",
+ "pass": true,
+ "rows": [
+  {
+   "path": "id",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000278\"",
+   "real": "\"00000000-0000-4000-8000-000000000278\""
+  },
+  {
+   "path": "parent",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000192\"",
+   "real": "\"00000000-0000-4000-8000-000000000192\""
+  },
+  {
+   "path": "order",
+   "status": "OK",
+   "doc": "2",
+   "real": "2"
+  },
+  {
+   "path": "attributes.allowBackward",
+   "status": "OK",
+   "doc": "true",
+   "real": "true"
+  },
+  {
+   "path": "attributes.type",
+   "status": "OK",
+   "doc": "\"internal_update_opportunity\"",
+   "real": "\"internal_update_opportunity\""
+  },
+  {
+   "path": "attributes.__customInputFields__",
+   "status": "OK",
+   "doc": "array[2]",
+   "real": "array[2]"
+  },
+  {
+   "path": "name",
+   "status": "OK",
+   "doc": "\"Update opportunity\"",
+   "real": "\"Update opportunity\""
+  },
+  {
+   "path": "type",
+   "status": "OK",
+   "doc": "\"internal_update_opportunity\"",
+   "real": "\"internal_update_opportunity\""
+  },
+  {
+   "path": "workflowsActionType",
+   "status": "OK",
+   "doc": "\"INTERNAL\"",
+   "real": "\"INTERNAL\""
+  },
+  {
+   "path": "parentKey",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000241\"",
+   "real": "\"00000000-0000-4000-8000-000000000241\""
+  }
+ ],
+ "realNode": {
+  "id": "00000000-0000-4000-8000-000000000278",
+  "parent": "00000000-0000-4000-8000-000000000192",
+  "order": 2,
+  "attributes": {
+   "allowBackward": true,
+   "type": "internal_update_opportunity",
+   "__customInputFields__": [
+    {
+     "__customInputs__": {},
+     "dataType": "SINGLE_OPTIONS",
+     "filterField": "pipelineId",
+     "value": "<pipelineId>",
+     "valueFieldType": "select"
+    },
+    {
+     "__customInputs__": {},
+     "dataType": "SINGLE_OPTIONS",
+     "filterField": "pipelineStageId",
+     "value": "00000000-0000-4000-8000-000000000168",
+     "valueFieldType": "select"
+    }
+   ],
+   "__customInputs__": {}
+  },
+  "name": "Update opportunity",
+  "type": "internal_update_opportunity",
+  "workflowsActionType": "INTERNAL",
+  "parentKey": "00000000-0000-4000-8000-000000000241",
+  "next": "00000000-0000-4000-8000-000000000193"
+ }
+}

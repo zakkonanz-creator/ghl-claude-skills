@@ -1,0 +1,112 @@
+{
+ "doc": "research/phase1/raw/actions/math-operation.md",
+ "kind": "action",
+ "workflowId": "00000000-0000-4000-8000-000000000202",
+ "nodeId": "00000000-0000-4000-8000-000000000258",
+ "source": "https://firebasestorage.googleapis.com/v0/b/<bucket>/o/<path>?alt=media&token=<token><bucket>/o/<path>?alt=media&token=<token>",
+ "pass": true,
+ "rows": [
+  {
+   "path": "id",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000258\"",
+   "real": "\"00000000-0000-4000-8000-000000000258\""
+  },
+  {
+   "path": "stepIndex",
+   "status": "OK",
+   "doc": "1",
+   "real": "1"
+  },
+  {
+   "path": "order",
+   "status": "OK",
+   "doc": "5",
+   "real": "5"
+  },
+  {
+   "path": "attributes.selectField",
+   "status": "OK",
+   "doc": "\"<numberFieldId>\"",
+   "real": "\"<numberFieldId>\""
+  },
+  {
+   "path": "attributes.selectFieldtype",
+   "status": "OK",
+   "doc": "\"numerical\"",
+   "real": "\"numerical\""
+  },
+  {
+   "path": "attributes.sourceCustomValueId",
+   "status": "OK",
+   "doc": "\"\"",
+   "real": "\"\""
+  },
+  {
+   "path": "attributes.updateField",
+   "status": "OK",
+   "doc": "\"<numberFieldId>\"",
+   "real": "\"<numberFieldId>\""
+  },
+  {
+   "path": "attributes.updateFieldType",
+   "status": "OK",
+   "doc": "\"numerical\"",
+   "real": "\"numerical\""
+  },
+  {
+   "path": "attributes.targetCustomValueId",
+   "status": "OK",
+   "doc": "\"\"",
+   "real": "\"\""
+  },
+  {
+   "path": "attributes.operators",
+   "status": "OK",
+   "doc": "array[1]",
+   "real": "array[1]"
+  },
+  {
+   "path": "name",
+   "status": "OK",
+   "doc": "\"Math operation\"",
+   "real": "\"Math operation\""
+  },
+  {
+   "path": "type",
+   "status": "OK",
+   "doc": "\"math_operation\"",
+   "real": "\"math_operation\""
+  },
+  {
+   "path": "parentKey",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000303\"",
+   "real": "\"00000000-0000-4000-8000-000000000303\""
+  }
+ ],
+ "realNode": {
+  "id": "00000000-0000-4000-8000-000000000258",
+  "stepIndex": 1,
+  "order": 5,
+  "attributes": {
+   "selectField": "<numberFieldId>",
+   "selectFieldtype": "numerical",
+   "sourceCustomValueId": "",
+   "updateField": "<numberFieldId>",
+   "updateFieldType": "numerical",
+   "targetCustomValueId": "",
+   "operators": [
+    {
+     "operator": "sub",
+     "__id": "00000000-0000-4000-8000-000000000319",
+     "value": 5
+    }
+   ]
+  },
+  "name": "Math operation",
+  "type": "math_operation",
+  "parentKey": "00000000-0000-4000-8000-000000000303",
+  "next": "00000000-0000-4000-8000-000000000257"
+ }
+}

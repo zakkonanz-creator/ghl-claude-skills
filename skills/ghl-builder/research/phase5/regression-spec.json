@@ -1,0 +1,48 @@
+{
+  "name": "ZZZ-SPIKE-regression-template",
+  "publish": false,
+  "triggers": [
+    {
+      "type": "contact_tag",
+      "name": "Regression tag added",
+      "filters": [
+        { "field": "tagsAdded", "operator": "index-of-true", "value": "zzz-spike-tag" }
+      ]
+    }
+  ],
+  "actions": [
+    {
+      "type": "email",
+      "name": "Regression email",
+      "config": { "subject": "Regression check", "html": "<p>Regression workflow check.</p>" }
+    },
+    {
+      "ref": "regression-wait",
+      "type": "wait",
+      "name": "Regression wait 5 minutes",
+      "config": { "unit": "minutes", "value": 5 }
+    },
+    {
+      "type": "if_else",
+      "name": "Regression tag branch",
+      "branches": [
+        {
+          "name": "Has regression tag",
+          "conditions": [
+            { "conditionType": "contact_detail", "field": "tags", "operator": "index-of-true", "value": ["zzz-spike-tag"] }
+          ],
+          "actions": [
+            { "type": "remove_contact_tag", "name": "Remove regression tag", "config": { "tags": ["zzz-spike-tag"] } },
+            { "type": "goto", "name": "Go to regression wait", "config": { "target": "regression-wait" } }
+          ]
+        }
+      ],
+      "else": {
+        "name": "No regression tag",
+        "actions": [
+          { "type": "add_contact_tag", "name": "Add regression tag", "config": { "tags": ["zzz-spike-tag"] } }
+        ]
+      }
+    }
+  ]
+}

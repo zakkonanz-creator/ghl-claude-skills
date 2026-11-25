@@ -1,0 +1,91 @@
+{
+ "doc": "research/phase1/raw/triggers/birthday-reminder.md",
+ "kind": "trigger",
+ "workflowId": "00000000-0000-4000-8000-000000000182",
+ "nodeId": "<id017>",
+ "source": "GET /workflow/<locationId>/trigger?workflowId=00000000-0000-4000-8000-000000000182",
+ "pass": true,
+ "rows": [
+  {
+   "path": "id",
+   "status": "OK",
+   "doc": "\"<id017>\"",
+   "real": "\"<id017>\""
+  },
+  {
+   "path": "active",
+   "status": "OK",
+   "doc": "false",
+   "real": "false"
+  },
+  {
+   "path": "actions",
+   "status": "OK",
+   "doc": "array[1]",
+   "real": "array[1]"
+  },
+  {
+   "path": "conditions",
+   "status": "OK",
+   "doc": "array[0]",
+   "real": "array[0]"
+  },
+  {
+   "path": "type",
+   "status": "OK",
+   "doc": "\"birthday_reminder\"",
+   "real": "\"birthday_reminder\""
+  },
+  {
+   "path": "masterType",
+   "status": "OK",
+   "doc": "\"highlevel\"",
+   "real": "\"highlevel\""
+  },
+  {
+   "path": "workflow_id",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000182\"",
+   "real": "\"00000000-0000-4000-8000-000000000182\""
+  },
+  {
+   "path": "location_id",
+   "status": "OK",
+   "doc": "\"<locationId>\"",
+   "real": "\"<locationId>\""
+  },
+  {
+   "path": "name",
+   "status": "OK",
+   "doc": "\"Birthday Reminder\"",
+   "real": "\"Birthday Reminder\""
+  },
+  {
+   "path": "belongs_to",
+   "status": "OK",
+   "doc": "\"workflow\"",
+   "real": "\"workflow\""
+  }
+ ],
+ "realNode": {
+  "id": "<id017>",
+  "date_updated": "2026-07-17T00:43:53.439Z",
+  "date_added": "2026-07-17T00:43:53.439Z",
+  "deleted": false,
+  "active": false,
+  "actions": [
+   {
+    "workflow_id": "00000000-0000-4000-8000-000000000182",
+    "type": "add_to_workflow"
+   }
+  ],
+  "conditions": [],
+  "type": "birthday_reminder",
+  "masterType": "highlevel",
+  "workflow_id": "00000000-0000-4000-8000-000000000182",
+  "location_id": "<locationId>",
+  "name": "Birthday Reminder",
+  "belongs_to": "workflow",
+  "schedule_config": {}
+ }
+}

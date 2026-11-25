@@ -1,0 +1,85 @@
+{
+ "doc": "../raw/triggers/product-started.md",
+ "kind": "trigger",
+ "workflowId": "00000000-0000-4000-8000-000000000181",
+ "nodeId": "<id028>",
+ "source": "GET /workflow/<locationId>/trigger?workflowId=00000000-0000-4000-8000-000000000181",
+ "pass": true,
+ "rows": [
+  {
+   "path": "id",
+   "status": "OK",
+   "doc": "\"<id028>\"",
+   "real": "\"<id028>\""
+  },
+  {
+   "path": "active",
+   "status": "OK",
+   "doc": "false",
+   "real": "false"
+  },
+  {
+   "path": "actions",
+   "status": "OK",
+   "doc": "array[1]",
+   "real": "array[1]"
+  },
+  {
+   "path": "conditions",
+   "status": "OK",
+   "doc": "array[0]",
+   "real": "array[0]"
+  },
+  {
+   "path": "type",
+   "status": "OK",
+   "doc": "\"product_started\"",
+   "real": "\"product_started\""
+  },
+  {
+   "path": "masterType",
+   "status": "OK",
+   "doc": "\"highlevel\"",
+   "real": "\"highlevel\""
+  },
+  {
+   "path": "workflow_id",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000181\"",
+   "real": "\"00000000-0000-4000-8000-000000000181\""
+  },
+  {
+   "path": "location_id",
+   "status": "OK",
+   "doc": "\"<locationId>\"",
+   "real": "\"<locationId>\""
+  },
+  {
+   "path": "name",
+   "status": "OK",
+   "doc": "\"Product Started\"",
+   "real": "\"Product Started\""
+  }
+ ],
+ "realNode": {
+  "id": "<id028>",
+  "date_updated": "2026-07-17T02:31:16.306Z",
+  "date_added": "2026-07-17T02:31:16.306Z",
+  "deleted": false,
+  "active": false,
+  "actions": [
+   {
+    "workflow_id": "00000000-0000-4000-8000-000000000181",
+    "type": "add_to_workflow"
+   }
+  ],
+  "conditions": [],
+  "type": "product_started",
+  "masterType": "highlevel",
+  "workflow_id": "00000000-0000-4000-8000-000000000181",
+  "location_id": "<locationId>",
+  "name": "Product Started",
+  "belongs_to": "workflow",
+  "schedule_config": {}
+ }
+}

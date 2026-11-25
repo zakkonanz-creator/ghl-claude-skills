@@ -1,0 +1,92 @@
+{
+ "doc": "research/phase1/raw/actions/send-documents-contracts.md",
+ "kind": "action",
+ "workflowId": "00000000-0000-4000-8000-000000000195",
+ "nodeId": "00000000-0000-4000-8000-000000000309",
+ "source": "https://firebasestorage.googleapis.com/v0/b/<bucket>/o/<path>?alt=media&token=<token><bucket>/o/<path>?alt=media&token=<token>",
+ "pass": true,
+ "rows": [
+  {
+   "path": "id",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000309\"",
+   "real": "\"00000000-0000-4000-8000-000000000309\""
+  },
+  {
+   "path": "order",
+   "status": "OK",
+   "doc": "3",
+   "real": "3"
+  },
+  {
+   "path": "attributes.userId",
+   "status": "OK",
+   "doc": "\"<userId>\"",
+   "real": "\"<userId>\""
+  },
+  {
+   "path": "attributes.templateId",
+   "status": "OK",
+   "doc": "\"000000000000000000000006\"",
+   "real": "\"000000000000000000000006\""
+  },
+  {
+   "path": "attributes.sendDocument",
+   "status": "OK",
+   "doc": "\"true\"",
+   "real": "\"true\""
+  },
+  {
+   "path": "attributes.medium",
+   "status": "OK",
+   "doc": "\"email\"",
+   "real": "\"email\""
+  },
+  {
+   "path": "attributes.type",
+   "status": "OK",
+   "doc": "\"proposals_estimates_send_document\"",
+   "real": "\"proposals_estimates_send_document\""
+  },
+  {
+   "path": "name",
+   "status": "OK",
+   "doc": "\"Send documents & contracts\"",
+   "real": "\"Send documents & contracts\""
+  },
+  {
+   "path": "type",
+   "status": "OK",
+   "doc": "\"proposals_estimates_send_document\"",
+   "real": "\"proposals_estimates_send_document\""
+  },
+  {
+   "path": "workflowsActionType",
+   "status": "OK",
+   "doc": "\"INTERNAL\"",
+   "real": "\"INTERNAL\""
+  },
+  {
+   "path": "parentKey",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000307\"",
+   "real": "\"00000000-0000-4000-8000-000000000307\""
+  }
+ ],
+ "realNode": {
+  "id": "00000000-0000-4000-8000-000000000309",
+  "order": 3,
+  "attributes": {
+   "userId": "<userId>",
+   "templateId": "000000000000000000000006",
+   "sendDocument": "true",
+   "medium": "email",
+   "type": "proposals_estimates_send_document",
+   "__customInputs__": {}
+  },
+  "name": "Send documents & contracts",
+  "type": "proposals_estimates_send_document",
+  "workflowsActionType": "INTERNAL",
+  "parentKey": "00000000-0000-4000-8000-000000000307"
+ }
+}

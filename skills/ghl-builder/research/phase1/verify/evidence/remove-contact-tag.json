@@ -1,0 +1,48 @@
+{
+ "doc": "../raw/actions/remove-contact-tag.md",
+ "kind": "action",
+ "workflowId": "00000000-0000-4000-8000-000000000171",
+ "nodeId": "00000000-0000-4000-8000-000000000281",
+ "source": "https://firebasestorage.googleapis.com/v0/b/<bucket>/o/<path>?alt=media&token=<token><bucket>/o/<path>?alt=media&token=<token>",
+ "pass": true,
+ "rows": [
+  {
+   "path": "name",
+   "status": "OK",
+   "doc": "\"Remove Tag\"",
+   "real": "\"Remove Tag\""
+  },
+  {
+   "path": "type",
+   "status": "OK",
+   "doc": "\"remove_contact_tag\"",
+   "real": "\"remove_contact_tag\""
+  },
+  {
+   "path": "attributes.tags",
+   "status": "OK",
+   "doc": "array[1]",
+   "real": "array[1]"
+  },
+  {
+   "path": "attributes.type",
+   "status": "OK",
+   "doc": "\"remove_contact_tag\"",
+   "real": "\"remove_contact_tag\""
+  }
+ ],
+ "realNode": {
+  "id": "00000000-0000-4000-8000-000000000281",
+  "order": 4,
+  "attributes": {
+   "tags": [
+    "zzz-spike-tag"
+   ],
+   "type": "remove_contact_tag"
+  },
+  "name": "Remove Tag",
+  "type": "remove_contact_tag",
+  "parentKey": "00000000-0000-4000-8000-000000000279",
+  "next": "00000000-0000-4000-8000-000000000242"
+ }
+}

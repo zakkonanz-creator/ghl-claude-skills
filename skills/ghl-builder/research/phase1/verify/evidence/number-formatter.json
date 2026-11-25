@@ -1,0 +1,110 @@
+{
+ "doc": "research/phase1/raw/actions/number-formatter.md",
+ "kind": "action",
+ "workflowId": "00000000-0000-4000-8000-000000000202",
+ "nodeId": "00000000-0000-4000-8000-000000000257",
+ "source": "https://firebasestorage.googleapis.com/v0/b/<bucket>/o/<path>?alt=media&token=<token><bucket>/o/<path>?alt=media&token=<token>",
+ "pass": true,
+ "rows": [
+  {
+   "path": "id",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000257\"",
+   "real": "\"00000000-0000-4000-8000-000000000257\""
+  },
+  {
+   "path": "stepIndex",
+   "status": "OK",
+   "doc": "2",
+   "real": "2"
+  },
+  {
+   "path": "order",
+   "status": "OK",
+   "doc": "6",
+   "real": "6"
+  },
+  {
+   "path": "attributes.type",
+   "status": "OK",
+   "doc": "\"number_formatter\"",
+   "real": "\"number_formatter\""
+  },
+  {
+   "path": "attributes.format.fromField",
+   "status": "OK",
+   "doc": "\"{{contact.zzzspikenumber}}\"",
+   "real": "\"{{contact.zzzspikenumber}}\""
+  },
+  {
+   "path": "attributes.format.options.inputDecimalMark",
+   "status": "OK",
+   "doc": "\"period\"",
+   "real": "\"period\""
+  },
+  {
+   "path": "attributes.format.options.outputNumberFormat",
+   "status": "OK",
+   "doc": "\"g:comma_d:period\"",
+   "real": "\"g:comma_d:period\""
+  },
+  {
+   "path": "attributes.format.fromFieldType",
+   "status": "OK",
+   "doc": "\"string\"",
+   "real": "\"string\""
+  },
+  {
+   "path": "attributes.format.toFieldType",
+   "status": "OK",
+   "doc": "\"number\"",
+   "real": "\"number\""
+  },
+  {
+   "path": "attributes.action",
+   "status": "OK",
+   "doc": "\"string_to_formatted_number\"",
+   "real": "\"string_to_formatted_number\""
+  },
+  {
+   "path": "name",
+   "status": "OK",
+   "doc": "\"Format number\"",
+   "real": "\"Format number\""
+  },
+  {
+   "path": "type",
+   "status": "OK",
+   "doc": "\"number_formatter\"",
+   "real": "\"number_formatter\""
+  },
+  {
+   "path": "parentKey",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000258\"",
+   "real": "\"00000000-0000-4000-8000-000000000258\""
+  }
+ ],
+ "realNode": {
+  "id": "00000000-0000-4000-8000-000000000257",
+  "stepIndex": 2,
+  "order": 6,
+  "attributes": {
+   "type": "number_formatter",
+   "format": {
+    "fromField": "{{contact.zzzspikenumber}}",
+    "options": {
+     "inputDecimalMark": "period",
+     "outputNumberFormat": "g:comma_d:period"
+    },
+    "fromFieldType": "string",
+    "toFieldType": "number"
+   },
+   "action": "string_to_formatted_number"
+  },
+  "name": "Format number",
+  "type": "number_formatter",
+  "parentKey": "00000000-0000-4000-8000-000000000258",
+  "next": "00000000-0000-4000-8000-000000000259"
+ }
+}

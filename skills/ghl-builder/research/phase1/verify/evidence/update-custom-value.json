@@ -1,0 +1,85 @@
+{
+ "doc": "research/phase1/raw/actions/update-custom-value.md",
+ "kind": "action",
+ "workflowId": "00000000-0000-4000-8000-000000000202",
+ "nodeId": "00000000-0000-4000-8000-000000000205",
+ "source": "https://firebasestorage.googleapis.com/v0/b/<bucket>/o/<path>?alt=media&token=<token><bucket>/o/<path>?alt=media&token=<token>",
+ "pass": true,
+ "rows": [
+  {
+   "path": "id",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000205\"",
+   "real": "\"00000000-0000-4000-8000-000000000205\""
+  },
+  {
+   "path": "parent",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000204\"",
+   "real": "\"00000000-0000-4000-8000-000000000204\""
+  },
+  {
+   "path": "order",
+   "status": "OK",
+   "doc": "1",
+   "real": "1"
+  },
+  {
+   "path": "attributes.current_value",
+   "status": "OK",
+   "doc": "\"before\"",
+   "real": "\"before\""
+  },
+  {
+   "path": "attributes.custom_value_id",
+   "status": "OK",
+   "doc": "\"<customValueId>\"",
+   "real": "\"<customValueId>\""
+  },
+  {
+   "path": "attributes.new_value",
+   "status": "OK",
+   "doc": "\"after\"",
+   "real": "\"after\""
+  },
+  {
+   "path": "attributes.type",
+   "status": "OK",
+   "doc": "\"update_custom_value\"",
+   "real": "\"update_custom_value\""
+  },
+  {
+   "path": "name",
+   "status": "OK",
+   "doc": "\"Update custom value\"",
+   "real": "\"Update custom value\""
+  },
+  {
+   "path": "type",
+   "status": "OK",
+   "doc": "\"update_custom_value\"",
+   "real": "\"update_custom_value\""
+  },
+  {
+   "path": "parentKey",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000216\"",
+   "real": "\"00000000-0000-4000-8000-000000000216\""
+  }
+ ],
+ "realNode": {
+  "id": "00000000-0000-4000-8000-000000000205",
+  "parent": "00000000-0000-4000-8000-000000000204",
+  "order": 1,
+  "attributes": {
+   "current_value": "before",
+   "custom_value_id": "<customValueId>",
+   "new_value": "after",
+   "type": "update_custom_value"
+  },
+  "name": "Update custom value",
+  "type": "update_custom_value",
+  "parentKey": "00000000-0000-4000-8000-000000000216",
+  "next": "00000000-0000-4000-8000-000000000203"
+ }
+}

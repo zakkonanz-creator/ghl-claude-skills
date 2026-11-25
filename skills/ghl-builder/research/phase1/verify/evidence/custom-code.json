@@ -1,0 +1,89 @@
+{
+ "doc": "research/phase1/raw/actions/custom-code.md",
+ "kind": "action",
+ "workflowId": "00000000-0000-4000-8000-000000000202",
+ "nodeId": "00000000-0000-4000-8000-000000000233",
+ "source": "https://firebasestorage.googleapis.com/v0/b/<bucket>/o/<path>?alt=media&token=<token><bucket>/o/<path>?alt=media&token=<token>",
+ "pass": true,
+ "rows": [
+  {
+   "path": "id",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000233\"",
+   "real": "\"00000000-0000-4000-8000-000000000233\""
+  },
+  {
+   "path": "stepIndex",
+   "status": "OK",
+   "doc": "1",
+   "real": "1"
+  },
+  {
+   "path": "order",
+   "status": "OK",
+   "doc": "0",
+   "real": "0"
+  },
+  {
+   "path": "attributes.code",
+   "status": "OK",
+   "doc": "\"output = { items: [{ name: 'alpha', amo",
+   "real": "\"output = { items: [{ name: 'alpha', amo"
+  },
+  {
+   "path": "attributes.language",
+   "status": "OK",
+   "doc": "\"javascript\"",
+   "real": "\"javascript\""
+  },
+  {
+   "path": "attributes.output.items",
+   "status": "OK",
+   "doc": "array[2]",
+   "real": "array[2]"
+  },
+  {
+   "path": "name",
+   "status": "OK",
+   "doc": "\"Custom code\"",
+   "real": "\"Custom code\""
+  },
+  {
+   "path": "type",
+   "status": "OK",
+   "doc": "\"custom_code\"",
+   "real": "\"custom_code\""
+  },
+  {
+   "path": "next",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000232\"",
+   "real": "\"00000000-0000-4000-8000-000000000232\""
+  }
+ ],
+ "realNode": {
+  "id": "00000000-0000-4000-8000-000000000233",
+  "stepIndex": 1,
+  "order": 0,
+  "attributes": {
+   "code": "output = { items: [{ name: 'alpha', amount: 10 }, { name: 'beta', amount: 20 }] }\n",
+   "inputData": {},
+   "language": "javascript",
+   "output": {
+    "items": [
+     {
+      "name": "alpha",
+      "amount": 10
+     },
+     {
+      "name": "beta",
+      "amount": 20
+     }
+    ]
+   }
+  },
+  "name": "Custom code",
+  "type": "custom_code",
+  "next": "00000000-0000-4000-8000-000000000232"
+ }
+}

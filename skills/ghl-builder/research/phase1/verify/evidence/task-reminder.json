@@ -1,0 +1,100 @@
+{
+ "doc": "research/phase1/raw/triggers/task-reminder.md",
+ "kind": "trigger",
+ "workflowId": "00000000-0000-4000-8000-000000000182",
+ "nodeId": "<id029>",
+ "source": "GET /workflow/<locationId>/trigger?workflowId=00000000-0000-4000-8000-000000000182",
+ "pass": true,
+ "rows": [
+  {
+   "path": "id",
+   "status": "OK",
+   "doc": "\"<id029>\"",
+   "real": "\"<id029>\""
+  },
+  {
+   "path": "active",
+   "status": "OK",
+   "doc": "false",
+   "real": "false"
+  },
+  {
+   "path": "actions",
+   "status": "OK",
+   "doc": "array[1]",
+   "real": "array[1]"
+  },
+  {
+   "path": "conditions",
+   "status": "OK",
+   "doc": "array[1]",
+   "real": "array[1]"
+  },
+  {
+   "path": "type",
+   "status": "OK",
+   "doc": "\"task_due_date_reminder\"",
+   "real": "\"task_due_date_reminder\""
+  },
+  {
+   "path": "masterType",
+   "status": "OK",
+   "doc": "\"highlevel\"",
+   "real": "\"highlevel\""
+  },
+  {
+   "path": "workflow_id",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000182\"",
+   "real": "\"00000000-0000-4000-8000-000000000182\""
+  },
+  {
+   "path": "location_id",
+   "status": "OK",
+   "doc": "\"<locationId>\"",
+   "real": "\"<locationId>\""
+  },
+  {
+   "path": "name",
+   "status": "OK",
+   "doc": "\"Task Reminder\"",
+   "real": "\"Task Reminder\""
+  },
+  {
+   "path": "belongs_to",
+   "status": "OK",
+   "doc": "\"workflow\"",
+   "real": "\"workflow\""
+  }
+ ],
+ "realNode": {
+  "id": "<id029>",
+  "date_updated": "2026-07-17T01:34:56.409Z",
+  "date_added": "2026-07-17T01:34:56.409Z",
+  "deleted": false,
+  "active": false,
+  "actions": [
+   {
+    "workflow_id": "00000000-0000-4000-8000-000000000182",
+    "type": "add_to_workflow"
+   }
+  ],
+  "conditions": [
+   {
+    "operator": "time-diff-now-lte",
+    "field": "task.dueDate",
+    "value": 1,
+    "title": "Before no. of days",
+    "type": "number",
+    "id": "before-days-in-number"
+   }
+  ],
+  "type": "task_due_date_reminder",
+  "masterType": "highlevel",
+  "workflow_id": "00000000-0000-4000-8000-000000000182",
+  "location_id": "<locationId>",
+  "name": "Task Reminder",
+  "belongs_to": "workflow",
+  "schedule_config": {}
+ }
+}

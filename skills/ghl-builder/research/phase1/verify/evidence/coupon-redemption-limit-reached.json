@@ -1,0 +1,74 @@
+{
+ "doc": "research/phase1/raw/triggers/coupon-redemption-limit-reached.md",
+ "kind": "trigger",
+ "workflowId": "00000000-0000-4000-8000-000000000195",
+ "nodeId": "<id005>",
+ "source": "GET /workflow/<locationId>/trigger?workflowId=00000000-0000-4000-8000-000000000195",
+ "pass": true,
+ "rows": [
+  {
+   "path": "id",
+   "status": "OK",
+   "doc": "\"<id005>\"",
+   "real": "\"<id005>\""
+  },
+  {
+   "path": "active",
+   "status": "OK",
+   "doc": "false",
+   "real": "false"
+  },
+  {
+   "path": "conditions",
+   "status": "OK",
+   "doc": "array[0]",
+   "real": "array[0]"
+  },
+  {
+   "path": "type",
+   "status": "OK",
+   "doc": "\"coupon_redemption_limit_reached\"",
+   "real": "\"coupon_redemption_limit_reached\""
+  },
+  {
+   "path": "masterType",
+   "status": "OK",
+   "doc": "\"internal\"",
+   "real": "\"internal\""
+  },
+  {
+   "path": "name",
+   "status": "OK",
+   "doc": "\"Coupon Redemption Limit Reached\"",
+   "real": "\"Coupon Redemption Limit Reached\""
+  },
+  {
+   "path": "actions",
+   "status": "OK",
+   "doc": "array[1]",
+   "real": "array[1]"
+  }
+ ],
+ "realNode": {
+  "id": "<id005>",
+  "date_updated": "2026-07-17T02:00:16.716Z",
+  "date_added": "2026-07-17T02:00:16.716Z",
+  "deleted": false,
+  "active": false,
+  "actions": [
+   {
+    "workflow_id": "00000000-0000-4000-8000-000000000195",
+    "type": "add_to_workflow"
+   }
+  ],
+  "conditions": [],
+  "type": "coupon_redemption_limit_reached",
+  "masterType": "internal",
+  "workflow_id": "00000000-0000-4000-8000-000000000195",
+  "location_id": "<locationId>",
+  "name": "Coupon Redemption Limit Reached",
+  "belongs_to": "workflow",
+  "workflowsTriggerType": "INTERNAL",
+  "schedule_config": {}
+ }
+}

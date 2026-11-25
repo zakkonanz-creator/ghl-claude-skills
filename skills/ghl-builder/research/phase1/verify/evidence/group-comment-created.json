@@ -1,0 +1,85 @@
+{
+ "doc": "../raw/triggers/group-comment-created.md",
+ "kind": "trigger",
+ "workflowId": "00000000-0000-4000-8000-000000000181",
+ "nodeId": "<id018>",
+ "source": "GET /workflow/<locationId>/trigger?workflowId=00000000-0000-4000-8000-000000000181",
+ "pass": true,
+ "rows": [
+  {
+   "path": "id",
+   "status": "OK",
+   "doc": "\"<id018>\"",
+   "real": "\"<id018>\""
+  },
+  {
+   "path": "active",
+   "status": "OK",
+   "doc": "false",
+   "real": "false"
+  },
+  {
+   "path": "actions",
+   "status": "OK",
+   "doc": "array[1]",
+   "real": "array[1]"
+  },
+  {
+   "path": "conditions",
+   "status": "OK",
+   "doc": "array[0]",
+   "real": "array[0]"
+  },
+  {
+   "path": "type",
+   "status": "OK",
+   "doc": "\"group_comment_created\"",
+   "real": "\"group_comment_created\""
+  },
+  {
+   "path": "masterType",
+   "status": "OK",
+   "doc": "\"highlevel\"",
+   "real": "\"highlevel\""
+  },
+  {
+   "path": "workflow_id",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000181\"",
+   "real": "\"00000000-0000-4000-8000-000000000181\""
+  },
+  {
+   "path": "location_id",
+   "status": "OK",
+   "doc": "\"<locationId>\"",
+   "real": "\"<locationId>\""
+  },
+  {
+   "path": "name",
+   "status": "OK",
+   "doc": "\"Group Comment Created\"",
+   "real": "\"Group Comment Created\""
+  }
+ ],
+ "realNode": {
+  "id": "<id018>",
+  "date_updated": "2026-07-17T01:30:00.196Z",
+  "date_added": "2026-07-17T01:30:00.196Z",
+  "deleted": false,
+  "active": false,
+  "actions": [
+   {
+    "workflow_id": "00000000-0000-4000-8000-000000000181",
+    "type": "add_to_workflow"
+   }
+  ],
+  "conditions": [],
+  "type": "group_comment_created",
+  "masterType": "highlevel",
+  "workflow_id": "00000000-0000-4000-8000-000000000181",
+  "location_id": "<locationId>",
+  "name": "Group Comment Created",
+  "belongs_to": "workflow",
+  "schedule_config": {}
+ }
+}

@@ -1,0 +1,102 @@
+{
+ "doc": "../raw/triggers/customer-booked-appointment.md",
+ "kind": "trigger",
+ "workflowId": "00000000-0000-4000-8000-000000000174",
+ "nodeId": "<id066>",
+ "source": "GET /workflow/<locationId>/trigger?workflowId=00000000-0000-4000-8000-000000000174",
+ "pass": true,
+ "rows": [
+  {
+   "path": "id",
+   "status": "OK",
+   "doc": "\"<id066>\"",
+   "real": "\"<id066>\""
+  },
+  {
+   "path": "active",
+   "status": "OK",
+   "doc": "false",
+   "real": "false"
+  },
+  {
+   "path": "conditions",
+   "status": "OK",
+   "doc": "array[2]",
+   "real": "array[2]"
+  },
+  {
+   "path": "type",
+   "status": "OK",
+   "doc": "\"customer_appointment\"",
+   "real": "\"customer_appointment\""
+  },
+  {
+   "path": "masterType",
+   "status": "OK",
+   "doc": "\"highlevel\"",
+   "real": "\"highlevel\""
+  },
+  {
+   "path": "name",
+   "status": "OK",
+   "doc": "\"Customer Booked Appointment\"",
+   "real": "\"Customer Booked Appointment\""
+  },
+  {
+   "path": "actions",
+   "status": "OK",
+   "doc": "array[1]",
+   "real": "array[1]"
+  },
+  {
+   "path": "workflow_id",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000174\"",
+   "real": "\"00000000-0000-4000-8000-000000000174\""
+  },
+  {
+   "path": "location_id",
+   "status": "OK",
+   "doc": "\"<locationId>\"",
+   "real": "\"<locationId>\""
+  }
+ ],
+ "realNode": {
+  "id": "<id066>",
+  "date_updated": "2026-07-16T23:27:36.074Z",
+  "date_added": "2026-07-16T23:27:36.074Z",
+  "deleted": false,
+  "active": false,
+  "actions": [
+   {
+    "workflow_id": "00000000-0000-4000-8000-000000000174",
+    "type": "add_to_workflow"
+   }
+  ],
+  "conditions": [
+   {
+    "operator": "is-any-of",
+    "field": "contactMode",
+    "value": [
+     "guest"
+    ],
+    "type": "input"
+   },
+   {
+    "operator": "index-of-true",
+    "field": "contact.tags",
+    "value": "zzz-spike-tag",
+    "title": "Has tag",
+    "type": "select",
+    "id": "has-tag"
+   }
+  ],
+  "type": "customer_appointment",
+  "masterType": "highlevel",
+  "workflow_id": "00000000-0000-4000-8000-000000000174",
+  "location_id": "<locationId>",
+  "name": "Customer Booked Appointment",
+  "belongs_to": "workflow",
+  "schedule_config": {}
+ }
+}

@@ -1,0 +1,138 @@
+{
+ "doc": "research/phase1/raw/actions/array-formatter.md",
+ "kind": "action",
+ "workflowId": "00000000-0000-4000-8000-000000000202",
+ "nodeId": "00000000-0000-4000-8000-000000000232",
+ "source": "https://firebasestorage.googleapis.com/v0/b/<bucket>/o/<path>?alt=media&token=<token><bucket>/o/<path>?alt=media&token=<token>",
+ "pass": true,
+ "rows": [
+  {
+   "path": "id",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000232\"",
+   "real": "\"00000000-0000-4000-8000-000000000232\""
+  },
+  {
+   "path": "stepIndex",
+   "status": "OK",
+   "doc": "2",
+   "real": "2"
+  },
+  {
+   "path": "order",
+   "status": "OK",
+   "doc": "1",
+   "real": "1"
+  },
+  {
+   "path": "attributes.type",
+   "status": "OK",
+   "doc": "\"array_functions\"",
+   "real": "\"array_functions\""
+  },
+  {
+   "path": "attributes.action",
+   "status": "OK",
+   "doc": "\"find_by_index\"",
+   "real": "\"find_by_index\""
+  },
+  {
+   "path": "attributes.find_by_index.fromField",
+   "status": "OK",
+   "doc": "\"{{custom_code.1.output.items}}\"",
+   "real": "\"{{custom_code.1.output.items}}\""
+  },
+  {
+   "path": "attributes.find_by_index.filters",
+   "status": "OK",
+   "doc": "array[0]",
+   "real": "array[0]"
+  },
+  {
+   "path": "attributes.find_by_index.fields",
+   "status": "OK",
+   "doc": "array[0]",
+   "real": "array[0]"
+  },
+  {
+   "path": "attributes.find_by_index.index",
+   "status": "OK",
+   "doc": "0",
+   "real": "0"
+  },
+  {
+   "path": "attributes.find_by_index.operations",
+   "status": "OK",
+   "doc": "array[0]",
+   "real": "array[0]"
+  },
+  {
+   "path": "attributes.referenceObject.name",
+   "status": "OK",
+   "doc": "\"alpha\"",
+   "real": "\"alpha\""
+  },
+  {
+   "path": "attributes.referenceObject.amount",
+   "status": "OK",
+   "doc": "10",
+   "real": "10"
+  },
+  {
+   "path": "attributes.referencePath",
+   "status": "OK",
+   "doc": "\"output.items[]\"",
+   "real": "\"output.items[]\""
+  },
+  {
+   "path": "attributes._testResponseVersion",
+   "status": "OK",
+   "doc": "1",
+   "real": "1"
+  },
+  {
+   "path": "name",
+   "status": "OK",
+   "doc": "\"Array formatter\"",
+   "real": "\"Array formatter\""
+  },
+  {
+   "path": "type",
+   "status": "OK",
+   "doc": "\"array_functions\"",
+   "real": "\"array_functions\""
+  },
+  {
+   "path": "parentKey",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000233\"",
+   "real": "\"00000000-0000-4000-8000-000000000233\""
+  }
+ ],
+ "realNode": {
+  "id": "00000000-0000-4000-8000-000000000232",
+  "stepIndex": 2,
+  "order": 1,
+  "attributes": {
+   "type": "array_functions",
+   "action": "find_by_index",
+   "find_by_index": {
+    "fromField": "{{custom_code.1.output.items}}",
+    "filters": [],
+    "fields": [],
+    "index": 0,
+    "operations": []
+   },
+   "referenceObject": {
+    "name": "alpha",
+    "amount": 10
+   },
+   "referencePath": "output.items[]",
+   "_testResponseVersion": 1
+  },
+  "name": "Array formatter",
+  "type": "array_functions",
+  "parentKey": "00000000-0000-4000-8000-000000000233",
+  "next": "00000000-0000-4000-8000-000000000234"
+ }
+}

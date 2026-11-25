@@ -1,0 +1,93 @@
+{
+ "doc": "research/phase1/raw/actions/ai-summarize.md",
+ "kind": "action",
+ "workflowId": "00000000-0000-4000-8000-000000000211",
+ "nodeId": "00000000-0000-4000-8000-000000000324",
+ "source": "https://firebasestorage.googleapis.com/v0/b/<bucket>/o/<path>?alt=media&token=<token><bucket>/o/<path>?alt=media&token=<token>",
+ "pass": true,
+ "rows": [
+  {
+   "path": "id",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000324\"",
+   "real": "\"00000000-0000-4000-8000-000000000324\""
+  },
+  {
+   "path": "stepIndex",
+   "status": "OK",
+   "doc": "1",
+   "real": "1"
+  },
+  {
+   "path": "parent",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000213\"",
+   "real": "\"00000000-0000-4000-8000-000000000213\""
+  },
+  {
+   "path": "order",
+   "status": "OK",
+   "doc": "0",
+   "real": "0"
+  },
+  {
+   "path": "attributes.maxLength",
+   "status": "OK",
+   "doc": "\"3 sentences\"",
+   "real": "\"3 sentences\""
+  },
+  {
+   "path": "attributes.inputText",
+   "status": "VALUE",
+   "doc": "\"Long source text to summarize.\"",
+   "real": "\"In the year 2424, humanity had transcen"
+  },
+  {
+   "path": "attributes.type",
+   "status": "OK",
+   "doc": "\"workflow_ai_summarize_text\"",
+   "real": "\"workflow_ai_summarize_text\""
+  },
+  {
+   "path": "name",
+   "status": "OK",
+   "doc": "\"AI summarize\"",
+   "real": "\"AI summarize\""
+  },
+  {
+   "path": "type",
+   "status": "OK",
+   "doc": "\"workflow_ai_summarize_text\"",
+   "real": "\"workflow_ai_summarize_text\""
+  },
+  {
+   "path": "workflowsActionType",
+   "status": "OK",
+   "doc": "\"INTERNAL\"",
+   "real": "\"INTERNAL\""
+  },
+  {
+   "path": "parentKey",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000213\"",
+   "real": "\"00000000-0000-4000-8000-000000000213\""
+  }
+ ],
+ "realNode": {
+  "id": "00000000-0000-4000-8000-000000000324",
+  "stepIndex": 1,
+  "parent": "00000000-0000-4000-8000-000000000213",
+  "order": 0,
+  "attributes": {
+   "maxLength": "3 sentences",
+   "inputText": "In the year 2424, humanity had transcended the terrestrial confines of Earth, establishing colonies on distant exoplanets. Among these, Elysium IV stood as a testament to human ingenuity, a utopia floating in the vacuum of space, orbited by the artificial sun, Prometheus. The inhabitants of Elysium IV had long since abandoned the primitive technologies of their forebears, embracing a society where consciousness could be digitized, and human experience was augmented by virtual realities.        The protagonist of our narrative, Dr. Elara Vance, was a preeminent scholar in quantum consciousness, working at the Celestial Mind Institute. Dr. Vance had dedicated her life to solving the Quantum Paradox, a theoretical conundrum that posited the existence of a parallel universe accessible through the manipulation of quantum states in the human brain.        On a seemingly ordinary day, Dr. Vance achieved a breakthrough. Her consciousness was projected into the parallel universe, revealing a realm where the laws of physics were governed by consciousness itself. This discovery had profound implications, suggesting that reality was not a fixed construct but a tapestry woven from the threads of individual perceptions.        However, this revelation came with a dire warning. The beings inhabiting this parallel universe, the Sentinels, guardians of the cosmic equilibrium, declared that humanity's relentless pursuit of knowledge posed a threat to the multiverse's stability. Dr. Vance was faced with an ethical dilemma: share her discovery and risk the annihilation of countless realities, or suppress the truth to safeguard the cosmic order.        In the end, Dr. Vance chose to encode the secrets of the Quantum Paradox within a cryptic algorithm, accessible only to those who could comprehend the responsibility it entailed. Elysium IV continued to thrive, oblivious to the thin veil separating them from chaos, while Dr. Vance watched over the balance, a silent guardian of both worlds.",
+   "type": "workflow_ai_summarize_text",
+   "__customInputs__": {}
+  },
+  "name": "AI summarize",
+  "type": "workflow_ai_summarize_text",
+  "workflowsActionType": "INTERNAL",
+  "parentKey": "00000000-0000-4000-8000-000000000213",
+  "next": "00000000-0000-4000-8000-000000000283"
+ }
+}

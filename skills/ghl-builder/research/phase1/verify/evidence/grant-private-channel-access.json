@@ -1,0 +1,57 @@
+{
+ "doc": "../raw/actions/grant-private-channel-access.md",
+ "kind": "action",
+ "workflowId": "00000000-0000-4000-8000-000000000181",
+ "nodeId": "00000000-0000-4000-8000-000000000284",
+ "source": "https://firebasestorage.googleapis.com/v0/b/<bucket>/o/<path>?alt=media&token=<token><bucket>/o/<path>?alt=media&token=<token>",
+ "pass": true,
+ "rows": [
+  {
+   "path": "id",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000284\"",
+   "real": "\"00000000-0000-4000-8000-000000000284\""
+  },
+  {
+   "path": "order",
+   "status": "OK",
+   "doc": "2",
+   "real": "2"
+  },
+  {
+   "path": "attributes.type",
+   "status": "OK",
+   "doc": "\"grant-private-channel-access\"",
+   "real": "\"grant-private-channel-access\""
+  },
+  {
+   "path": "name",
+   "status": "OK",
+   "doc": "\"Grant private channel access\"",
+   "real": "\"Grant private channel access\""
+  },
+  {
+   "path": "type",
+   "status": "OK",
+   "doc": "\"grant-private-channel-access\"",
+   "real": "\"grant-private-channel-access\""
+  },
+  {
+   "path": "parentKey",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000221\"",
+   "real": "\"00000000-0000-4000-8000-000000000221\""
+  }
+ ],
+ "realNode": {
+  "id": "00000000-0000-4000-8000-000000000284",
+  "order": 2,
+  "attributes": {
+   "type": "grant-private-channel-access"
+  },
+  "name": "Grant private channel access",
+  "type": "grant-private-channel-access",
+  "parentKey": "00000000-0000-4000-8000-000000000221",
+  "next": "00000000-0000-4000-8000-000000000218"
+ }
+}

@@ -1,0 +1,8 @@
+{
+  "name": "ghl-claude-skills",
+  "version": "1.0.0",
+  "description": "GoHighLevel for Claude Code: a know-how skill (which MCP, API or browser path to use, HighLevel's error codes, verified traps, HighLevel's own AI as of Nov 2026, launch QA) and a builder skill that builds workflows and forms from plain English and checks its own work. Workflows stay in draft unless you say publish.",
+  "author": { "name": "Zak Konanz" },
+  "license": "MIT",
+  "keywords": ["gohighlevel", "highlevel", "ghl", "crm", "workflows", "mcp", "automation"]
+}

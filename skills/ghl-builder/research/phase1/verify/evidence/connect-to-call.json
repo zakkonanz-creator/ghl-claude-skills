@@ -1,0 +1,64 @@
+{
+ "doc": "../raw/actions/connect-to-call.md",
+ "kind": "action",
+ "workflowId": "00000000-0000-4000-8000-000000000190",
+ "nodeId": "00000000-0000-4000-8000-000000000193",
+ "source": "https://firebasestorage.googleapis.com/v0/b/<bucket>/o/<path>?alt=media&token=<token><bucket>/o/<path>?alt=media&token=<token>",
+ "pass": true,
+ "rows": [
+  {
+   "path": "id",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000193\"",
+   "real": "\"00000000-0000-4000-8000-000000000193\""
+  },
+  {
+   "path": "parent",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000192\"",
+   "real": "\"00000000-0000-4000-8000-000000000192\""
+  },
+  {
+   "path": "order",
+   "status": "OK",
+   "doc": "3",
+   "real": "3"
+  },
+  {
+   "path": "attributes.type",
+   "status": "OK",
+   "doc": "\"ivr_connect_call\"",
+   "real": "\"ivr_connect_call\""
+  },
+  {
+   "path": "name",
+   "status": "OK",
+   "doc": "\"Connect to call\"",
+   "real": "\"Connect to call\""
+  },
+  {
+   "path": "type",
+   "status": "OK",
+   "doc": "\"ivr_connect_call\"",
+   "real": "\"ivr_connect_call\""
+  },
+  {
+   "path": "parentKey",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000278\"",
+   "real": "\"00000000-0000-4000-8000-000000000278\""
+  }
+ ],
+ "realNode": {
+  "id": "00000000-0000-4000-8000-000000000193",
+  "parent": "00000000-0000-4000-8000-000000000192",
+  "order": 3,
+  "attributes": {
+   "type": "ivr_connect_call"
+  },
+  "name": "Connect to call",
+  "type": "ivr_connect_call",
+  "parentKey": "00000000-0000-4000-8000-000000000278",
+  "next": "00000000-0000-4000-8000-000000000191"
+ }
+}

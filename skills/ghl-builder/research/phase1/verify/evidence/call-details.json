@@ -1,0 +1,87 @@
+{
+ "doc": "research/phase1/raw/triggers/call-details.md",
+ "kind": "trigger",
+ "workflowId": "00000000-0000-4000-8000-000000000177",
+ "nodeId": "<id052>",
+ "source": "GET /workflow/<locationId>/trigger?workflowId=00000000-0000-4000-8000-000000000177",
+ "pass": true,
+ "rows": [
+  {
+   "path": "id",
+   "status": "OK",
+   "doc": "\"<id052>\"",
+   "real": "\"<id052>\""
+  },
+  {
+   "path": "active",
+   "status": "OK",
+   "doc": "false",
+   "real": "false"
+  },
+  {
+   "path": "conditions",
+   "status": "OK",
+   "doc": "array[1]",
+   "real": "array[1]"
+  },
+  {
+   "path": "type",
+   "status": "OK",
+   "doc": "\"call_status\"",
+   "real": "\"call_status\""
+  },
+  {
+   "path": "masterType",
+   "status": "OK",
+   "doc": "\"highlevel\"",
+   "real": "\"highlevel\""
+  },
+  {
+   "path": "name",
+   "status": "OK",
+   "doc": "\"Call Details\"",
+   "real": "\"Call Details\""
+  },
+  {
+   "path": "actions",
+   "status": "OK",
+   "doc": "array[1]",
+   "real": "array[1]"
+  },
+  {
+   "path": "location_id",
+   "status": "OK",
+   "doc": "\"<locationId>\"",
+   "real": "\"<locationId>\""
+  }
+ ],
+ "realNode": {
+  "id": "<id052>",
+  "date_updated": "2026-07-17T01:05:07.805Z",
+  "date_added": "2026-07-17T01:05:07.805Z",
+  "deleted": false,
+  "active": false,
+  "actions": [
+   {
+    "workflow_id": "00000000-0000-4000-8000-000000000177",
+    "type": "add_to_workflow"
+   }
+  ],
+  "conditions": [
+   {
+    "operator": "==",
+    "field": "message.direction",
+    "value": "inbound",
+    "title": "Call direction",
+    "type": "select"
+   }
+  ],
+  "type": "call_status",
+  "masterType": "highlevel",
+  "workflow_id": "00000000-0000-4000-8000-000000000177",
+  "location_id": "<locationId>",
+  "name": "Call Details",
+  "belongs_to": "workflow",
+  "schedule_config": {}
+ }
+}

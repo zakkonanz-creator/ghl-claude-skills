@@ -1,0 +1,179 @@
+{
+ "doc": "../raw/actions/if-else.md",
+ "kind": "action",
+ "workflowId": "00000000-0000-4000-8000-000000000171",
+ "nodeId": "00000000-0000-4000-8000-000000000246",
+ "source": "https://firebasestorage.googleapis.com/v0/b/<bucket>/o/<path>?alt=media&token=<token><bucket>/o/<path>?alt=media&token=<token>",
+ "pass": true,
+ "rows": [
+  {
+   "path": "id",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000246\"",
+   "real": "\"00000000-0000-4000-8000-000000000246\""
+  },
+  {
+   "path": "order",
+   "status": "OK",
+   "doc": "21",
+   "real": "21"
+  },
+  {
+   "path": "attributes.currentRecipeType",
+   "status": "OK",
+   "doc": "\"CUSTOM\"",
+   "real": "\"CUSTOM\""
+  },
+  {
+   "path": "attributes.branches",
+   "status": "OK",
+   "doc": "array[1]",
+   "real": "array[2]"
+  },
+  {
+   "path": "attributes.operator",
+   "status": "OK",
+   "doc": "\"and\"",
+   "real": "\"and\""
+  },
+  {
+   "path": "attributes.if",
+   "status": "OK",
+   "doc": "true",
+   "real": "true"
+  },
+  {
+   "path": "attributes.conditionName",
+   "status": "OK",
+   "doc": "\"zzz-spike Condition\"",
+   "real": "\"zzz-spike Condition\""
+  },
+  {
+   "path": "attributes.version",
+   "status": "OK",
+   "doc": "2",
+   "real": "2"
+  },
+  {
+   "path": "attributes.noneBranchName",
+   "status": "OK",
+   "doc": "\"None\"",
+   "real": "\"None\""
+  },
+  {
+   "path": "name",
+   "status": "OK",
+   "doc": "\"zzz-spike Condition\"",
+   "real": "\"zzz-spike Condition\""
+  },
+  {
+   "path": "type",
+   "status": "OK",
+   "doc": "\"if_else\"",
+   "real": "\"if_else\""
+  },
+  {
+   "path": "cat",
+   "status": "OK",
+   "doc": "\"conditions\"",
+   "real": "\"conditions\""
+  },
+  {
+   "path": "next",
+   "status": "OK",
+   "doc": "array[3]",
+   "real": "array[3]"
+  },
+  {
+   "path": "comments",
+   "status": "OK",
+   "doc": "array[0]",
+   "real": "array[0]"
+  },
+  {
+   "path": "nodeType",
+   "status": "OK",
+   "doc": "\"condition-node\"",
+   "real": "\"condition-node\""
+  },
+  {
+   "path": "parentKey",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000180\"",
+   "real": "\"00000000-0000-4000-8000-000000000180\""
+  }
+ ],
+ "realNode": {
+  "id": "00000000-0000-4000-8000-000000000246",
+  "order": 21,
+  "name": "zzz-spike Condition",
+  "type": "if_else",
+  "cat": "conditions",
+  "nodeType": "condition-node",
+  "comments": [],
+  "attributes": {
+   "currentRecipeType": "CUSTOM",
+   "if": true,
+   "conditionName": "zzz-spike Condition",
+   "operator": "and",
+   "version": 2,
+   "noneBranchName": "None",
+   "branches": [
+    {
+     "id": "00000000-0000-4000-8000-000000000287",
+     "name": "zzz Branch A",
+     "segments": [
+      {
+       "__segmentId": "00000000-0000-4000-8000-000000000313",
+       "operator": "and",
+       "conditions": [
+        {
+         "conditionType": "contact_detail",
+         "conditionSubType": "<customFieldId>",
+         "conditionOperator": "==",
+         "conditionValue": "Alice",
+         "__conditionId": "00000000-0000-4000-8000-000000000314",
+         "ifElseNodeId": "",
+         "isWait": false
+        }
+       ]
+      }
+     ],
+     "operator": "and",
+     "showErrors": false,
+     "branchNameError": "Branch name cannot be empty!"
+    },
+    {
+     "id": "00000000-0000-4000-8000-000000000315",
+     "name": "zzz Branch B",
+     "segments": [
+      {
+       "__segmentId": "00000000-0000-4000-8000-000000000316",
+       "operator": "and",
+       "conditions": [
+        {
+         "conditionType": "contact_detail",
+         "conditionSubType": "<customFieldId>",
+         "conditionOperator": "==",
+         "conditionValue": "Bob",
+         "__conditionId": "00000000-0000-4000-8000-000000000317",
+         "ifElseNodeId": "",
+         "isWait": false
+        }
+       ]
+      }
+     ],
+     "operator": "and",
+     "showErrors": false,
+     "branchNameError": "Branch name cannot be empty!"
+    }
+   ]
+  },
+  "next": [
+   "00000000-0000-4000-8000-000000000287",
+   "00000000-0000-4000-8000-000000000315",
+   "00000000-0000-4000-8000-000000000318"
+  ],
+  "parentKey": "00000000-0000-4000-8000-000000000180"
+ }
+}

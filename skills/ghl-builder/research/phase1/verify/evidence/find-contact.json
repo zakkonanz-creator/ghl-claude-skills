@@ -1,0 +1,157 @@
+{
+ "doc": "research/phase1/raw/actions/find-contact.md",
+ "kind": "action",
+ "workflowId": "00000000-0000-4000-8000-000000000182",
+ "nodeId": "00000000-0000-4000-8000-000000000305",
+ "source": "https://firebasestorage.googleapis.com/v0/b/<bucket>/o/<path>?alt=media&token=<token><bucket>/o/<path>?alt=media&token=<token>",
+ "pass": true,
+ "rows": [
+  {
+   "path": "id",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000305\"",
+   "real": "\"00000000-0000-4000-8000-000000000305\""
+  },
+  {
+   "path": "parentKey",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000265\"",
+   "real": "\"00000000-0000-4000-8000-000000000265\""
+  },
+  {
+   "path": "type",
+   "status": "OK",
+   "doc": "\"find_contact\"",
+   "real": "\"find_contact\""
+  },
+  {
+   "path": "name",
+   "status": "OK",
+   "doc": "\"Find contact\"",
+   "real": "\"Find contact\""
+  },
+  {
+   "path": "attributes.type",
+   "status": "OK",
+   "doc": "\"find_contact\"",
+   "real": "\"find_contact\""
+  },
+  {
+   "path": "attributes.fields",
+   "status": "OK",
+   "doc": "array[1]",
+   "real": "array[1]"
+  },
+  {
+   "path": "attributes.convertToMultipath",
+   "status": "OK",
+   "doc": "true",
+   "real": "true"
+  },
+  {
+   "path": "attributes.name",
+   "status": "OK",
+   "doc": "\"Find contact\"",
+   "real": "\"Find contact\""
+  },
+  {
+   "path": "attributes.cat",
+   "status": "OK",
+   "doc": "\"multi-path\"",
+   "real": "\"multi-path\""
+  },
+  {
+   "path": "attributes.isHybridAction",
+   "status": "OK",
+   "doc": "true",
+   "real": "true"
+  },
+  {
+   "path": "attributes.hybridActionType",
+   "status": "OK",
+   "doc": "\"find_contact\"",
+   "real": "\"find_contact\""
+  },
+  {
+   "path": "attributes.transitions",
+   "status": "OK",
+   "doc": "array[1]",
+   "real": "array[2]"
+  },
+  {
+   "path": "order",
+   "status": "OK",
+   "doc": "5",
+   "real": "5"
+  },
+  {
+   "path": "cat",
+   "status": "OK",
+   "doc": "\"multi-path\"",
+   "real": "\"multi-path\""
+  },
+  {
+   "path": "next",
+   "status": "OK",
+   "doc": "array[2]",
+   "real": "array[2]"
+  }
+ ],
+ "realNode": {
+  "id": "00000000-0000-4000-8000-000000000305",
+  "parentKey": "00000000-0000-4000-8000-000000000265",
+  "type": "find_contact",
+  "name": "Find contact",
+  "attributes": {
+   "type": "find_contact",
+   "fields": [
+    {
+     "field": "email",
+     "value": "zzz-b3@example.com",
+     "title": "Email",
+     "type": "string",
+     "date": "",
+     "includeAdditional": false
+    }
+   ],
+   "convertToMultipath": true,
+   "name": "Find contact",
+   "cat": "multi-path",
+   "isHybridAction": true,
+   "hybridActionType": "find_contact",
+   "transitions": [
+    {
+     "id": "00000000-0000-4000-8000-000000000325",
+     "name": "Contact found",
+     "condition": "contact_found",
+     "conditionType": "user-defined",
+     "isPrimaryBranch": true,
+     "description": "",
+     "attributes": {
+      "type": "contact_found",
+      "description": "Contact found",
+      "cat": "multi-path"
+     }
+    },
+    {
+     "id": "00000000-0000-4000-8000-000000000299",
+     "name": "Contact not found",
+     "condition": "contact_not_found",
+     "conditionType": "user-defined",
+     "isPrimaryBranch": false,
+     "description": "",
+     "attributes": {
+      "type": "contact_not_found",
+      "description": "Contact not found"
+     }
+    }
+   ]
+  },
+  "order": 5,
+  "cat": "multi-path",
+  "next": [
+   "00000000-0000-4000-8000-000000000325",
+   "00000000-0000-4000-8000-000000000299"
+  ]
+ }
+}

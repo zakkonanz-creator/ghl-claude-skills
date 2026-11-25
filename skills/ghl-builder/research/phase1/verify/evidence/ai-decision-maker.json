@@ -1,0 +1,167 @@
+{
+ "doc": "research/phase1/raw/actions/ai-decision-maker.md",
+ "kind": "action",
+ "workflowId": "00000000-0000-4000-8000-000000000211",
+ "nodeId": "00000000-0000-4000-8000-000000000222",
+ "source": "https://firebasestorage.googleapis.com/v0/b/<bucket>/o/<path>?alt=media&token=<token><bucket>/o/<path>?alt=media&token=<token>",
+ "pass": true,
+ "rows": [
+  {
+   "path": "id",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000222\"",
+   "real": "\"00000000-0000-4000-8000-000000000222\""
+  },
+  {
+   "path": "type",
+   "status": "OK",
+   "doc": "\"workflow_ai_decision_maker\"",
+   "real": "\"workflow_ai_decision_maker\""
+  },
+  {
+   "path": "name",
+   "status": "OK",
+   "doc": "\"AI decision maker\"",
+   "real": "\"AI decision maker\""
+  },
+  {
+   "path": "attributes.instructions",
+   "status": "OK",
+   "doc": "<placeholder>",
+   "real": "string"
+  },
+  {
+   "path": "attributes.information",
+   "status": "OK",
+   "doc": "\"We sell to small (1-50), medium (51-200",
+   "real": "\"We sell to small (1-50), medium (51-200"
+  },
+  {
+   "path": "attributes.type",
+   "status": "OK",
+   "doc": "\"workflow_ai_decision_maker\"",
+   "real": "\"workflow_ai_decision_maker\""
+  },
+  {
+   "path": "attributes.cat",
+   "status": "OK",
+   "doc": "\"multi-path\"",
+   "real": "\"multi-path\""
+  },
+  {
+   "path": "attributes.convertToMultipath",
+   "status": "OK",
+   "doc": "true",
+   "real": "true"
+  },
+  {
+   "path": "attributes.transitions",
+   "status": "OK",
+   "doc": "array[1]",
+   "real": "array[4]"
+  },
+  {
+   "path": "attributes.__name__",
+   "status": "OK",
+   "doc": "\"AI decision maker\"",
+   "real": "\"AI decision maker\""
+  },
+  {
+   "path": "order",
+   "status": "OK",
+   "doc": "0",
+   "real": "0"
+  },
+  {
+   "path": "cat",
+   "status": "OK",
+   "doc": "\"multi-path\"",
+   "real": "\"multi-path\""
+  },
+  {
+   "path": "workflowsActionType",
+   "status": "OK",
+   "doc": "\"INTERNAL\"",
+   "real": "\"INTERNAL\""
+  },
+  {
+   "path": "next",
+   "status": "OK",
+   "doc": "array[1]",
+   "real": "array[4]"
+  }
+ ],
+ "realNode": {
+  "id": "00000000-0000-4000-8000-000000000222",
+  "type": "workflow_ai_decision_maker",
+  "name": "AI decision maker",
+  "attributes": {
+   "instructions": "Route leads based on {{contact.engagement_score}} and {{contact.company_size}}. High scores (>60) or large companies go to sales. Medium scores (30-60) get nurturing. Low scores (<30) get re-engagement campaigns.",
+   "information": "We sell to small (1-50), medium (51-200), and large (200+) companies. Engagement scores range 0-100. Large companies get priority regardless of score.",
+   "type": "workflow_ai_decision_maker",
+   "__customInputs__": {},
+   "cat": "multi-path",
+   "convertToMultipath": true,
+   "transitions": [
+    {
+     "id": "00000000-0000-4000-8000-000000000223",
+     "name": "Default Branch",
+     "fields": {
+      "description": "Go in this branch if none of the other branches make sense.",
+      "branchKey": "none"
+     },
+     "meta": {
+      "__branchKey__": "predefined_Default Branch"
+     },
+     "conditionType": "pre-defined"
+    },
+    {
+     "id": "00000000-0000-4000-8000-000000000224",
+     "name": "High Priority - Sales",
+     "fields": {
+      "description": "Route when {{contact.engagement_score}} >60 OR large company to sales team",
+      "branchKey": "send_discount_offer"
+     },
+     "meta": {
+      "__branchKey__": "00000000-0000-4000-8000-000000000225"
+     },
+     "conditionType": "user-defined"
+    },
+    {
+     "id": "00000000-0000-4000-8000-000000000226",
+     "name": "Medium Engagement - Nurture",
+     "fields": {
+      "description": "Email sequence when  {{contact.engagement_score}} 30-60 for small/medium companies",
+      "branchKey": "assign_sales_call"
+     },
+     "meta": {
+      "__branchKey__": "00000000-0000-4000-8000-000000000227"
+     },
+     "conditionType": "user-defined"
+    },
+    {
+     "id": "00000000-0000-4000-8000-000000000228",
+     "name": "Low Engagement - Reactivate",
+     "fields": {
+      "description": "Re-engagement when {{contact.engagement_score}} < 30",
+      "branchKey": "send_case_study"
+     },
+     "meta": {
+      "__branchKey__": "00000000-0000-4000-8000-000000000229"
+     },
+     "conditionType": "user-defined"
+    }
+   ],
+   "__name__": "AI decision maker"
+  },
+  "order": 0,
+  "cat": "multi-path",
+  "workflowsActionType": "INTERNAL",
+  "next": [
+   "00000000-0000-4000-8000-000000000223",
+   "00000000-0000-4000-8000-000000000224",
+   "00000000-0000-4000-8000-000000000226",
+   "00000000-0000-4000-8000-000000000228"
+  ]
+ }
+}

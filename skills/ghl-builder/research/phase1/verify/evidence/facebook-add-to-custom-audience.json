@@ -1,0 +1,64 @@
+{
+ "doc": "research/phase1/raw/actions/facebook-add-to-custom-audience.md",
+ "kind": "action",
+ "workflowId": "00000000-0000-4000-8000-000000000202",
+ "nodeId": "00000000-0000-4000-8000-000000000254",
+ "source": "https://firebasestorage.googleapis.com/v0/b/<bucket>/o/<path>?alt=media&token=<token><bucket>/o/<path>?alt=media&token=<token>",
+ "pass": true,
+ "rows": [
+  {
+   "path": "id",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000254\"",
+   "real": "\"00000000-0000-4000-8000-000000000254\""
+  },
+  {
+   "path": "parent",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000204\"",
+   "real": "\"00000000-0000-4000-8000-000000000204\""
+  },
+  {
+   "path": "order",
+   "status": "OK",
+   "doc": "5",
+   "real": "5"
+  },
+  {
+   "path": "attributes.type",
+   "status": "OK",
+   "doc": "\"facebook_add_to_custom_audience\"",
+   "real": "\"facebook_add_to_custom_audience\""
+  },
+  {
+   "path": "name",
+   "status": "OK",
+   "doc": "\"Add to customer Audience - Facebook\"",
+   "real": "\"Add to customer Audience - Facebook\""
+  },
+  {
+   "path": "type",
+   "status": "OK",
+   "doc": "\"facebook_add_to_custom_audience\"",
+   "real": "\"facebook_add_to_custom_audience\""
+  },
+  {
+   "path": "parentKey",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000253\"",
+   "real": "\"00000000-0000-4000-8000-000000000253\""
+  }
+ ],
+ "realNode": {
+  "id": "00000000-0000-4000-8000-000000000254",
+  "parent": "00000000-0000-4000-8000-000000000204",
+  "order": 5,
+  "attributes": {
+   "type": "facebook_add_to_custom_audience"
+  },
+  "name": "Add to customer Audience - Facebook",
+  "type": "facebook_add_to_custom_audience",
+  "parentKey": "00000000-0000-4000-8000-000000000253",
+  "next": "00000000-0000-4000-8000-000000000260"
+ }
+}

@@ -1,0 +1,93 @@
+{
+ "doc": "../raw/triggers/form-submitted.md",
+ "kind": "trigger",
+ "workflowId": "00000000-0000-4000-8000-000000000174",
+ "nodeId": "<id054>",
+ "source": "GET /workflow/<locationId>/trigger?workflowId=00000000-0000-4000-8000-000000000174",
+ "pass": true,
+ "rows": [
+  {
+   "path": "id",
+   "status": "OK",
+   "doc": "\"<id054>\"",
+   "real": "\"<id054>\""
+  },
+  {
+   "path": "active",
+   "status": "OK",
+   "doc": "false",
+   "real": "false"
+  },
+  {
+   "path": "conditions",
+   "status": "OK",
+   "doc": "array[1]",
+   "real": "array[1]"
+  },
+  {
+   "path": "type",
+   "status": "OK",
+   "doc": "\"form_submission\"",
+   "real": "\"form_submission\""
+  },
+  {
+   "path": "masterType",
+   "status": "OK",
+   "doc": "\"highlevel\"",
+   "real": "\"highlevel\""
+  },
+  {
+   "path": "name",
+   "status": "OK",
+   "doc": "\"Form Submitted\"",
+   "real": "\"Form Submitted\""
+  },
+  {
+   "path": "actions",
+   "status": "OK",
+   "doc": "array[1]",
+   "real": "array[1]"
+  },
+  {
+   "path": "workflow_id",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000174\"",
+   "real": "\"00000000-0000-4000-8000-000000000174\""
+  },
+  {
+   "path": "location_id",
+   "status": "OK",
+   "doc": "\"<locationId>\"",
+   "real": "\"<locationId>\""
+  }
+ ],
+ "realNode": {
+  "id": "<id054>",
+  "date_updated": "2026-07-16T23:26:03.351Z",
+  "date_added": "2026-07-16T23:26:03.351Z",
+  "deleted": false,
+  "active": false,
+  "actions": [
+   {
+    "workflow_id": "00000000-0000-4000-8000-000000000174",
+    "type": "add_to_workflow"
+   }
+  ],
+  "conditions": [
+   {
+    "operator": "==",
+    "field": "formData.termsAndConditions",
+    "value": true,
+    "title": "Terms and Conditions",
+    "type": "select"
+   }
+  ],
+  "type": "form_submission",
+  "masterType": "highlevel",
+  "workflow_id": "00000000-0000-4000-8000-000000000174",
+  "location_id": "<locationId>",
+  "name": "Form Submitted",
+  "belongs_to": "workflow",
+  "schedule_config": {}
+ }
+}

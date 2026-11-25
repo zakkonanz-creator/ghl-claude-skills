@@ -1,0 +1,141 @@
+{
+ "doc": "../raw/actions/custom-webhook.md",
+ "kind": "action",
+ "workflowId": "00000000-0000-4000-8000-000000000171",
+ "nodeId": "00000000-0000-4000-8000-000000000239",
+ "source": "https://firebasestorage.googleapis.com/v0/b/<bucket>/o/<path>?alt=media&token=<token><bucket>/o/<path>?alt=media&token=<token>",
+ "pass": true,
+ "rows": [
+  {
+   "path": "id",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000239\"",
+   "real": "\"00000000-0000-4000-8000-000000000239\""
+  },
+  {
+   "path": "order",
+   "status": "OK",
+   "doc": "8",
+   "real": "8"
+  },
+  {
+   "path": "name",
+   "status": "OK",
+   "doc": "\"Custom webhook\"",
+   "real": "\"Custom webhook\""
+  },
+  {
+   "path": "type",
+   "status": "OK",
+   "doc": "\"custom_webhook\"",
+   "real": "\"custom_webhook\""
+  },
+  {
+   "path": "attributes.event",
+   "status": "OK",
+   "doc": "\"CUSTOM\"",
+   "real": "\"CUSTOM\""
+  },
+  {
+   "path": "attributes.method",
+   "status": "OK",
+   "doc": "\"POST\"",
+   "real": "\"POST\""
+  },
+  {
+   "path": "attributes.url",
+   "status": "OK",
+   "doc": "\"https://example.com/zzz-spike-webhook\"",
+   "real": "\"https://example.com/zzz-spike-webhook\""
+  },
+  {
+   "path": "attributes.body.contentType",
+   "status": "OK",
+   "doc": "\"application/json\"",
+   "real": "\"application/json\""
+  },
+  {
+   "path": "attributes.body.rawData",
+   "status": "VALUE",
+   "doc": "\"{\\n  \\\"id\\\": \\\"{{contact.id}}\\\", ... }\"",
+   "real": "\"{\\n  \\\"id\\\": \\\"{{contact.id}}\\\",\\n  \\\"n"
+  },
+  {
+   "path": "attributes.body.keyValueData",
+   "status": "OK",
+   "doc": "array[0]",
+   "real": "array[0]"
+  },
+  {
+   "path": "attributes.headers",
+   "status": "OK",
+   "doc": "array[0]",
+   "real": "array[0]"
+  },
+  {
+   "path": "attributes.parameters",
+   "status": "OK",
+   "doc": "array[0]",
+   "real": "array[0]"
+  },
+  {
+   "path": "attributes.authorization.type",
+   "status": "OK",
+   "doc": "\"NONE\"",
+   "real": "\"NONE\""
+  },
+  {
+   "path": "attributes.authorization.data",
+   "status": "OK",
+   "doc": "null",
+   "real": "null"
+  },
+  {
+   "path": "attributes.saveResponse",
+   "status": "OK",
+   "doc": "false",
+   "real": "false"
+  },
+  {
+   "path": "attributes.webhookResponse.selectedContact",
+   "status": "OK",
+   "doc": "\"\"",
+   "real": "\"\""
+  },
+  {
+   "path": "parentKey",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000172\"",
+   "real": "\"00000000-0000-4000-8000-000000000172\""
+  }
+ ],
+ "realNode": {
+  "id": "00000000-0000-4000-8000-000000000239",
+  "stepIndex": 1,
+  "order": 8,
+  "attributes": {
+   "event": "CUSTOM",
+   "method": "POST",
+   "url": "https://example.com/zzz-spike-webhook",
+   "body": {
+    "contentType": "application/json",
+    "rawData": "{\n  \"id\": \"{{contact.id}}\",\n  \"name\": \"{{contact.name}}\",\n  \"email\": \"{{contact.email}}\",\n  \"phone\": \"{{contact.phone}}\"\n}",
+    "keyValueData": []
+   },
+   "headers": [],
+   "parameters": [],
+   "authorization": {
+    "type": "NONE",
+    "data": null
+   },
+   "saveResponse": false,
+   "webhookResponse": {
+    "selectedContact": ""
+   }
+  },
+  "name": "Custom webhook",
+  "type": "custom_webhook",
+  "parentKey": "00000000-0000-4000-8000-000000000172",
+  "next": "00000000-0000-4000-8000-000000000276"
+ }
+}

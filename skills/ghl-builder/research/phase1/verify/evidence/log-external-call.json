@@ -1,0 +1,84 @@
+{
+ "doc": "../raw/actions/log-external-call.md",
+ "kind": "action",
+ "workflowId": "00000000-0000-4000-8000-000000000196",
+ "nodeId": "00000000-0000-4000-8000-000000000207",
+ "source": "https://firebasestorage.googleapis.com/v0/b/<bucket>/o/<path>?alt=media&token=<token><bucket>/o/<path>?alt=media&token=<token>",
+ "pass": true,
+ "rows": [
+  {
+   "path": "name",
+   "status": "OK",
+   "doc": "\"Log external call\"",
+   "real": "\"Log external call\""
+  },
+  {
+   "path": "type",
+   "status": "OK",
+   "doc": "\"log-external-call\"",
+   "real": "\"log-external-call\""
+  },
+  {
+   "path": "attributes.direction",
+   "status": "OK",
+   "doc": "\"inbound\"",
+   "real": "\"inbound\""
+  },
+  {
+   "path": "attributes.date",
+   "status": "OK",
+   "doc": "\"\"",
+   "real": "\"\""
+  },
+  {
+   "path": "attributes.to",
+   "status": "OK",
+   "doc": "\"+15550001111\"",
+   "real": "\"+15550001111\""
+  },
+  {
+   "path": "attributes.from",
+   "status": "OK",
+   "doc": "\"+15550002222\"",
+   "real": "\"+15550002222\""
+  },
+  {
+   "path": "attributes.status",
+   "status": "OK",
+   "doc": "\"completed\"",
+   "real": "\"completed\""
+  },
+  {
+   "path": "attributes.attachments",
+   "status": "OK",
+   "doc": "\"\"",
+   "real": "\"\""
+  },
+  {
+   "path": "attributes.type",
+   "status": "OK",
+   "doc": "\"log-external-call\"",
+   "real": "\"log-external-call\""
+  }
+ ],
+ "realNode": {
+  "id": "00000000-0000-4000-8000-000000000207",
+  "parent": "00000000-0000-4000-8000-000000000208",
+  "order": 1,
+  "attributes": {
+   "direction": "inbound",
+   "date": "",
+   "to": "+15550001111",
+   "from": "+15550002222",
+   "status": "completed",
+   "attachments": "",
+   "type": "log-external-call",
+   "__customInputs__": {}
+  },
+  "name": "Log external call",
+  "type": "log-external-call",
+  "workflowsActionType": "INTERNAL",
+  "parentKey": "00000000-0000-4000-8000-000000000209",
+  "next": "00000000-0000-4000-8000-000000000210"
+ }
+}

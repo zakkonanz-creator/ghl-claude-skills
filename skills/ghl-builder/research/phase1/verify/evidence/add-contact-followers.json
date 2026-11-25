@@ -1,0 +1,67 @@
+{
+ "doc": "research/phase1/raw/actions/add-contact-followers.md",
+ "kind": "action",
+ "workflowId": "00000000-0000-4000-8000-000000000182",
+ "nodeId": "00000000-0000-4000-8000-000000000188",
+ "source": "https://firebasestorage.googleapis.com/v0/b/<bucket>/o/<path>?alt=media&token=<token><bucket>/o/<path>?alt=media&token=<token>",
+ "pass": true,
+ "rows": [
+  {
+   "path": "id",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000188\"",
+   "real": "\"00000000-0000-4000-8000-000000000188\""
+  },
+  {
+   "path": "order",
+   "status": "OK",
+   "doc": "0",
+   "real": "0"
+  },
+  {
+   "path": "attributes.users",
+   "status": "OK",
+   "doc": "array[1]",
+   "real": "array[1]"
+  },
+  {
+   "path": "attributes.type",
+   "status": "OK",
+   "doc": "\"internal-add-contact-followers\"",
+   "real": "\"internal-add-contact-followers\""
+  },
+  {
+   "path": "name",
+   "status": "OK",
+   "doc": "\"Add contact followers\"",
+   "real": "\"Add contact followers\""
+  },
+  {
+   "path": "type",
+   "status": "OK",
+   "doc": "\"internal-add-contact-followers\"",
+   "real": "\"internal-add-contact-followers\""
+  },
+  {
+   "path": "workflowsActionType",
+   "status": "OK",
+   "doc": "\"INTERNAL\"",
+   "real": "\"INTERNAL\""
+  }
+ ],
+ "realNode": {
+  "id": "00000000-0000-4000-8000-000000000188",
+  "order": 0,
+  "attributes": {
+   "users": [
+    "<userId>"
+   ],
+   "type": "internal-add-contact-followers",
+   "__customInputs__": {}
+  },
+  "name": "Add contact followers",
+  "type": "internal-add-contact-followers",
+  "workflowsActionType": "INTERNAL",
+  "next": "00000000-0000-4000-8000-000000000187"
+ }
+}

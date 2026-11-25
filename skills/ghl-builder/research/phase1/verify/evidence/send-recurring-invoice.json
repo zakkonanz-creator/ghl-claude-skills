@@ -1,0 +1,57 @@
+{
+ "doc": "research/phase1/raw/actions/send-recurring-invoice.md",
+ "kind": "action",
+ "workflowId": "00000000-0000-4000-8000-000000000195",
+ "nodeId": "00000000-0000-4000-8000-000000000306",
+ "source": "https://firebasestorage.googleapis.com/v0/b/<bucket>/o/<path>?alt=media&token=<token><bucket>/o/<path>?alt=media&token=<token>",
+ "pass": true,
+ "rows": [
+  {
+   "path": "id",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000306\"",
+   "real": "\"00000000-0000-4000-8000-000000000306\""
+  },
+  {
+   "path": "order",
+   "status": "OK",
+   "doc": "5",
+   "real": "5"
+  },
+  {
+   "path": "attributes.type",
+   "status": "OK",
+   "doc": "\"create_recurring_invoice\"",
+   "real": "\"create_recurring_invoice\""
+  },
+  {
+   "path": "name",
+   "status": "OK",
+   "doc": "\"Send recurring invoice\"",
+   "real": "\"Send recurring invoice\""
+  },
+  {
+   "path": "type",
+   "status": "OK",
+   "doc": "\"create_recurring_invoice\"",
+   "real": "\"create_recurring_invoice\""
+  },
+  {
+   "path": "parentKey",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000321\"",
+   "real": "\"00000000-0000-4000-8000-000000000321\""
+  }
+ ],
+ "realNode": {
+  "id": "00000000-0000-4000-8000-000000000306",
+  "order": 5,
+  "attributes": {
+   "type": "create_recurring_invoice"
+  },
+  "name": "Send recurring invoice",
+  "type": "create_recurring_invoice",
+  "parentKey": "00000000-0000-4000-8000-000000000321",
+  "next": "00000000-0000-4000-8000-000000000269"
+ }
+}

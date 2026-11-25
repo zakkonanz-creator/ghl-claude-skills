@@ -1,0 +1,113 @@
+{
+ "doc": "research/phase1/raw/actions/ai-extract-data.md",
+ "kind": "action",
+ "workflowId": "00000000-0000-4000-8000-000000000211",
+ "nodeId": "00000000-0000-4000-8000-000000000294",
+ "source": "https://firebasestorage.googleapis.com/v0/b/<bucket>/o/<path>?alt=media&token=<token><bucket>/o/<path>?alt=media&token=<token>",
+ "pass": true,
+ "rows": [
+  {
+   "path": "id",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000294\"",
+   "real": "\"00000000-0000-4000-8000-000000000294\""
+  },
+  {
+   "path": "stepIndex",
+   "status": "OK",
+   "doc": "1",
+   "real": "1"
+  },
+  {
+   "path": "parent",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000228\"",
+   "real": "\"00000000-0000-4000-8000-000000000228\""
+  },
+  {
+   "path": "order",
+   "status": "OK",
+   "doc": "0",
+   "real": "0"
+  },
+  {
+   "path": "attributes.sourceData",
+   "status": "OK",
+   "doc": "\"{{contact.first_name}}\"",
+   "real": "\"{{contact.first_name}}\""
+  },
+  {
+   "path": "attributes.information",
+   "status": "OK",
+   "doc": "\"\"",
+   "real": "\"\""
+  },
+  {
+   "path": "attributes.templates",
+   "status": "OK",
+   "doc": "\"custom\"",
+   "real": "\"custom\""
+  },
+  {
+   "path": "attributes.__customInputFields__",
+   "status": "OK",
+   "doc": "array[1]",
+   "real": "array[1]"
+  },
+  {
+   "path": "attributes.type",
+   "status": "OK",
+   "doc": "\"workflow_ai_extract_data\"",
+   "real": "\"workflow_ai_extract_data\""
+  },
+  {
+   "path": "name",
+   "status": "OK",
+   "doc": "\"AI extract data\"",
+   "real": "\"AI extract data\""
+  },
+  {
+   "path": "type",
+   "status": "OK",
+   "doc": "\"workflow_ai_extract_data\"",
+   "real": "\"workflow_ai_extract_data\""
+  },
+  {
+   "path": "workflowsActionType",
+   "status": "OK",
+   "doc": "\"INTERNAL\"",
+   "real": "\"INTERNAL\""
+  },
+  {
+   "path": "parentKey",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000228\"",
+   "real": "\"00000000-0000-4000-8000-000000000228\""
+  }
+ ],
+ "realNode": {
+  "id": "00000000-0000-4000-8000-000000000294",
+  "stepIndex": 1,
+  "parent": "00000000-0000-4000-8000-000000000228",
+  "order": 0,
+  "attributes": {
+   "sourceData": "{{contact.first_name}}",
+   "information": "",
+   "templates": "custom",
+   "__customInputFields__": [
+    {
+     "fieldName": "title",
+     "dataType": "text",
+     "description": "Extract a concise title from the source text."
+    }
+   ],
+   "type": "workflow_ai_extract_data",
+   "__customInputs__": {}
+  },
+  "name": "AI extract data",
+  "type": "workflow_ai_extract_data",
+  "workflowsActionType": "INTERNAL",
+  "parentKey": "00000000-0000-4000-8000-000000000228",
+  "next": "00000000-0000-4000-8000-000000000293"
+ }
+}

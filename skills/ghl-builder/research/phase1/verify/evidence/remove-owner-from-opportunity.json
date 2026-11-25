@@ -1,0 +1,72 @@
+{
+ "doc": "../raw/actions/remove-owner-from-opportunity.md",
+ "kind": "action",
+ "workflowId": "00000000-0000-4000-8000-000000000190",
+ "nodeId": "00000000-0000-4000-8000-000000000241",
+ "source": "https://firebasestorage.googleapis.com/v0/b/<bucket>/o/<path>?alt=media&token=<token><bucket>/o/<path>?alt=media&token=<token>",
+ "pass": true,
+ "rows": [
+  {
+   "path": "id",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000241\"",
+   "real": "\"00000000-0000-4000-8000-000000000241\""
+  },
+  {
+   "path": "parent",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000192\"",
+   "real": "\"00000000-0000-4000-8000-000000000192\""
+  },
+  {
+   "path": "order",
+   "status": "OK",
+   "doc": "1",
+   "real": "1"
+  },
+  {
+   "path": "attributes.type",
+   "status": "OK",
+   "doc": "\"internal-remove-opportunity-owner\"",
+   "real": "\"internal-remove-opportunity-owner\""
+  },
+  {
+   "path": "name",
+   "status": "OK",
+   "doc": "\"Remove owner from opportunity\"",
+   "real": "\"Remove owner from opportunity\""
+  },
+  {
+   "path": "type",
+   "status": "OK",
+   "doc": "\"internal-remove-opportunity-owner\"",
+   "real": "\"internal-remove-opportunity-owner\""
+  },
+  {
+   "path": "workflowsActionType",
+   "status": "OK",
+   "doc": "\"INTERNAL\"",
+   "real": "\"INTERNAL\""
+  },
+  {
+   "path": "parentKey",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000240\"",
+   "real": "\"00000000-0000-4000-8000-000000000240\""
+  }
+ ],
+ "realNode": {
+  "id": "00000000-0000-4000-8000-000000000241",
+  "parent": "00000000-0000-4000-8000-000000000192",
+  "order": 1,
+  "attributes": {
+   "type": "internal-remove-opportunity-owner",
+   "__customInputs__": {}
+  },
+  "name": "Remove owner from opportunity",
+  "type": "internal-remove-opportunity-owner",
+  "workflowsActionType": "INTERNAL",
+  "parentKey": "00000000-0000-4000-8000-000000000240",
+  "next": "00000000-0000-4000-8000-000000000278"
+ }
+}

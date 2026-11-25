@@ -1,0 +1,67 @@
+{
+ "doc": "../raw/actions/add-followers-to-opportunity.md",
+ "kind": "action",
+ "workflowId": "00000000-0000-4000-8000-000000000190",
+ "nodeId": "00000000-0000-4000-8000-000000000291",
+ "source": "https://firebasestorage.googleapis.com/v0/b/<bucket>/o/<path>?alt=media&token=<token><bucket>/o/<path>?alt=media&token=<token>",
+ "pass": true,
+ "rows": [
+  {
+   "path": "id",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000291\"",
+   "real": "\"00000000-0000-4000-8000-000000000291\""
+  },
+  {
+   "path": "order",
+   "status": "OK",
+   "doc": "0",
+   "real": "0"
+  },
+  {
+   "path": "attributes.users",
+   "status": "OK",
+   "doc": "array[1]",
+   "real": "array[1]"
+  },
+  {
+   "path": "attributes.type",
+   "status": "OK",
+   "doc": "\"internal-add-opportunities-followers\"",
+   "real": "\"internal-add-opportunities-followers\""
+  },
+  {
+   "path": "name",
+   "status": "OK",
+   "doc": "\"Add follower(s) to opportunity\"",
+   "real": "\"Add follower(s) to opportunity\""
+  },
+  {
+   "path": "type",
+   "status": "OK",
+   "doc": "\"internal-add-opportunities-followers\"",
+   "real": "\"internal-add-opportunities-followers\""
+  },
+  {
+   "path": "workflowsActionType",
+   "status": "OK",
+   "doc": "\"INTERNAL\"",
+   "real": "\"INTERNAL\""
+  }
+ ],
+ "realNode": {
+  "id": "00000000-0000-4000-8000-000000000291",
+  "order": 0,
+  "attributes": {
+   "users": [
+    "<userId>"
+   ],
+   "type": "internal-add-opportunities-followers",
+   "__customInputs__": {}
+  },
+  "name": "Add follower(s) to opportunity",
+  "type": "internal-add-opportunities-followers",
+  "workflowsActionType": "INTERNAL",
+  "next": "00000000-0000-4000-8000-000000000292"
+ }
+}

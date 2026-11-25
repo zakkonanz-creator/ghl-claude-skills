@@ -1,0 +1,87 @@
+{
+ "doc": "../raw/triggers/pipeline-stage-changed.md",
+ "kind": "trigger",
+ "workflowId": "00000000-0000-4000-8000-000000000174",
+ "nodeId": "<id020>",
+ "source": "GET /workflow/<locationId>/trigger?workflowId=00000000-0000-4000-8000-000000000174",
+ "pass": true,
+ "rows": [
+  {
+   "path": "id",
+   "status": "OK",
+   "doc": "\"<id020>\"",
+   "real": "\"<id020>\""
+  },
+  {
+   "path": "active",
+   "status": "OK",
+   "doc": "false",
+   "real": "false"
+  },
+  {
+   "path": "conditions",
+   "status": "OK",
+   "doc": "array[1]",
+   "real": "array[1]"
+  },
+  {
+   "path": "type",
+   "status": "OK",
+   "doc": "\"pipeline_stage_updated\"",
+   "real": "\"pipeline_stage_updated\""
+  },
+  {
+   "path": "masterType",
+   "status": "OK",
+   "doc": "\"highlevel\"",
+   "real": "\"highlevel\""
+  },
+  {
+   "path": "name",
+   "status": "OK",
+   "doc": "\"Pipeline Stage Changed\"",
+   "real": "\"Pipeline Stage Changed\""
+  },
+  {
+   "path": "actions",
+   "status": "OK",
+   "doc": "array[1]",
+   "real": "array[1]"
+  },
+  {
+   "path": "location_id",
+   "status": "OK",
+   "doc": "\"<locationId>\"",
+   "real": "\"<locationId>\""
+  }
+ ],
+ "realNode": {
+  "id": "<id020>",
+  "date_updated": "2026-07-16T23:29:48.409Z",
+  "date_added": "2026-07-16T23:29:48.409Z",
+  "deleted": false,
+  "active": false,
+  "actions": [
+   {
+    "workflow_id": "00000000-0000-4000-8000-000000000174",
+    "type": "add_to_workflow"
+   }
+  ],
+  "conditions": [
+   {
+    "operator": "==",
+    "field": "opportunity.pipelineId",
+    "value": "<pipelineId>",
+    "title": "In pipeline",
+    "type": "select"
+   }
+  ],
+  "type": "pipeline_stage_updated",
+  "masterType": "highlevel",
+  "workflow_id": "00000000-0000-4000-8000-000000000174",
+  "location_id": "<locationId>",
+  "name": "Pipeline Stage Changed",
+  "belongs_to": "workflow",
+  "schedule_config": {}
+ }
+}

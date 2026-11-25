@@ -1,0 +1,65 @@
+{
+ "doc": "research/phase1/raw/actions/email-verification.md",
+ "kind": "action",
+ "workflowId": "00000000-0000-4000-8000-000000000182",
+ "nodeId": "00000000-0000-4000-8000-000000000265",
+ "source": "https://firebasestorage.googleapis.com/v0/b/<bucket>/o/<path>?alt=media&token=<token><bucket>/o/<path>?alt=media&token=<token>",
+ "pass": true,
+ "rows": [
+  {
+   "path": "id",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000265\"",
+   "real": "\"00000000-0000-4000-8000-000000000265\""
+  },
+  {
+   "path": "order",
+   "status": "OK",
+   "doc": "4",
+   "real": "4"
+  },
+  {
+   "path": "attributes.type",
+   "status": "OK",
+   "doc": "\"contact_email_verification\"",
+   "real": "\"contact_email_verification\""
+  },
+  {
+   "path": "name",
+   "status": "OK",
+   "doc": "\"Email verification\"",
+   "real": "\"Email verification\""
+  },
+  {
+   "path": "type",
+   "status": "OK",
+   "doc": "\"contact_email_verification\"",
+   "real": "\"contact_email_verification\""
+  },
+  {
+   "path": "workflowsActionType",
+   "status": "OK",
+   "doc": "\"INTERNAL\"",
+   "real": "\"INTERNAL\""
+  },
+  {
+   "path": "parentKey",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000252\"",
+   "real": "\"00000000-0000-4000-8000-000000000252\""
+  }
+ ],
+ "realNode": {
+  "id": "00000000-0000-4000-8000-000000000265",
+  "order": 4,
+  "attributes": {
+   "type": "contact_email_verification",
+   "__customInputs__": {}
+  },
+  "name": "Email verification",
+  "type": "contact_email_verification",
+  "workflowsActionType": "INTERNAL",
+  "parentKey": "00000000-0000-4000-8000-000000000252",
+  "next": "00000000-0000-4000-8000-000000000305"
+ }
+}

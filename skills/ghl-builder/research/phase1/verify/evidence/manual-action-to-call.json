@@ -1,0 +1,31 @@
+{
+ "doc": "research/phase1/raw/actions/manual-action-to-call.md",
+ "kind": "action",
+ "workflowId": "00000000-0000-4000-8000-000000000196",
+ "nodeId": "00000000-0000-4000-8000-000000000197",
+ "source": "https://firebasestorage.googleapis.com/v0/b/<bucket>/o/<path>?alt=media&token=<token><bucket>/o/<path>?alt=media&token=<token>",
+ "pass": true,
+ "rows": [
+  {
+   "path": "name",
+   "status": "OK",
+   "doc": "\"Manual call\"",
+   "real": "\"Manual call\""
+  },
+  {
+   "path": "type",
+   "status": "OK",
+   "doc": "\"manual-call\"",
+   "real": "\"manual-call\""
+  }
+ ],
+ "realNode": {
+  "id": "00000000-0000-4000-8000-000000000197",
+  "order": 1,
+  "attributes": {},
+  "name": "Manual call",
+  "type": "manual-call",
+  "parentKey": "00000000-0000-4000-8000-000000000198",
+  "next": "00000000-0000-4000-8000-000000000199"
+ }
+}

@@ -1,0 +1,53 @@
+{
+ "doc": "EXAMPLE-FAIL-demo.md",
+ "kind": "action",
+ "workflowId": "00000000-0000-4000-8000-000000000171",
+ "nodeId": "00000000-0000-4000-8000-000000000172",
+ "source": "https://firebasestorage.googleapis.com/v0/b/<bucket>/o/<path>?alt=media&token=<token><bucket>/o/<path>?alt=media&token=<token>",
+ "pass": false,
+ "rows": [
+  {
+   "path": "name",
+   "status": "OK",
+   "doc": "\"Add to Workflow\"",
+   "real": "\"Add to Workflow\""
+  },
+  {
+   "path": "type",
+   "status": "OK",
+   "doc": "\"add_to_workflow\"",
+   "real": "\"add_to_workflow\""
+  },
+  {
+   "path": "attributes.type",
+   "status": "OK",
+   "doc": "\"add_to_workflow\"",
+   "real": "\"add_to_workflow\""
+  },
+  {
+   "path": "attributes.workflowId",
+   "status": "MISSING",
+   "doc": "\"00000000-0000-4000-8000-000000000173\"",
+   "real": "—"
+  },
+  {
+   "path": "attributes.input_trigger_params",
+   "status": "TYPE",
+   "doc": "string",
+   "real": "boolean"
+  }
+ ],
+ "realNode": {
+  "id": "00000000-0000-4000-8000-000000000172",
+  "order": 7,
+  "attributes": {
+   "input_trigger_params": false,
+   "type": "add_to_workflow",
+   "workflow_id": "00000000-0000-4000-8000-000000000173"
+  },
+  "name": "Add to Workflow",
+  "type": "add_to_workflow",
+  "parentKey": "00000000-0000-4000-8000-000000000238",
+  "next": "00000000-0000-4000-8000-000000000239"
+ }
+}

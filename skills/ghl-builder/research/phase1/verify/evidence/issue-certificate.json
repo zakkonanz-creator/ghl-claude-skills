@@ -1,0 +1,56 @@
+{
+ "doc": "../raw/actions/issue-certificate.md",
+ "kind": "action",
+ "workflowId": "00000000-0000-4000-8000-000000000181",
+ "nodeId": "00000000-0000-4000-8000-000000000272",
+ "source": "https://firebasestorage.googleapis.com/v0/b/<bucket>/o/<path>?alt=media&token=<token><bucket>/o/<path>?alt=media&token=<token>",
+ "pass": true,
+ "rows": [
+  {
+   "path": "id",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000272\"",
+   "real": "\"00000000-0000-4000-8000-000000000272\""
+  },
+  {
+   "path": "order",
+   "status": "OK",
+   "doc": "8",
+   "real": "8"
+  },
+  {
+   "path": "attributes.type",
+   "status": "OK",
+   "doc": "\"issue_certificates_workflow\"",
+   "real": "\"issue_certificates_workflow\""
+  },
+  {
+   "path": "name",
+   "status": "OK",
+   "doc": "\"Issue certificate\"",
+   "real": "\"Issue certificate\""
+  },
+  {
+   "path": "type",
+   "status": "OK",
+   "doc": "\"issue_certificates_workflow\"",
+   "real": "\"issue_certificates_workflow\""
+  },
+  {
+   "path": "parentKey",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000270\"",
+   "real": "\"00000000-0000-4000-8000-000000000270\""
+  }
+ ],
+ "realNode": {
+  "id": "00000000-0000-4000-8000-000000000272",
+  "order": 8,
+  "attributes": {
+   "type": "issue_certificates_workflow"
+  },
+  "name": "Issue certificate",
+  "type": "issue_certificates_workflow",
+  "parentKey": "00000000-0000-4000-8000-000000000270"
+ }
+}

@@ -1,0 +1,74 @@
+{
+ "doc": "research/phase1/raw/triggers/estimates.md",
+ "kind": "trigger",
+ "workflowId": "00000000-0000-4000-8000-000000000195",
+ "nodeId": "<id095>",
+ "source": "GET /workflow/<locationId>/trigger?workflowId=00000000-0000-4000-8000-000000000195",
+ "pass": true,
+ "rows": [
+  {
+   "path": "id",
+   "status": "OK",
+   "doc": "\"<id095>\"",
+   "real": "\"<id095>\""
+  },
+  {
+   "path": "active",
+   "status": "OK",
+   "doc": "false",
+   "real": "false"
+  },
+  {
+   "path": "conditions",
+   "status": "OK",
+   "doc": "array[0]",
+   "real": "array[0]"
+  },
+  {
+   "path": "type",
+   "status": "OK",
+   "doc": "\"estimate_update\"",
+   "real": "\"estimate_update\""
+  },
+  {
+   "path": "masterType",
+   "status": "OK",
+   "doc": "\"internal\"",
+   "real": "\"internal\""
+  },
+  {
+   "path": "name",
+   "status": "OK",
+   "doc": "\"Estimates\"",
+   "real": "\"Estimates\""
+  },
+  {
+   "path": "actions",
+   "status": "OK",
+   "doc": "array[1]",
+   "real": "array[1]"
+  }
+ ],
+ "realNode": {
+  "id": "<id095>",
+  "date_updated": "2026-07-17T02:01:09.170Z",
+  "date_added": "2026-07-17T02:01:09.170Z",
+  "deleted": false,
+  "active": false,
+  "actions": [
+   {
+    "workflow_id": "00000000-0000-4000-8000-000000000195",
+    "type": "add_to_workflow"
+   }
+  ],
+  "conditions": [],
+  "type": "estimate_update",
+  "masterType": "internal",
+  "workflow_id": "00000000-0000-4000-8000-000000000195",
+  "location_id": "<locationId>",
+  "name": "Estimates",
+  "belongs_to": "workflow",
+  "workflowsTriggerType": "INTERNAL",
+  "schedule_config": {}
+ }
+}

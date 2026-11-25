@@ -1,0 +1,101 @@
+{
+ "doc": "../raw/actions/create-opportunity.md",
+ "kind": "action",
+ "workflowId": "00000000-0000-4000-8000-000000000190",
+ "nodeId": "00000000-0000-4000-8000-000000000311",
+ "source": "https://firebasestorage.googleapis.com/v0/b/<bucket>/o/<path>?alt=media&token=<token><bucket>/o/<path>?alt=media&token=<token>",
+ "pass": true,
+ "rows": [
+  {
+   "path": "id",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000311\"",
+   "real": "\"00000000-0000-4000-8000-000000000311\""
+  },
+  {
+   "path": "order",
+   "status": "OK",
+   "doc": "2",
+   "real": "2"
+  },
+  {
+   "path": "attributes.pipelineId",
+   "status": "OK",
+   "doc": "\"<pipelineId>\"",
+   "real": "\"<pipelineId>\""
+  },
+  {
+   "path": "attributes.type",
+   "status": "OK",
+   "doc": "\"internal_create_opportunity\"",
+   "real": "\"internal_create_opportunity\""
+  },
+  {
+   "path": "attributes.__customInputFields__",
+   "status": "OK",
+   "doc": "array[3]",
+   "real": "array[3]"
+  },
+  {
+   "path": "name",
+   "status": "OK",
+   "doc": "\"Create opportunity\"",
+   "real": "\"Create opportunity\""
+  },
+  {
+   "path": "type",
+   "status": "OK",
+   "doc": "\"internal_create_opportunity\"",
+   "real": "\"internal_create_opportunity\""
+  },
+  {
+   "path": "workflowsActionType",
+   "status": "OK",
+   "doc": "\"INTERNAL\"",
+   "real": "\"INTERNAL\""
+  },
+  {
+   "path": "parentKey",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000292\"",
+   "real": "\"00000000-0000-4000-8000-000000000292\""
+  }
+ ],
+ "realNode": {
+  "id": "00000000-0000-4000-8000-000000000311",
+  "order": 2,
+  "attributes": {
+   "pipelineId": "<pipelineId>",
+   "type": "internal_create_opportunity",
+   "__customInputFields__": [
+    {
+     "__customInputs__": {},
+     "dataType": "SINGLE_OPTIONS",
+     "filterField": "pipelineStageId",
+     "value": "00000000-0000-4000-8000-000000000168",
+     "valueFieldType": "select"
+    },
+    {
+     "__customInputs__": {},
+     "dataType": "TEXT",
+     "filterField": "name",
+     "value": "zzz-spike-b7 opportunity",
+     "valueFieldType": "string"
+    },
+    {
+     "__customInputs__": {},
+     "dataType": "SINGLE_OPTIONS",
+     "filterField": "status",
+     "value": "open",
+     "valueFieldType": "select"
+    }
+   ],
+   "__customInputs__": {}
+  },
+  "name": "Create opportunity",
+  "type": "internal_create_opportunity",
+  "workflowsActionType": "INTERNAL",
+  "parentKey": "00000000-0000-4000-8000-000000000292",
+  "next": "00000000-0000-4000-8000-000000000310"
+ }
+}

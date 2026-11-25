@@ -1,0 +1,46 @@
+{
+ "doc": "research/phase1/raw/actions/manual-action-to-sms.md",
+ "kind": "action",
+ "workflowId": "00000000-0000-4000-8000-000000000196",
+ "nodeId": "00000000-0000-4000-8000-000000000199",
+ "source": "https://firebasestorage.googleapis.com/v0/b/<bucket>/o/<path>?alt=media&token=<token><bucket>/o/<path>?alt=media&token=<token>",
+ "pass": true,
+ "rows": [
+  {
+   "path": "name",
+   "status": "OK",
+   "doc": "\"Manual SMS\"",
+   "real": "\"Manual SMS\""
+  },
+  {
+   "path": "type",
+   "status": "OK",
+   "doc": "\"manual-sms\"",
+   "real": "\"manual-sms\""
+  },
+  {
+   "path": "attributes.body",
+   "status": "OK",
+   "doc": "\"ZZZ spike manual SMS\"",
+   "real": "\"ZZZ spike manual SMS\""
+  },
+  {
+   "path": "attributes.attachments",
+   "status": "OK",
+   "doc": "array[0]",
+   "real": "array[0]"
+  }
+ ],
+ "realNode": {
+  "id": "00000000-0000-4000-8000-000000000199",
+  "order": 2,
+  "attributes": {
+   "body": "ZZZ spike manual SMS",
+   "attachments": []
+  },
+  "name": "Manual SMS",
+  "type": "manual-sms",
+  "parentKey": "00000000-0000-4000-8000-000000000197",
+  "next": "00000000-0000-4000-8000-000000000236"
+ }
+}

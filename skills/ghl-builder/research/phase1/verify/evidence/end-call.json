@@ -1,0 +1,63 @@
+{
+ "doc": "../raw/actions/end-call.md",
+ "kind": "action",
+ "workflowId": "00000000-0000-4000-8000-000000000190",
+ "nodeId": "00000000-0000-4000-8000-000000000250",
+ "source": "https://firebasestorage.googleapis.com/v0/b/<bucket>/o/<path>?alt=media&token=<token><bucket>/o/<path>?alt=media&token=<token>",
+ "pass": true,
+ "rows": [
+  {
+   "path": "id",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000250\"",
+   "real": "\"00000000-0000-4000-8000-000000000250\""
+  },
+  {
+   "path": "parent",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000192\"",
+   "real": "\"00000000-0000-4000-8000-000000000192\""
+  },
+  {
+   "path": "order",
+   "status": "OK",
+   "doc": "8",
+   "real": "8"
+  },
+  {
+   "path": "attributes.type",
+   "status": "OK",
+   "doc": "\"ivr_hangup\"",
+   "real": "\"ivr_hangup\""
+  },
+  {
+   "path": "name",
+   "status": "OK",
+   "doc": "\"End call\"",
+   "real": "\"End call\""
+  },
+  {
+   "path": "type",
+   "status": "OK",
+   "doc": "\"ivr_hangup\"",
+   "real": "\"ivr_hangup\""
+  },
+  {
+   "path": "parentKey",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000251\"",
+   "real": "\"00000000-0000-4000-8000-000000000251\""
+  }
+ ],
+ "realNode": {
+  "id": "00000000-0000-4000-8000-000000000250",
+  "parent": "00000000-0000-4000-8000-000000000192",
+  "order": 8,
+  "attributes": {
+   "type": "ivr_hangup"
+  },
+  "name": "End call",
+  "type": "ivr_hangup",
+  "parentKey": "00000000-0000-4000-8000-000000000251"
+ }
+}

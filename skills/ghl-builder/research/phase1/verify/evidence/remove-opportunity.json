@@ -1,0 +1,53 @@
+{
+ "doc": "../raw/actions/remove-opportunity.md",
+ "kind": "action",
+ "workflowId": "00000000-0000-4000-8000-000000000171",
+ "nodeId": "00000000-0000-4000-8000-000000000180",
+ "source": "https://firebasestorage.googleapis.com/v0/b/<bucket>/o/<path>?alt=media&token=<token><bucket>/o/<path>?alt=media&token=<token>",
+ "pass": true,
+ "rows": [
+  {
+   "path": "name",
+   "status": "OK",
+   "doc": "\"zzz-spike Remove Opp\"",
+   "real": "\"zzz-spike Remove Opp\""
+  },
+  {
+   "path": "type",
+   "status": "OK",
+   "doc": "\"remove_opportunity\"",
+   "real": "\"remove_opportunity\""
+  },
+  {
+   "path": "attributes.type",
+   "status": "OK",
+   "doc": "\"remove_opportunity\"",
+   "real": "\"remove_opportunity\""
+  },
+  {
+   "path": "attributes.pipeline_id",
+   "status": "OK",
+   "doc": "\"<pipelineId>\"",
+   "real": "\"<pipelineId>\""
+  },
+  {
+   "path": "attributes.opportunity_to_be_found",
+   "status": "OK",
+   "doc": "\"all\"",
+   "real": "\"all\""
+  }
+ ],
+ "realNode": {
+  "id": "00000000-0000-4000-8000-000000000180",
+  "order": 20,
+  "name": "zzz-spike Remove Opp",
+  "type": "remove_opportunity",
+  "attributes": {
+   "type": "remove_opportunity",
+   "pipeline_id": "<pipelineId>",
+   "opportunity_to_be_found": "all"
+  },
+  "parentKey": "00000000-0000-4000-8000-000000000178",
+  "next": "00000000-0000-4000-8000-000000000246"
+ }
+}

@@ -1,0 +1,93 @@
+{
+ "doc": "research/phase1/raw/actions/goal-event.md",
+ "kind": "action",
+ "workflowId": "00000000-0000-4000-8000-000000000202",
+ "nodeId": "00000000-0000-4000-8000-000000000303",
+ "source": "https://firebasestorage.googleapis.com/v0/b/<bucket>/o/<path>?alt=media&token=<token><bucket>/o/<path>?alt=media&token=<token>",
+ "pass": true,
+ "rows": [
+  {
+   "path": "id",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000303\"",
+   "real": "\"00000000-0000-4000-8000-000000000303\""
+  },
+  {
+   "path": "order",
+   "status": "OK",
+   "doc": "4",
+   "real": "4"
+  },
+  {
+   "path": "attributes.op",
+   "status": "OK",
+   "doc": "\"or\"",
+   "real": "\"or\""
+  },
+  {
+   "path": "attributes.segments",
+   "status": "OK",
+   "doc": "array[1]",
+   "real": "array[1]"
+  },
+  {
+   "path": "attributes.type",
+   "status": "OK",
+   "doc": "\"workflow_goal\"",
+   "real": "\"workflow_goal\""
+  },
+  {
+   "path": "attributes.action",
+   "status": "OK",
+   "doc": "\"exit\"",
+   "real": "\"exit\""
+  },
+  {
+   "path": "name",
+   "status": "OK",
+   "doc": "\"Goal\"",
+   "real": "\"Goal\""
+  },
+  {
+   "path": "type",
+   "status": "OK",
+   "doc": "\"workflow_goal\"",
+   "real": "\"workflow_goal\""
+  },
+  {
+   "path": "parentKey",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000248\"",
+   "real": "\"00000000-0000-4000-8000-000000000248\""
+  }
+ ],
+ "realNode": {
+  "id": "00000000-0000-4000-8000-000000000303",
+  "order": 4,
+  "attributes": {
+   "op": "or",
+   "segments": [
+    {
+     "op": "or",
+     "conditions": [
+      {
+       "goal_condition": "add_contact_tag",
+       "extras": {
+        "tags": [
+         "zzz-spike-tag"
+        ]
+       },
+       "id": "00000000-0000-4000-8000-000000000304"
+      }
+     ]
+    }
+   ],
+   "type": "workflow_goal",
+   "action": "exit"
+  },
+  "name": "Goal",
+  "type": "workflow_goal",
+  "parentKey": "00000000-0000-4000-8000-000000000248",
+  "next": "00000000-0000-4000-8000-000000000258"
+ }
+}

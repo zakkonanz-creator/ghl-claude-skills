@@ -1,0 +1,90 @@
+{
+ "doc": "../raw/triggers/inbound-webhook.md",
+ "kind": "trigger",
+ "workflowId": "00000000-0000-4000-8000-000000000174",
+ "nodeId": "00000000-0000-4000-8000-000000000297",
+ "source": "GET /workflow/<locationId>/trigger?workflowId=00000000-0000-4000-8000-000000000174",
+ "pass": true,
+ "rows": [
+  {
+   "path": "id",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000297\"",
+   "real": "\"00000000-0000-4000-8000-000000000297\""
+  },
+  {
+   "path": "active",
+   "status": "OK",
+   "doc": "false",
+   "real": "false"
+  },
+  {
+   "path": "actions",
+   "status": "OK",
+   "doc": "array[1]",
+   "real": "array[1]"
+  },
+  {
+   "path": "conditions",
+   "status": "OK",
+   "doc": "array[0]",
+   "real": "array[0]"
+  },
+  {
+   "path": "type",
+   "status": "OK",
+   "doc": "\"inbound_webhook\"",
+   "real": "\"inbound_webhook\""
+  },
+  {
+   "path": "masterType",
+   "status": "OK",
+   "doc": "\"highlevel\"",
+   "real": "\"highlevel\""
+  },
+  {
+   "path": "workflow_id",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000174\"",
+   "real": "\"00000000-0000-4000-8000-000000000174\""
+  },
+  {
+   "path": "location_id",
+   "status": "OK",
+   "doc": "\"<locationId>\"",
+   "real": "\"<locationId>\""
+  },
+  {
+   "path": "name",
+   "status": "OK",
+   "doc": "\"Inbound Webhook\"",
+   "real": "\"Inbound Webhook\""
+  },
+  {
+   "path": "belongs_to",
+   "status": "OK",
+   "doc": "\"workflow\"",
+   "real": "\"workflow\""
+  }
+ ],
+ "realNode": {
+  "id": "00000000-0000-4000-8000-000000000297",
+  "date_updated": "2026-07-16T23:13:17.849Z",
+  "date_added": "2026-07-16T23:13:17.849Z",
+  "deleted": false,
+  "active": false,
+  "actions": [
+   {
+    "workflow_id": "00000000-0000-4000-8000-000000000174",
+    "type": "add_to_workflow"
+   }
+  ],
+  "conditions": [],
+  "type": "inbound_webhook",
+  "masterType": "highlevel",
+  "workflow_id": "00000000-0000-4000-8000-000000000174",
+  "location_id": "<locationId>",
+  "name": "Inbound Webhook",
+  "belongs_to": "workflow"
+ }
+}

@@ -1,0 +1,64 @@
+{
+ "doc": "research/phase1/raw/actions/record-voicemail.md",
+ "kind": "action",
+ "workflowId": "00000000-0000-4000-8000-000000000190",
+ "nodeId": "00000000-0000-4000-8000-000000000194",
+ "source": "https://firebasestorage.googleapis.com/v0/b/<bucket>/o/<path>?alt=media&token=<token><bucket>/o/<path>?alt=media&token=<token>",
+ "pass": true,
+ "rows": [
+  {
+   "path": "id",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000194\"",
+   "real": "\"00000000-0000-4000-8000-000000000194\""
+  },
+  {
+   "path": "parent",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000192\"",
+   "real": "\"00000000-0000-4000-8000-000000000192\""
+  },
+  {
+   "path": "order",
+   "status": "OK",
+   "doc": "5",
+   "real": "5"
+  },
+  {
+   "path": "attributes.type",
+   "status": "OK",
+   "doc": "\"ivr_collect_voicemail\"",
+   "real": "\"ivr_collect_voicemail\""
+  },
+  {
+   "path": "name",
+   "status": "OK",
+   "doc": "\"Record voicemail\"",
+   "real": "\"Record voicemail\""
+  },
+  {
+   "path": "type",
+   "status": "OK",
+   "doc": "\"ivr_collect_voicemail\"",
+   "real": "\"ivr_collect_voicemail\""
+  },
+  {
+   "path": "parentKey",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000191\"",
+   "real": "\"00000000-0000-4000-8000-000000000191\""
+  }
+ ],
+ "realNode": {
+  "id": "00000000-0000-4000-8000-000000000194",
+  "parent": "00000000-0000-4000-8000-000000000192",
+  "order": 5,
+  "attributes": {
+   "type": "ivr_collect_voicemail"
+  },
+  "name": "Record voicemail",
+  "type": "ivr_collect_voicemail",
+  "parentKey": "00000000-0000-4000-8000-000000000191",
+  "next": "00000000-0000-4000-8000-000000000277"
+ }
+}

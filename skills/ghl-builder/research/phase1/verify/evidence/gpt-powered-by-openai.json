@@ -1,0 +1,192 @@
+{
+ "doc": "research/phase1/raw/actions/gpt-powered-by-openai.md",
+ "kind": "action",
+ "workflowId": "00000000-0000-4000-8000-000000000211",
+ "nodeId": "00000000-0000-4000-8000-000000000212",
+ "source": "https://firebasestorage.googleapis.com/v0/b/<bucket>/o/<path>?alt=media&token=<token><bucket>/o/<path>?alt=media&token=<token>",
+ "pass": true,
+ "rows": [
+  {
+   "path": "id",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000212\"",
+   "real": "\"00000000-0000-4000-8000-000000000212\""
+  },
+  {
+   "path": "stepIndex",
+   "status": "OK",
+   "doc": "1",
+   "real": "1"
+  },
+  {
+   "path": "parent",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000213\"",
+   "real": "\"00000000-0000-4000-8000-000000000213\""
+  },
+  {
+   "path": "order",
+   "status": "OK",
+   "doc": "3",
+   "real": "3"
+  },
+  {
+   "path": "attributes.type",
+   "status": "OK",
+   "doc": "\"chatgpt\"",
+   "real": "\"chatgpt\""
+  },
+  {
+   "path": "attributes.apiKey",
+   "status": "OK",
+   "doc": "\"\"",
+   "real": "\"\""
+  },
+  {
+   "path": "attributes.event",
+   "status": "OK",
+   "doc": "\"simple-prompt\"",
+   "real": "\"simple-prompt\""
+  },
+  {
+   "path": "attributes.model",
+   "status": "OK",
+   "doc": "\"gpt-5-mini\"",
+   "real": "\"gpt-5-mini\""
+  },
+  {
+   "path": "attributes.temperature",
+   "status": "OK",
+   "doc": "\"0.2\"",
+   "real": "\"0.2\""
+  },
+  {
+   "path": "attributes.promptText",
+   "status": "OK",
+   "doc": "\"Write a concise follow-up for {{contact",
+   "real": "\"Write a concise follow-up for {{contact"
+  },
+  {
+   "path": "attributes.actionType",
+   "status": "OK",
+   "doc": "\"custom\"",
+   "real": "\"custom\""
+  },
+  {
+   "path": "attributes.actionParams.message",
+   "status": "OK",
+   "doc": "\"\"",
+   "real": "\"\""
+  },
+  {
+   "path": "attributes.actionParams.categories",
+   "status": "OK",
+   "doc": "array[0]",
+   "real": "array[0]"
+  },
+  {
+   "path": "attributes.actionParams.length",
+   "status": "OK",
+   "doc": "\"\"",
+   "real": "\"\""
+  },
+  {
+   "path": "attributes.actionParams.from",
+   "status": "OK",
+   "doc": "\"\"",
+   "real": "\"\""
+  },
+  {
+   "path": "attributes.actionParams.to",
+   "status": "OK",
+   "doc": "\"\"",
+   "real": "\"\""
+  },
+  {
+   "path": "attributes.actionParams.memoryKeyToggle",
+   "status": "OK",
+   "doc": "false",
+   "real": "false"
+  },
+  {
+   "path": "attributes.actionParams.memoryKeyType",
+   "status": "OK",
+   "doc": "\"action\"",
+   "real": "\"action\""
+  },
+  {
+   "path": "attributes.actionParams.memoryKeyCustom",
+   "status": "OK",
+   "doc": "\"\"",
+   "real": "\"\""
+  },
+  {
+   "path": "attributes.memoryKey",
+   "status": "OK",
+   "doc": "\"\"",
+   "real": "\"\""
+  },
+  {
+   "path": "attributes.excludeFromHistory",
+   "status": "OK",
+   "doc": "false",
+   "real": "false"
+  },
+  {
+   "path": "attributes.excludeInstructionsFromHistory",
+   "status": "OK",
+   "doc": "false",
+   "real": "false"
+  },
+  {
+   "path": "name",
+   "status": "OK",
+   "doc": "\"GPT powered by OpenAI\"",
+   "real": "\"GPT powered by OpenAI\""
+  },
+  {
+   "path": "type",
+   "status": "OK",
+   "doc": "\"chatgpt\"",
+   "real": "\"chatgpt\""
+  },
+  {
+   "path": "parentKey",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000214\"",
+   "real": "\"00000000-0000-4000-8000-000000000214\""
+  }
+ ],
+ "realNode": {
+  "id": "00000000-0000-4000-8000-000000000212",
+  "stepIndex": 1,
+  "parent": "00000000-0000-4000-8000-000000000213",
+  "order": 3,
+  "attributes": {
+   "type": "chatgpt",
+   "apiKey": "",
+   "event": "simple-prompt",
+   "model": "gpt-5-mini",
+   "temperature": "0.2",
+   "promptText": "Write a concise follow-up for {{contact.first_name}}.",
+   "actionType": "custom",
+   "actionParams": {
+    "message": "",
+    "categories": [],
+    "length": "",
+    "from": "",
+    "to": "",
+    "memoryKeyToggle": false,
+    "memoryKeyType": "action",
+    "memoryKeyCustom": ""
+   },
+   "memoryKey": "",
+   "excludeFromHistory": false,
+   "excludeInstructionsFromHistory": false
+  },
+  "name": "GPT powered by OpenAI",
+  "type": "chatgpt",
+  "parentKey": "00000000-0000-4000-8000-000000000214",
+  "next": "00000000-0000-4000-8000-000000000215"
+ }
+}

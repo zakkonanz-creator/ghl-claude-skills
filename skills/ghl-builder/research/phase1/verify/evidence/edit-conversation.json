@@ -1,0 +1,85 @@
+{
+ "doc": "research/phase1/raw/actions/edit-conversation.md",
+ "kind": "action",
+ "workflowId": "00000000-0000-4000-8000-000000000182",
+ "nodeId": "00000000-0000-4000-8000-000000000252",
+ "source": "https://firebasestorage.googleapis.com/v0/b/<bucket>/o/<path>?alt=media&token=<token><bucket>/o/<path>?alt=media&token=<token>",
+ "pass": true,
+ "rows": [
+  {
+   "path": "id",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000252\"",
+   "real": "\"00000000-0000-4000-8000-000000000252\""
+  },
+  {
+   "path": "order",
+   "status": "OK",
+   "doc": "3",
+   "real": "3"
+  },
+  {
+   "path": "attributes.read",
+   "status": "OK",
+   "doc": "true",
+   "real": "true"
+  },
+  {
+   "path": "attributes.archive",
+   "status": "OK",
+   "doc": "true",
+   "real": "true"
+  },
+  {
+   "path": "attributes.type",
+   "status": "OK",
+   "doc": "\"edit_conversation\"",
+   "real": "\"edit_conversation\""
+  },
+  {
+   "path": "name",
+   "status": "OK",
+   "doc": "\"Edit conversation\"",
+   "real": "\"Edit conversation\""
+  },
+  {
+   "path": "type",
+   "status": "OK",
+   "doc": "\"edit_conversation\"",
+   "real": "\"edit_conversation\""
+  },
+  {
+   "path": "workflowsActionType",
+   "status": "OK",
+   "doc": "\"INTERNAL\"",
+   "real": "\"INTERNAL\""
+  },
+  {
+   "path": "parentKey",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000189\"",
+   "real": "\"00000000-0000-4000-8000-000000000189\""
+  },
+  {
+   "path": "next",
+   "status": "VALUE",
+   "doc": "\"00000000-0000-4000-8000-000000000264\"",
+   "real": "\"00000000-0000-4000-8000-000000000265\""
+  }
+ ],
+ "realNode": {
+  "id": "00000000-0000-4000-8000-000000000252",
+  "order": 3,
+  "attributes": {
+   "read": true,
+   "archive": true,
+   "type": "edit_conversation",
+   "__customInputs__": {}
+  },
+  "name": "Edit conversation",
+  "type": "edit_conversation",
+  "workflowsActionType": "INTERNAL",
+  "parentKey": "00000000-0000-4000-8000-000000000189",
+  "next": "00000000-0000-4000-8000-000000000265"
+ }
+}

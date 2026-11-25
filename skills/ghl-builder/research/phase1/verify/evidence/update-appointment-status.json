@@ -1,0 +1,71 @@
+{
+ "doc": "../raw/actions/update-appointment-status.md",
+ "kind": "action",
+ "workflowId": "00000000-0000-4000-8000-000000000171",
+ "nodeId": "00000000-0000-4000-8000-000000000243",
+ "source": "https://firebasestorage.googleapis.com/v0/b/<bucket>/o/<path>?alt=media&token=<token><bucket>/o/<path>?alt=media&token=<token>",
+ "pass": true,
+ "rows": [
+  {
+   "path": "id",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000243\"",
+   "real": "\"00000000-0000-4000-8000-000000000243\""
+  },
+  {
+   "path": "order",
+   "status": "OK",
+   "doc": "11",
+   "real": "11"
+  },
+  {
+   "path": "attributes.category",
+   "status": "OK",
+   "doc": "\"appointment\"",
+   "real": "\"appointment\""
+  },
+  {
+   "path": "attributes.type",
+   "status": "OK",
+   "doc": "\"update_appointment_status\"",
+   "real": "\"update_appointment_status\""
+  },
+  {
+   "path": "attributes.status_type",
+   "status": "OK",
+   "doc": "\"confirmed\"",
+   "real": "\"confirmed\""
+  },
+  {
+   "path": "name",
+   "status": "OK",
+   "doc": "\"Update appointment status\"",
+   "real": "\"Update appointment status\""
+  },
+  {
+   "path": "type",
+   "status": "OK",
+   "doc": "\"update_appointment_status\"",
+   "real": "\"update_appointment_status\""
+  },
+  {
+   "path": "parentKey",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000244\"",
+   "real": "\"00000000-0000-4000-8000-000000000244\""
+  }
+ ],
+ "realNode": {
+  "id": "00000000-0000-4000-8000-000000000243",
+  "order": 11,
+  "attributes": {
+   "category": "appointment",
+   "type": "update_appointment_status",
+   "status_type": "confirmed"
+  },
+  "name": "Update appointment status",
+  "type": "update_appointment_status",
+  "parentKey": "00000000-0000-4000-8000-000000000244",
+  "next": "00000000-0000-4000-8000-000000000245"
+ }
+}

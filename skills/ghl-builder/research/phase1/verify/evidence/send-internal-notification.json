@@ -1,0 +1,124 @@
+{
+ "doc": "../raw/actions/send-internal-notification.md",
+ "kind": "action",
+ "workflowId": "00000000-0000-4000-8000-000000000171",
+ "nodeId": "00000000-0000-4000-8000-000000000288",
+ "source": "https://firebasestorage.googleapis.com/v0/b/<bucket>/o/<path>?alt=media&token=<token><bucket>/o/<path>?alt=media&token=<token>",
+ "pass": true,
+ "rows": [
+  {
+   "path": "id",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000288\"",
+   "real": "\"00000000-0000-4000-8000-000000000288\""
+  },
+  {
+   "path": "order",
+   "status": "OK",
+   "doc": "17",
+   "real": "17"
+  },
+  {
+   "path": "attributes.type",
+   "status": "OK",
+   "doc": "\"email\"",
+   "real": "\"email\""
+  },
+  {
+   "path": "attributes.email.isCloned",
+   "status": "OK",
+   "doc": "false",
+   "real": "false"
+  },
+  {
+   "path": "attributes.email.from_name",
+   "status": "OK",
+   "doc": "\"\"",
+   "real": "\"\""
+  },
+  {
+   "path": "attributes.email.from_email",
+   "status": "OK",
+   "doc": "\"\"",
+   "real": "\"\""
+  },
+  {
+   "path": "attributes.email.subject",
+   "status": "OK",
+   "doc": "\"zzz-spike internal email {{contact.name",
+   "real": "\"zzz-spike internal email {{contact.name"
+  },
+  {
+   "path": "attributes.email.html",
+   "status": "OK",
+   "doc": "<placeholder>",
+   "real": "string"
+  },
+  {
+   "path": "attributes.email.userType",
+   "status": "OK",
+   "doc": "\"user\"",
+   "real": "\"user\""
+  },
+  {
+   "path": "attributes.email.selectedUser",
+   "status": "OK",
+   "doc": "array[1]",
+   "real": "array[1]"
+  },
+  {
+   "path": "attributes.email.preHeader",
+   "status": "OK",
+   "doc": "\"\"",
+   "real": "\"\""
+  },
+  {
+   "path": "attributes.email.attachments",
+   "status": "OK",
+   "doc": "array[0]",
+   "real": "array[0]"
+  },
+  {
+   "path": "name",
+   "status": "OK",
+   "doc": "\"zzz-spike Internal Notif Email\"",
+   "real": "\"zzz-spike Internal Notif Email\""
+  },
+  {
+   "path": "type",
+   "status": "OK",
+   "doc": "\"internal_notification\"",
+   "real": "\"internal_notification\""
+  },
+  {
+   "path": "parentKey",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000289\"",
+   "real": "\"00000000-0000-4000-8000-000000000289\""
+  }
+ ],
+ "realNode": {
+  "id": "00000000-0000-4000-8000-000000000288",
+  "order": 17,
+  "name": "zzz-spike Internal Notif Email",
+  "type": "internal_notification",
+  "attributes": {
+   "type": "email",
+   "email": {
+    "isCloned": false,
+    "from_name": "",
+    "from_email": "",
+    "subject": "zzz-spike internal email {{contact.name}}",
+    "html": "<p style=\"margin:0px;font-family:verdana,geneva,sans-serif;font-size:16px; padding-left: 0px!important;\">zzz-spike internal notification body</p>",
+    "userType": "user",
+    "selectedUser": [
+     "<userId>"
+    ],
+    "preHeader": "",
+    "attachments": []
+   }
+  },
+  "parentKey": "00000000-0000-4000-8000-000000000289",
+  "next": "00000000-0000-4000-8000-000000000179"
+ }
+}

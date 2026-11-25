@@ -1,0 +1,57 @@
+{
+ "doc": "research/phase1/raw/actions/send-invoice.md",
+ "kind": "action",
+ "workflowId": "00000000-0000-4000-8000-000000000195",
+ "nodeId": "00000000-0000-4000-8000-000000000307",
+ "source": "https://firebasestorage.googleapis.com/v0/b/<bucket>/o/<path>?alt=media&token=<token><bucket>/o/<path>?alt=media&token=<token>",
+ "pass": true,
+ "rows": [
+  {
+   "path": "id",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000307\"",
+   "real": "\"00000000-0000-4000-8000-000000000307\""
+  },
+  {
+   "path": "order",
+   "status": "OK",
+   "doc": "2",
+   "real": "2"
+  },
+  {
+   "path": "attributes.type",
+   "status": "OK",
+   "doc": "\"payments_create_invoice\"",
+   "real": "\"payments_create_invoice\""
+  },
+  {
+   "path": "name",
+   "status": "OK",
+   "doc": "\"Send invoice\"",
+   "real": "\"Send invoice\""
+  },
+  {
+   "path": "type",
+   "status": "OK",
+   "doc": "\"payments_create_invoice\"",
+   "real": "\"payments_create_invoice\""
+  },
+  {
+   "path": "parentKey",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000308\"",
+   "real": "\"00000000-0000-4000-8000-000000000308\""
+  }
+ ],
+ "realNode": {
+  "id": "00000000-0000-4000-8000-000000000307",
+  "order": 2,
+  "attributes": {
+   "type": "payments_create_invoice"
+  },
+  "name": "Send invoice",
+  "type": "payments_create_invoice",
+  "parentKey": "00000000-0000-4000-8000-000000000308",
+  "next": "00000000-0000-4000-8000-000000000309"
+ }
+}

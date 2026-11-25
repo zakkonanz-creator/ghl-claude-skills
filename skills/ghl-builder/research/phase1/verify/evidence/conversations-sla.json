@@ -1,0 +1,74 @@
+{
+ "doc": "../raw/triggers/conversations-sla.md",
+ "kind": "trigger",
+ "workflowId": "00000000-0000-4000-8000-000000000196",
+ "nodeId": "<id077>",
+ "source": "GET /workflow/<locationId>/trigger?workflowId=00000000-0000-4000-8000-000000000196",
+ "pass": true,
+ "rows": [
+  {
+   "path": "name",
+   "status": "OK",
+   "doc": "\"Conversations SLA\"",
+   "real": "\"Conversations SLA\""
+  },
+  {
+   "path": "type",
+   "status": "OK",
+   "doc": "\"conversations_sla\"",
+   "real": "\"conversations_sla\""
+  },
+  {
+   "path": "masterType",
+   "status": "OK",
+   "doc": "\"internal\"",
+   "real": "\"internal\""
+  },
+  {
+   "path": "conditions",
+   "status": "OK",
+   "doc": "array[1]",
+   "real": "array[2]"
+  }
+ ],
+ "realNode": {
+  "id": "<id077>",
+  "date_added": "2026-07-17T01:41:30.253Z",
+  "deleted": false,
+  "actions": [
+   {
+    "workflow_id": "00000000-0000-4000-8000-000000000196",
+    "type": "add_to_workflow"
+   }
+  ],
+  "conditions": [
+   {
+    "operator": "==",
+    "field": "slaStatus",
+    "value": "sla_due",
+    "title": "SLA status",
+    "type": "select",
+    "id": "slaStatus"
+   },
+   {
+    "operator": "==",
+    "field": "avoidRepeatedTriggers",
+    "value": "yes",
+    "title": "Avoid repeated triggers",
+    "type": "select",
+    "id": "avoidRepeatedTriggers",
+    "ignoreConditionMatch": true
+   }
+  ],
+  "type": "conversations_sla",
+  "masterType": "internal",
+  "workflow_id": "00000000-0000-4000-8000-000000000196",
+  "location_id": "<locationId>",
+  "name": "Conversations SLA",
+  "belongs_to": "workflow",
+  "workflowsTriggerType": "INTERNAL",
+  "schedule_config": {},
+  "date_updated": "2026-07-17T01:58:59.370Z",
+  "active": false
+ }
+}

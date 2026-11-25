@@ -1,0 +1,97 @@
+{
+ "doc": "research/phase1/raw/actions/copy-contact.md",
+ "kind": "action",
+ "workflowId": "00000000-0000-4000-8000-000000000182",
+ "nodeId": "00000000-0000-4000-8000-000000000189",
+ "source": "https://firebasestorage.googleapis.com/v0/b/<bucket>/o/<path>?alt=media&token=<token><bucket>/o/<path>?alt=media&token=<token>",
+ "pass": true,
+ "rows": [
+  {
+   "path": "id",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000189\"",
+   "real": "\"00000000-0000-4000-8000-000000000189\""
+  },
+  {
+   "path": "order",
+   "status": "OK",
+   "doc": "2",
+   "real": "2"
+  },
+  {
+   "path": "attributes.type",
+   "status": "OK",
+   "doc": "\"copy_contact_to_subaccount\"",
+   "real": "\"copy_contact_to_subaccount\""
+  },
+  {
+   "path": "attributes.newLocations",
+   "status": "OK",
+   "doc": "array[1]",
+   "real": "array[1]"
+  },
+  {
+   "path": "attributes.withTags",
+   "status": "OK",
+   "doc": "false",
+   "real": "false"
+  },
+  {
+   "path": "attributes.withCustomFields",
+   "status": "OK",
+   "doc": "false",
+   "real": "false"
+  },
+  {
+   "path": "attributes.tags",
+   "status": "OK",
+   "doc": "array[0]",
+   "real": "array[0]"
+  },
+  {
+   "path": "attributes.updateIfExists",
+   "status": "OK",
+   "doc": "false",
+   "real": "false"
+  },
+  {
+   "path": "name",
+   "status": "OK",
+   "doc": "\"Copy contact\"",
+   "real": "\"Copy contact\""
+  },
+  {
+   "path": "type",
+   "status": "OK",
+   "doc": "\"copy_contact_to_subaccount\"",
+   "real": "\"copy_contact_to_subaccount\""
+  },
+  {
+   "path": "parentKey",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000187\"",
+   "real": "\"00000000-0000-4000-8000-000000000187\""
+  }
+ ],
+ "realNode": {
+  "id": "00000000-0000-4000-8000-000000000189",
+  "order": 2,
+  "attributes": {
+   "type": "copy_contact_to_subaccount",
+   "newLocations": [
+    {
+     "value": "<id063>",
+     "label": "Target Sub-account"
+    }
+   ],
+   "withTags": false,
+   "withCustomFields": false,
+   "tags": [],
+   "updateIfExists": false
+  },
+  "name": "Copy contact",
+  "type": "copy_contact_to_subaccount",
+  "parentKey": "00000000-0000-4000-8000-000000000187",
+  "next": "00000000-0000-4000-8000-000000000252"
+ }
+}

@@ -1,0 +1,77 @@
+{
+  "comment": "Judgment rules, checked at PLAN time. The field registry catches writes that are the wrong SHAPE. This file catches machinery that should not be BUILT AT ALL. Every entry here was paid for once: a field created, steps wired, a branch maintained, all serving a requirement that did not exist. Read this before planning, not after building.",
+  "updatedAt": "2026-08-27",
+  "rules": [
+    {
+      "id": "no-sms-length-gate",
+      "severity": "block",
+      "rule": "Do not count the characters of an SMS before sending it, and do not build a field, formatter or branch to do so.",
+      "why": "The reviewer's instruction is direct: we do not need to count the number of characters on an SMS before sending. Building it cost a NUMERICAL custom field (sms_length_holder), a formatter step, a holder write and a length-gate branch. The gate never worked either, because formatter output does not resolve through a merge token, so the fallback always sent while the paid rewrite was discarded.",
+      "insteadDo": "Write the message to fit and send it. If length genuinely matters, constrain the copy at authoring time.",
+      "detect": ["sms_length", "length_holder", "character count", "char count", "count the characters"],
+      "evidence": "Workflow A review note, 2026-08-27. Machinery confirmed non functional in the 2026-08-18 reconciliation."
+    },
+    {
+      "id": "no-redundant-add-to-workflow",
+      "severity": "block",
+      "rule": "Do not add an add-to-workflow step when the receiving workflow already triggers on a tag this workflow applies.",
+      "why": "Seven notes, all deleted by hand. The tag applied one step earlier already enrols the contact, so the explicit handoff double enrols. The build wired the handoff without reading the target's trigger.",
+      "insteadDo": "Read the target workflow's trigger first. If it triggers on a tag you apply, applying the tag IS the handoff.",
+      "detect": ["add_to_workflow"],
+      "check": "For each add_to_workflow step, read the target workflow's triggers. Block if any trigger is a tag this workflow applies upstream.",
+      "evidence": "Seven review notes across workflows A and B, 2026-08-27."
+    },
+    {
+      "id": "no-invented-operators",
+      "severity": "block",
+      "rule": "Do not use a comparison operator that the condition picker does not offer. No ==, no is_checked, no relative date comparison.",
+      "why": "Programming idioms carried into a builder that exposes a fixed vocabulary. The picker offers a closed set; anything else either fails validation or, worse, saves and never matches.",
+      "insteadDo": "Enumerate the available operators for that field type and pick from them. For a checkbox use Includes plus true. For dates, gate with a Wait node rather than comparing.",
+      "detect": ["==", "!=", "is_checked", ">=", "<="],
+      "evidence": "Workflow A review note on ==, workflow D note on is_checked, 2026-08-27. Relative date limitation recorded separately."
+    },
+    {
+      "id": "duration-in-step-name",
+      "severity": "warn",
+      "rule": "Every wait or timeout step name states its duration. Wait 1h before asking, not Wait before asking. Cooldown for 90 days, do not remove, not Cooldown, do not remove.",
+      "why": "Durations are the load bearing logic of a cadence and are invisible on the canvas unless the name carries them. A reviewer cannot audit timing without opening every node.",
+      "insteadDo": "Name the step with its duration at authoring time.",
+      "detect": ["wait", "cooldown", "timeout"],
+      "evidence": "Five review notes across workflows A and A2, 2026-08-27."
+    },
+    {
+      "id": "tag-name-as-step-name",
+      "severity": "warn",
+      "rule": "Name a tag step with the tag it applies.",
+      "why": "Same intent as the duration rule: the canvas should be readable without opening nodes.",
+      "insteadDo": "Use the tag name as the action name.",
+      "evidence": "Workflow A review note, 2026-08-27."
+    },
+    {
+      "id": "lost-reason-required",
+      "severity": "block",
+      "rule": "Any step that closes an opportunity sets its lost reason in the same step.",
+      "why": "The reason is the only thing that makes closed opportunities reportable. Without it the pipeline records that referrals were lost but never why.",
+      "insteadDo": "Set the lost reason alongside the stage change.",
+      "detect": ["close", "lost", "closed"],
+      "evidence": "Three review notes on workflow D, 2026-08-27: Not Interested, Bad Number, Cadence Exhausted."
+    },
+    {
+      "id": "webhook-needs-mapping-reference",
+      "severity": "block",
+      "rule": "An inbound webhook trigger requires a mapping reference.",
+      "why": "Without it the trigger cannot resolve an incoming payload into fields, so nothing downstream binds.",
+      "insteadDo": "Supply the mapping reference when creating the trigger.",
+      "detect": ["inbound_webhook"],
+      "evidence": "Workflow E2 review note, 2026-08-27."
+    },
+    {
+      "id": "verify-after-refresh",
+      "severity": "block",
+      "rule": "After building, refresh the workflow and reopen every trigger and action to confirm filters and values actually persisted. Assume nothing saved until a refreshed state confirms it.",
+      "why": "The most consequential note in the set. A trigger filter appeared set during authoring and had not persisted. The canvas is not evidence, because the platform accepts and displays input it did not save.",
+      "insteadDo": "Build, refresh, reopen each node, confirm. Treat the refreshed read as the only proof.",
+      "evidence": "Workflow A trigger filter note, 2026-08-27, stated by the reviewer as a general rule for all future builds."
+    }
+  ]
+}

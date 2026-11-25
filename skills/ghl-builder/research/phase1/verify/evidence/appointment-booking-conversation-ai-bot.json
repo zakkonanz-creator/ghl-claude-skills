@@ -1,0 +1,151 @@
+{
+ "doc": "../raw/actions/appointment-booking-conversation-ai-bot.md",
+ "kind": "action",
+ "workflowId": "00000000-0000-4000-8000-000000000196",
+ "nodeId": "00000000-0000-4000-8000-000000000237",
+ "source": "https://firebasestorage.googleapis.com/v0/b/<bucket>/o/<path>?alt=media&token=<token><bucket>/o/<path>?alt=media&token=<token>",
+ "pass": true,
+ "rows": [
+  {
+   "path": "name",
+   "status": "OK",
+   "doc": "\"Appointment booking conversation AI bot",
+   "real": "\"Appointment booking conversation AI bot"
+  },
+  {
+   "path": "type",
+   "status": "OK",
+   "doc": "\"appointment_booking_conversation_ai\"",
+   "real": "\"appointment_booking_conversation_ai\""
+  },
+  {
+   "path": "attributes.calendarId",
+   "status": "OK",
+   "doc": "\"<calendarId>\"",
+   "real": "\"<calendarId>\""
+  },
+  {
+   "path": "attributes.personality",
+   "status": "OK",
+   "doc": "\"Friendly and concise\"",
+   "real": "\"Friendly and concise\""
+  },
+  {
+   "path": "attributes.additionalInstructions",
+   "status": "OK",
+   "doc": "\"Use the selected calendar.\"",
+   "real": "\"Use the selected calendar.\""
+  },
+  {
+   "path": "attributes.botResponsesLimit",
+   "status": "OK",
+   "doc": "5",
+   "real": "5"
+  },
+  {
+   "path": "attributes.timeOutDuration",
+   "status": "OK",
+   "doc": "1",
+   "real": "1"
+  },
+  {
+   "path": "attributes.timeOutDurationUnit",
+   "status": "OK",
+   "doc": "\"hours\"",
+   "real": "\"hours\""
+  },
+  {
+   "path": "attributes.channel",
+   "status": "OK",
+   "doc": "\"SMS\"",
+   "real": "\"SMS\""
+  },
+  {
+   "path": "attributes.shouldBotNotSendConfirmationMessage",
+   "status": "OK",
+   "doc": "false",
+   "real": "false"
+  },
+  {
+   "path": "attributes.aiReplyWaitTime",
+   "status": "OK",
+   "doc": "10",
+   "real": "10"
+  },
+  {
+   "path": "attributes.transitions",
+   "status": "OK",
+   "doc": "array[1]",
+   "real": "array[3]"
+  }
+ ],
+ "realNode": {
+  "id": "00000000-0000-4000-8000-000000000237",
+  "parentKey": "00000000-0000-4000-8000-000000000236",
+  "type": "appointment_booking_conversation_ai",
+  "name": "Appointment booking conversation AI bot",
+  "attributes": {
+   "calendarId": "<calendarId>",
+   "personality": "Friendly and concise",
+   "additionalInstructions": "Use the selected calendar.",
+   "botResponsesLimit": 5,
+   "timeOutDuration": 1,
+   "timeOutDurationUnit": "hours",
+   "channel": "SMS",
+   "shouldBotNotSendConfirmationMessage": false,
+   "aiReplyWaitTime": 10,
+   "type": "appointment_booking_conversation_ai",
+   "__customInputs__": {},
+   "cat": "multi-path",
+   "convertToMultipath": true,
+   "transitions": [
+    {
+     "id": "00000000-0000-4000-8000-000000000326",
+     "name": "Time Out",
+     "fields": {
+      "condition": "Bot time out"
+     },
+     "meta": {
+      "key": "time_out",
+      "__branchKey__": "predefined_Time Out"
+     },
+     "conditionType": "pre-defined"
+    },
+    {
+     "id": "00000000-0000-4000-8000-000000000327",
+     "name": "Appointment Was Booked",
+     "fields": {
+      "condition": "Appointment booked on the calendar"
+     },
+     "meta": {
+      "key": "appointment_was_booked",
+      "__branchKey__": "predefined_Appointment Was Booked"
+     },
+     "conditionType": "pre-defined"
+    },
+    {
+     "id": "00000000-0000-4000-8000-000000000208",
+     "name": "Appointment Not Booked",
+     "fields": {
+      "condition": "Maximum message limit have reached or contact doesn't wish to book appointment"
+     },
+     "meta": {
+      "key": "appointment_not_booked",
+      "__branchKey__": "predefined_Appointment Not Booked"
+     },
+     "conditionType": "pre-defined"
+    }
+   ],
+   "__name__": "Appointment booking conversation AI bot"
+  },
+  "order": 4,
+  "cat": "multi-path",
+  "workflowsActionType": "INTERNAL",
+  "stepIndex": 1,
+  "next": [
+   "00000000-0000-4000-8000-000000000326",
+   "00000000-0000-4000-8000-000000000327",
+   "00000000-0000-4000-8000-000000000208"
+  ]
+ }
+}

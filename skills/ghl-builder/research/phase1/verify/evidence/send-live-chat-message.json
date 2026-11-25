@@ -1,0 +1,49 @@
+{
+ "doc": "../raw/actions/send-live-chat-message.md",
+ "kind": "action",
+ "workflowId": "00000000-0000-4000-8000-000000000196",
+ "nodeId": "00000000-0000-4000-8000-000000000210",
+ "source": "https://firebasestorage.googleapis.com/v0/b/<bucket>/o/<path>?alt=media&token=<token><bucket>/o/<path>?alt=media&token=<token>",
+ "pass": true,
+ "rows": [
+  {
+   "path": "name",
+   "status": "OK",
+   "doc": "\"Send live chat message\"",
+   "real": "\"Send live chat message\""
+  },
+  {
+   "path": "type",
+   "status": "OK",
+   "doc": "\"live_chat_response\"",
+   "real": "\"live_chat_response\""
+  },
+  {
+   "path": "attributes.liveChatResponse",
+   "status": "OK",
+   "doc": "<placeholder>",
+   "real": "string"
+  },
+  {
+   "path": "attributes.type",
+   "status": "OK",
+   "doc": "\"live_chat_response\"",
+   "real": "\"live_chat_response\""
+  }
+ ],
+ "realNode": {
+  "id": "00000000-0000-4000-8000-000000000210",
+  "parent": "00000000-0000-4000-8000-000000000208",
+  "order": 2,
+  "attributes": {
+   "liveChatResponse": "<p style=\"margin:0px; padding-left: 0px!important;\">ZZZ spike live chat message</p>",
+   "type": "live_chat_response",
+   "__customInputs__": {}
+  },
+  "name": "Send live chat message",
+  "type": "live_chat_response",
+  "workflowsActionType": "INTERNAL",
+  "parentKey": "00000000-0000-4000-8000-000000000207",
+  "next": "00000000-0000-4000-8000-000000000249"
+ }
+}

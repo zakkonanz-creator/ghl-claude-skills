@@ -1,0 +1,92 @@
+{
+ "doc": "../raw/actions/enable-disable-dnd.md",
+ "kind": "action",
+ "workflowId": "00000000-0000-4000-8000-000000000211",
+ "nodeId": "00000000-0000-4000-8000-000000000273",
+ "source": "https://firebasestorage.googleapis.com/v0/b/<bucket>/o/<path>?alt=media&token=<token><bucket>/o/<path>?alt=media&token=<token>",
+ "pass": true,
+ "rows": [
+  {
+   "path": "id",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000273\"",
+   "real": "\"00000000-0000-4000-8000-000000000273\""
+  },
+  {
+   "path": "parent",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000274\"",
+   "real": "\"00000000-0000-4000-8000-000000000274\""
+  },
+  {
+   "path": "order",
+   "status": "OK",
+   "doc": "0",
+   "real": "0"
+  },
+  {
+   "path": "attributes.type",
+   "status": "OK",
+   "doc": "\"dnd_contact\"",
+   "real": "\"dnd_contact\""
+  },
+  {
+   "path": "attributes.dnd_direction",
+   "status": "OK",
+   "doc": "\"outbound\"",
+   "real": "\"outbound\""
+  },
+  {
+   "path": "attributes.dnd_contact",
+   "status": "OK",
+   "doc": "\"enable_specific\"",
+   "real": "\"enable_specific\""
+  },
+  {
+   "path": "attributes.specific_channels",
+   "status": "OK",
+   "doc": "array[6]",
+   "real": "array[6]"
+  },
+  {
+   "path": "name",
+   "status": "OK",
+   "doc": "\"Enable/disable DND\"",
+   "real": "\"Enable/disable DND\""
+  },
+  {
+   "path": "type",
+   "status": "OK",
+   "doc": "\"dnd_contact\"",
+   "real": "\"dnd_contact\""
+  },
+  {
+   "path": "parentKey",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000274\"",
+   "real": "\"00000000-0000-4000-8000-000000000274\""
+  }
+ ],
+ "realNode": {
+  "id": "00000000-0000-4000-8000-000000000273",
+  "parent": "00000000-0000-4000-8000-000000000274",
+  "order": 0,
+  "attributes": {
+   "type": "dnd_contact",
+   "dnd_direction": "outbound",
+   "dnd_contact": "enable_specific",
+   "specific_channels": [
+    "Call",
+    "SMS",
+    "Email",
+    "WhatsApp",
+    "FB",
+    "GMB"
+   ]
+  },
+  "name": "Enable/disable DND",
+  "type": "dnd_contact",
+  "parentKey": "00000000-0000-4000-8000-000000000274",
+  "next": "00000000-0000-4000-8000-000000000275"
+ }
+}

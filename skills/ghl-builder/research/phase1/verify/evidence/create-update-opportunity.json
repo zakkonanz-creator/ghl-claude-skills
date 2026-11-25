@@ -1,0 +1,112 @@
+{
+ "doc": "../raw/actions/create-update-opportunity.md",
+ "kind": "action",
+ "workflowId": "00000000-0000-4000-8000-000000000211",
+ "nodeId": "00000000-0000-4000-8000-000000000230",
+ "source": "https://firebasestorage.googleapis.com/v0/b/<bucket>/o/<path>?alt=media&token=<token><bucket>/o/<path>?alt=media&token=<token>",
+ "pass": true,
+ "rows": [
+  {
+   "path": "id",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000230\"",
+   "real": "\"00000000-0000-4000-8000-000000000230\""
+  },
+  {
+   "path": "parent",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000231\"",
+   "real": "\"00000000-0000-4000-8000-000000000231\""
+  },
+  {
+   "path": "order",
+   "status": "OK",
+   "doc": "0",
+   "real": "0"
+  },
+  {
+   "path": "attributes.fields",
+   "status": "OK",
+   "doc": "array[0]",
+   "real": "array[0]"
+  },
+  {
+   "path": "attributes.type",
+   "status": "OK",
+   "doc": "\"create_opportunity\"",
+   "real": "\"create_opportunity\""
+  },
+  {
+   "path": "attributes.pipeline_id",
+   "status": "OK",
+   "doc": "\"<pipelineId>\"",
+   "real": "\"<pipelineId>\""
+  },
+  {
+   "path": "attributes.pipeline_stage_id",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000168\"",
+   "real": "\"00000000-0000-4000-8000-000000000168\""
+  },
+  {
+   "path": "attributes.opportunity_name",
+   "status": "OK",
+   "doc": "\"\"",
+   "real": "\"\""
+  },
+  {
+   "path": "attributes.opportunity_source",
+   "status": "OK",
+   "doc": "\"\"",
+   "real": "\"\""
+  },
+  {
+   "path": "attributes.monetary_value",
+   "status": "OK",
+   "doc": "\"\"",
+   "real": "\"\""
+  },
+  {
+   "path": "attributes.allow_multiple",
+   "status": "OK",
+   "doc": "true",
+   "real": "true"
+  },
+  {
+   "path": "name",
+   "status": "OK",
+   "doc": "\"Create or update opportunity\"",
+   "real": "\"Create or update opportunity\""
+  },
+  {
+   "path": "type",
+   "status": "OK",
+   "doc": "\"create_opportunity\"",
+   "real": "\"create_opportunity\""
+  },
+  {
+   "path": "parentKey",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000231\"",
+   "real": "\"00000000-0000-4000-8000-000000000231\""
+  }
+ ],
+ "realNode": {
+  "id": "00000000-0000-4000-8000-000000000230",
+  "parent": "00000000-0000-4000-8000-000000000231",
+  "order": 0,
+  "attributes": {
+   "fields": [],
+   "type": "create_opportunity",
+   "pipeline_id": "<pipelineId>",
+   "pipeline_stage_id": "00000000-0000-4000-8000-000000000168",
+   "opportunity_name": "",
+   "opportunity_source": "",
+   "monetary_value": "",
+   "allow_multiple": true
+  },
+  "name": "Create or update opportunity",
+  "type": "create_opportunity",
+  "parentKey": "00000000-0000-4000-8000-000000000231"
+ }
+}

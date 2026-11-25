@@ -1,0 +1,86 @@
+{
+ "doc": "research/phase1/raw/actions/text-formatter.md",
+ "kind": "action",
+ "workflowId": "00000000-0000-4000-8000-000000000202",
+ "nodeId": "00000000-0000-4000-8000-000000000216",
+ "source": "https://firebasestorage.googleapis.com/v0/b/<bucket>/o/<path>?alt=media&token=<token><bucket>/o/<path>?alt=media&token=<token>",
+ "pass": true,
+ "rows": [
+  {
+   "path": "id",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000216\"",
+   "real": "\"00000000-0000-4000-8000-000000000216\""
+  },
+  {
+   "path": "stepIndex",
+   "status": "OK",
+   "doc": "1",
+   "real": "1"
+  },
+  {
+   "path": "parent",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000204\"",
+   "real": "\"00000000-0000-4000-8000-000000000204\""
+  },
+  {
+   "path": "order",
+   "status": "OK",
+   "doc": "0",
+   "real": "0"
+  },
+  {
+   "path": "attributes.type",
+   "status": "OK",
+   "doc": "\"text_formatter\"",
+   "real": "\"text_formatter\""
+  },
+  {
+   "path": "attributes.formatterType",
+   "status": "OK",
+   "doc": "\"upper_case\"",
+   "real": "\"upper_case\""
+  },
+  {
+   "path": "attributes.field",
+   "status": "OK",
+   "doc": "\"{{contact.first_name}}\"",
+   "real": "\"{{contact.first_name}}\""
+  },
+  {
+   "path": "name",
+   "status": "OK",
+   "doc": "\"Upper case\"",
+   "real": "\"Upper case\""
+  },
+  {
+   "path": "type",
+   "status": "OK",
+   "doc": "\"text_formatter\"",
+   "real": "\"text_formatter\""
+  },
+  {
+   "path": "parentKey",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000204\"",
+   "real": "\"00000000-0000-4000-8000-000000000204\""
+  }
+ ],
+ "realNode": {
+  "id": "00000000-0000-4000-8000-000000000216",
+  "stepIndex": 1,
+  "parent": "00000000-0000-4000-8000-000000000204",
+  "order": 0,
+  "attributes": {
+   "type": "text_formatter",
+   "extras": {},
+   "formatterType": "upper_case",
+   "field": "{{contact.first_name}}"
+  },
+  "name": "Upper case",
+  "type": "text_formatter",
+  "parentKey": "00000000-0000-4000-8000-000000000204",
+  "next": "00000000-0000-4000-8000-000000000205"
+ }
+}

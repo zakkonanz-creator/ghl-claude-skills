@@ -1,0 +1,88 @@
+{
+ "doc": "research/phase1/raw/actions/remove-contact-followers.md",
+ "kind": "action",
+ "workflowId": "00000000-0000-4000-8000-000000000182",
+ "nodeId": "00000000-0000-4000-8000-000000000235",
+ "source": "https://firebasestorage.googleapis.com/v0/b/<bucket>/o/<path>?alt=media&token=<token><bucket>/o/<path>?alt=media&token=<token>",
+ "pass": true,
+ "rows": [
+  {
+   "path": "id",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000235\"",
+   "real": "\"00000000-0000-4000-8000-000000000235\""
+  },
+  {
+   "path": "parent",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000185\"",
+   "real": "\"00000000-0000-4000-8000-000000000185\""
+  },
+  {
+   "path": "order",
+   "status": "OK",
+   "doc": "2",
+   "real": "2"
+  },
+  {
+   "path": "attributes.isRemoveAllOpportunityFollowers",
+   "status": "OK",
+   "doc": "false",
+   "real": "false"
+  },
+  {
+   "path": "attributes.users",
+   "status": "OK",
+   "doc": "array[1]",
+   "real": "array[1]"
+  },
+  {
+   "path": "attributes.type",
+   "status": "OK",
+   "doc": "\"internal-remove-contact-followers\"",
+   "real": "\"internal-remove-contact-followers\""
+  },
+  {
+   "path": "name",
+   "status": "OK",
+   "doc": "\"Remove contact followers\"",
+   "real": "\"Remove contact followers\""
+  },
+  {
+   "path": "type",
+   "status": "OK",
+   "doc": "\"internal-remove-contact-followers\"",
+   "real": "\"internal-remove-contact-followers\""
+  },
+  {
+   "path": "workflowsActionType",
+   "status": "OK",
+   "doc": "\"INTERNAL\"",
+   "real": "\"INTERNAL\""
+  },
+  {
+   "path": "parentKey",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000263\"",
+   "real": "\"00000000-0000-4000-8000-000000000263\""
+  }
+ ],
+ "realNode": {
+  "id": "00000000-0000-4000-8000-000000000235",
+  "parent": "00000000-0000-4000-8000-000000000185",
+  "order": 2,
+  "attributes": {
+   "isRemoveAllOpportunityFollowers": false,
+   "users": [
+    "<userId>"
+   ],
+   "type": "internal-remove-contact-followers",
+   "__customInputs__": {}
+  },
+  "name": "Remove contact followers",
+  "type": "internal-remove-contact-followers",
+  "workflowsActionType": "INTERNAL",
+  "parentKey": "00000000-0000-4000-8000-000000000263",
+  "next": "00000000-0000-4000-8000-000000000184"
+ }
+}

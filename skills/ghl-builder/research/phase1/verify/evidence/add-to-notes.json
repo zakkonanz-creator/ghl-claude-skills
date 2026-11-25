@@ -1,0 +1,78 @@
+{
+ "doc": "../raw/actions/add-to-notes.md",
+ "kind": "action",
+ "workflowId": "00000000-0000-4000-8000-000000000171",
+ "nodeId": "00000000-0000-4000-8000-000000000242",
+ "source": "https://firebasestorage.googleapis.com/v0/b/<bucket>/o/<path>?alt=media&token=<token><bucket>/o/<path>?alt=media&token=<token>",
+ "pass": true,
+ "rows": [
+  {
+   "path": "id",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000242\"",
+   "real": "\"00000000-0000-4000-8000-000000000242\""
+  },
+  {
+   "path": "order",
+   "status": "OK",
+   "doc": "5",
+   "real": "5"
+  },
+  {
+   "path": "name",
+   "status": "OK",
+   "doc": "\"Note\"",
+   "real": "\"Note\""
+  },
+  {
+   "path": "type",
+   "status": "OK",
+   "doc": "\"add_notes\"",
+   "real": "\"add_notes\""
+  },
+  {
+   "path": "attributes.title",
+   "status": "OK",
+   "doc": "\"Harvest note title\"",
+   "real": "\"Harvest note title\""
+  },
+  {
+   "path": "attributes.html",
+   "status": "OK",
+   "doc": "<placeholder>",
+   "real": "string"
+  },
+  {
+   "path": "attributes.color",
+   "status": "OK",
+   "doc": "\"#FEF0C7\"",
+   "real": "\"#FEF0C7\""
+  },
+  {
+   "path": "attributes.type",
+   "status": "OK",
+   "doc": "\"add_notes\"",
+   "real": "\"add_notes\""
+  },
+  {
+   "path": "parentKey",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000281\"",
+   "real": "\"00000000-0000-4000-8000-000000000281\""
+  }
+ ],
+ "realNode": {
+  "id": "00000000-0000-4000-8000-000000000242",
+  "order": 5,
+  "attributes": {
+   "html": "<p style=\"padding-left: 0px!important;\">Harvest note body {{contact.first_name}}</p>",
+   "color": "#FEF0C7",
+   "type": "add_notes",
+   "title": "Harvest note title"
+  },
+  "name": "Note",
+  "type": "add_notes",
+  "parentKey": "00000000-0000-4000-8000-000000000281",
+  "next": "00000000-0000-4000-8000-000000000238"
+ }
+}

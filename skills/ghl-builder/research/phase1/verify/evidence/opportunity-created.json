@@ -1,0 +1,91 @@
+{
+ "doc": "../raw/triggers/opportunity-created.md",
+ "kind": "trigger",
+ "workflowId": "00000000-0000-4000-8000-000000000190",
+ "nodeId": "<id097>",
+ "source": "GET /workflow/<locationId>/trigger?workflowId=00000000-0000-4000-8000-000000000190",
+ "pass": true,
+ "rows": [
+  {
+   "path": "id",
+   "status": "OK",
+   "doc": "\"<id097>\"",
+   "real": "\"<id097>\""
+  },
+  {
+   "path": "active",
+   "status": "OK",
+   "doc": "false",
+   "real": "false"
+  },
+  {
+   "path": "actions",
+   "status": "OK",
+   "doc": "array[1]",
+   "real": "array[1]"
+  },
+  {
+   "path": "conditions",
+   "status": "OK",
+   "doc": "array[0]",
+   "real": "array[0]"
+  },
+  {
+   "path": "type",
+   "status": "OK",
+   "doc": "\"opportunity_created\"",
+   "real": "\"opportunity_created\""
+  },
+  {
+   "path": "masterType",
+   "status": "OK",
+   "doc": "\"highlevel\"",
+   "real": "\"highlevel\""
+  },
+  {
+   "path": "workflow_id",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000190\"",
+   "real": "\"00000000-0000-4000-8000-000000000190\""
+  },
+  {
+   "path": "location_id",
+   "status": "OK",
+   "doc": "\"<locationId>\"",
+   "real": "\"<locationId>\""
+  },
+  {
+   "path": "name",
+   "status": "OK",
+   "doc": "\"Opportunity Created\"",
+   "real": "\"Opportunity Created\""
+  },
+  {
+   "path": "belongs_to",
+   "status": "OK",
+   "doc": "\"workflow\"",
+   "real": "\"workflow\""
+  }
+ ],
+ "realNode": {
+  "id": "<id097>",
+  "date_updated": "2026-07-17T01:21:25.448Z",
+  "date_added": "2026-07-17T01:21:25.448Z",
+  "deleted": false,
+  "active": false,
+  "actions": [
+   {
+    "workflow_id": "00000000-0000-4000-8000-000000000190",
+    "type": "add_to_workflow"
+   }
+  ],
+  "conditions": [],
+  "type": "opportunity_created",
+  "masterType": "highlevel",
+  "workflow_id": "00000000-0000-4000-8000-000000000190",
+  "location_id": "<locationId>",
+  "name": "Opportunity Created",
+  "belongs_to": "workflow",
+  "schedule_config": {}
+ }
+}

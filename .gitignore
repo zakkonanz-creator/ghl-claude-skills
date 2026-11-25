@@ -1,0 +1,9 @@
+node_modules/
+.DS_Store
+*.token
+**/tokens.json
+**/*.har
+**/network-capture*.jsonl
+skills/ghl-builder/registry/*.json
+!skills/ghl-builder/registry/global-fields.json
+!skills/ghl-builder/registry/do-not-build.json

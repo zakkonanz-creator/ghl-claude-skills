@@ -1,0 +1,50 @@
+{
+ "doc": "../raw/actions/grant-community-group-leaderboard-points.md",
+ "kind": "action",
+ "workflowId": "00000000-0000-4000-8000-000000000181",
+ "nodeId": "00000000-0000-4000-8000-000000000220",
+ "source": "https://firebasestorage.googleapis.com/v0/b/<bucket>/o/<path>?alt=media&token=<token><bucket>/o/<path>?alt=media&token=<token>",
+ "pass": true,
+ "rows": [
+  {
+   "path": "id",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000220\"",
+   "real": "\"00000000-0000-4000-8000-000000000220\""
+  },
+  {
+   "path": "order",
+   "status": "OK",
+   "doc": "0",
+   "real": "0"
+  },
+  {
+   "path": "attributes.type",
+   "status": "OK",
+   "doc": "\"grant_user_group_gamification_points\"",
+   "real": "\"grant_user_group_gamification_points\""
+  },
+  {
+   "path": "name",
+   "status": "OK",
+   "doc": "\"Grant community group leaderboard point",
+   "real": "\"Grant community group leaderboard point"
+  },
+  {
+   "path": "type",
+   "status": "OK",
+   "doc": "\"grant_user_group_gamification_points\"",
+   "real": "\"grant_user_group_gamification_points\""
+  }
+ ],
+ "realNode": {
+  "id": "00000000-0000-4000-8000-000000000220",
+  "order": 0,
+  "attributes": {
+   "type": "grant_user_group_gamification_points"
+  },
+  "name": "Grant community group leaderboard points",
+  "type": "grant_user_group_gamification_points",
+  "next": "00000000-0000-4000-8000-000000000221"
+ }
+}

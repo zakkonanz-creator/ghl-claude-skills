@@ -1,0 +1,101 @@
+{
+ "doc": "research/phase1/raw/actions/date-time-formatter.md",
+ "kind": "action",
+ "workflowId": "00000000-0000-4000-8000-000000000202",
+ "nodeId": "00000000-0000-4000-8000-000000000234",
+ "source": "https://firebasestorage.googleapis.com/v0/b/<bucket>/o/<path>?alt=media&token=<token><bucket>/o/<path>?alt=media&token=<token>",
+ "pass": true,
+ "rows": [
+  {
+   "path": "id",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000234\"",
+   "real": "\"00000000-0000-4000-8000-000000000234\""
+  },
+  {
+   "path": "stepIndex",
+   "status": "OK",
+   "doc": "1",
+   "real": "1"
+  },
+  {
+   "path": "order",
+   "status": "OK",
+   "doc": "2",
+   "real": "2"
+  },
+  {
+   "path": "attributes.type",
+   "status": "OK",
+   "doc": "\"datetime_formatter\"",
+   "real": "\"datetime_formatter\""
+  },
+  {
+   "path": "attributes.action",
+   "status": "OK",
+   "doc": "\"format_date\"",
+   "real": "\"format_date\""
+  },
+  {
+   "path": "attributes.format.type",
+   "status": "OK",
+   "doc": "\"date\"",
+   "real": "\"date\""
+  },
+  {
+   "path": "attributes.format.fromField",
+   "status": "OK",
+   "doc": "\"current_date\"",
+   "real": "\"current_date\""
+  },
+  {
+   "path": "attributes.format.fromFormat",
+   "status": "OK",
+   "doc": "\"YYYY-MM-DD\"",
+   "real": "\"YYYY-MM-DD\""
+  },
+  {
+   "path": "attributes.format.toFormat",
+   "status": "OK",
+   "doc": "\"MM/DD/YYYY\"",
+   "real": "\"MM/DD/YYYY\""
+  },
+  {
+   "path": "name",
+   "status": "OK",
+   "doc": "\"Format date\"",
+   "real": "\"Format date\""
+  },
+  {
+   "path": "type",
+   "status": "OK",
+   "doc": "\"datetime_formatter\"",
+   "real": "\"datetime_formatter\""
+  },
+  {
+   "path": "parentKey",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000232\"",
+   "real": "\"00000000-0000-4000-8000-000000000232\""
+  }
+ ],
+ "realNode": {
+  "id": "00000000-0000-4000-8000-000000000234",
+  "stepIndex": 1,
+  "order": 2,
+  "attributes": {
+   "type": "datetime_formatter",
+   "action": "format_date",
+   "format": {
+    "type": "date",
+    "fromField": "current_date",
+    "fromFormat": "YYYY-MM-DD",
+    "toFormat": "MM/DD/YYYY"
+   }
+  },
+  "name": "Format date",
+  "type": "datetime_formatter",
+  "parentKey": "00000000-0000-4000-8000-000000000232",
+  "next": "00000000-0000-4000-8000-000000000248"
+ }
+}

@@ -1,0 +1,154 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local/ghl-builder/spec.schema.json",
+  "title": "GHL workflow build specification",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["name", "triggers", "actions"],
+  "properties": {
+    "name": { "type": "string", "minLength": 1 },
+    "folder": { "type": ["string", "null"] },
+    "publish": { "type": "boolean", "default": false },
+    "settings": {
+      "type": "object",
+      "description": "Optional workflow-level toggles. Each key defaults to the platform default, so omitting this object changes nothing.",
+      "additionalProperties": false,
+      "properties": {
+        "allowMultiple": { "type": "boolean", "description": "Builder 'Allow Re-entry'. Default true." },
+        "allowMultipleOpportunity": { "type": "boolean", "description": "Builder 'Allow multiple Opportunities'. Governs per-opportunity enrolment SEPARATELY from allowMultiple. Default true." },
+        "stopOnResponse": { "type": "boolean", "description": "Halt the workflow when the contact replies. Default false." }
+      }
+    },
+    "triggers": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/trigger" }
+    },
+    "actions": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/action" }
+    }
+  },
+  "$defs": {
+    "condition": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": ["field", "operator"],
+      "properties": {
+        "field": { "type": "string", "minLength": 1 },
+        "operator": { "type": "string", "minLength": 1 },
+        "value": {},
+        "title": { "type": "string" },
+        "type": { "type": "string" },
+        "id": { "type": "string" }
+      }
+    },
+    "trigger": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["type"],
+      "properties": {
+        "type": { "type": "string", "minLength": 1 },
+        "name": { "type": "string" },
+        "filters": { "type": "array", "items": { "$ref": "#/$defs/condition" }, "default": [] },
+        "schedule_config": { "type": "object", "default": {} }
+      }
+    },
+    "branch": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "conditions", "actions"],
+      "properties": {
+        "name": { "type": "string", "minLength": 1 },
+        "operator": { "enum": ["and", "or"] },
+        "conditions": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/branchCondition" } },
+        "actions": { "type": "array", "items": { "$ref": "#/$defs/action" } }
+      }
+    },
+    "branchCondition": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": ["conditionType", "field", "operator"],
+      "properties": {
+        "conditionType": { "type": "string", "minLength": 1 },
+        "field": { "type": "string", "minLength": 1 },
+        "operator": { "type": "string", "minLength": 1 },
+        "value": {}
+      }
+    },
+    "action": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["type"],
+      "properties": {
+        "ref": { "type": "string", "minLength": 1 },
+        "type": { "type": "string", "minLength": 1 },
+        "name": { "type": "string" },
+        "config": { "type": "object", "default": {} },
+        "branches": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/branch" } },
+        "else": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "name": { "type": "string", "default": "None" },
+            "actions": { "type": "array", "items": { "$ref": "#/$defs/action" }, "default": [] }
+          }
+        }
+      },
+      "allOf": [
+        {
+          "if": { "properties": { "type": { "const": "if_else" } }, "required": ["type"] },
+          "then": { "required": ["branches"] },
+          "else": { "properties": { "branches": false, "else": false } }
+        },
+        {
+          "if": { "properties": { "type": { "const": "email" } }, "required": ["type"] },
+          "then": { "required": ["config"], "properties": { "config": { "required": ["subject", "html"] } } }
+        },
+        {
+          "if": { "properties": { "type": { "const": "sms" } }, "required": ["type"] },
+          "then": { "required": ["config"], "properties": { "config": { "required": ["body"] } } }
+        },
+        {
+          "if": { "properties": { "type": { "const": "wait" } }, "required": ["type"] },
+          "then": { "required": ["config"], "properties": { "config": {
+            "anyOf": [{ "required": ["value"] }, { "required": ["startAfter"] }, { "required": ["mode", "when", "distributed"] }],
+            "properties": {
+              "mode": { "enum": ["appointment"] },
+              "when": { "const": "before" },
+              "distributed": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "months": { "const": 0 },
+                  "days": { "type": "number", "minimum": 0 },
+                  "hours": { "type": "number", "minimum": 0 },
+                  "minutes": { "type": "number", "minimum": 0 }
+                }
+              },
+              "appointmentCondition": { "const": "next" },
+              "value": { "type": "number", "exclusiveMinimum": 0 },
+              "startAfter": {
+                "type": "object",
+                "required": ["value"],
+                "properties": { "value": { "type": "number", "exclusiveMinimum": 0 } }
+              }
+            }
+          } } }
+        },
+        {
+          "if": { "properties": { "type": { "enum": ["add_contact_tag", "remove_contact_tag"] } }, "required": ["type"] },
+          "then": { "required": ["config"], "properties": { "config": { "required": ["tags"], "properties": { "tags": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 } } } } } }
+        },
+        {
+          "if": { "properties": { "type": { "const": "assign_user" } }, "required": ["type"] },
+          "then": { "required": ["config"], "properties": { "config": { "required": ["users"], "properties": { "users": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 } } } } } }
+        },
+        {
+          "if": { "properties": { "type": { "const": "update_contact_field" } }, "required": ["type"] },
+          "then": { "required": ["config"], "properties": { "config": { "required": ["fields"], "properties": { "fields": { "type": "array", "minItems": 1 } } } } }
+        }
+      ]
+    }
+  }
+}

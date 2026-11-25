@@ -1,0 +1,99 @@
+{
+ "doc": "research/phase1/raw/actions/add-to-google-analytics.md",
+ "kind": "action",
+ "workflowId": "00000000-0000-4000-8000-000000000202",
+ "nodeId": "00000000-0000-4000-8000-000000000253",
+ "source": "https://firebasestorage.googleapis.com/v0/b/<bucket>/o/<path>?alt=media&token=<token><bucket>/o/<path>?alt=media&token=<token>",
+ "pass": true,
+ "rows": [
+  {
+   "path": "id",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000253\"",
+   "real": "\"00000000-0000-4000-8000-000000000253\""
+  },
+  {
+   "path": "parent",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000204\"",
+   "real": "\"00000000-0000-4000-8000-000000000204\""
+  },
+  {
+   "path": "order",
+   "status": "OK",
+   "doc": "4",
+   "real": "4"
+  },
+  {
+   "path": "attributes.type",
+   "status": "OK",
+   "doc": "\"google_analytics\"",
+   "real": "\"google_analytics\""
+  },
+  {
+   "path": "attributes.action_type",
+   "status": "OK",
+   "doc": "\"google_analytics_4\"",
+   "real": "\"google_analytics_4\""
+  },
+  {
+   "path": "attributes.measurement_id",
+   "status": "OK",
+   "doc": "\"G-ZZZSPIKE\"",
+   "real": "\"G-ZZZSPIKE\""
+  },
+  {
+   "path": "attributes.event",
+   "status": "OK",
+   "doc": "\"zzz_spike_event\"",
+   "real": "\"zzz_spike_event\""
+  },
+  {
+   "path": "attributes.api_secret",
+   "status": "OK",
+   "doc": "\"zzz-spike-secret\"",
+   "real": "\"zzz-spike-secret\""
+  },
+  {
+   "path": "attributes.ga4_event_value",
+   "status": "OK",
+   "doc": "\"1\"",
+   "real": "\"1\""
+  },
+  {
+   "path": "name",
+   "status": "OK",
+   "doc": "\"Add to Google Analytics\"",
+   "real": "\"Add to Google Analytics\""
+  },
+  {
+   "path": "type",
+   "status": "OK",
+   "doc": "\"google_analytics\"",
+   "real": "\"google_analytics\""
+  },
+  {
+   "path": "parentKey",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000206\"",
+   "real": "\"00000000-0000-4000-8000-000000000206\""
+  }
+ ],
+ "realNode": {
+  "id": "00000000-0000-4000-8000-000000000253",
+  "parent": "00000000-0000-4000-8000-000000000204",
+  "order": 4,
+  "attributes": {
+   "type": "google_analytics",
+   "action_type": "google_analytics_4",
+   "measurement_id": "G-ZZZSPIKE",
+   "event": "zzz_spike_event",
+   "api_secret": "zzz-spike-secret",
+   "ga4_event_value": "1"
+  },
+  "name": "Add to Google Analytics",
+  "type": "google_analytics",
+  "parentKey": "00000000-0000-4000-8000-000000000206",
+  "next": "00000000-0000-4000-8000-000000000254"
+ }
+}

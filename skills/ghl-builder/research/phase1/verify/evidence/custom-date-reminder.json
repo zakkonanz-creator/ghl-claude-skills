@@ -1,0 +1,152 @@
+{
+ "doc": "../raw/triggers/custom-date-reminder.md",
+ "kind": "trigger",
+ "workflowId": "00000000-0000-4000-8000-000000000174",
+ "nodeId": "<id064>",
+ "source": "GET /workflow/<locationId>/trigger?workflowId=00000000-0000-4000-8000-000000000174",
+ "pass": true,
+ "rows": [
+  {
+   "path": "id",
+   "status": "OK",
+   "doc": "\"<id064>\"",
+   "real": "\"<id064>\""
+  },
+  {
+   "path": "active",
+   "status": "OK",
+   "doc": "false",
+   "real": "false"
+  },
+  {
+   "path": "conditions",
+   "status": "OK",
+   "doc": "array[1]",
+   "real": "array[1]"
+  },
+  {
+   "path": "type",
+   "status": "OK",
+   "doc": "\"custom_date_reminder\"",
+   "real": "\"custom_date_reminder\""
+  },
+  {
+   "path": "masterType",
+   "status": "OK",
+   "doc": "\"highlevel\"",
+   "real": "\"highlevel\""
+  },
+  {
+   "path": "name",
+   "status": "OK",
+   "doc": "\"Custom Date Reminder\"",
+   "real": "\"Custom Date Reminder\""
+  },
+  {
+   "path": "match_year",
+   "status": "OK",
+   "doc": "true",
+   "real": "true"
+  },
+  {
+   "path": "custom_date_reminder_config.recordType",
+   "status": "OK",
+   "doc": "\"contact\"",
+   "real": "\"contact\""
+  },
+  {
+   "path": "custom_date_reminder_config.customDateFieldId",
+   "status": "OK",
+   "doc": "\"<dateFieldId>\"",
+   "real": "\"<dateFieldId>\""
+  },
+  {
+   "path": "custom_date_reminder_config.matchYear",
+   "status": "OK",
+   "doc": "true",
+   "real": "true"
+  },
+  {
+   "path": "custom_date_reminder_config.offsetDays",
+   "status": "OK",
+   "doc": "0",
+   "real": "0"
+  },
+  {
+   "path": "custom_date_reminder_config.runHour",
+   "status": "OK",
+   "doc": "\"8\"",
+   "real": "\"8\""
+  },
+  {
+   "path": "custom_date_reminder_config.timezone",
+   "status": "OK",
+   "doc": "\"\"",
+   "real": "\"\""
+  },
+  {
+   "path": "custom_date_reminder_config.last_run",
+   "status": "OK",
+   "doc": "\"\"",
+   "real": "\"\""
+  },
+  {
+   "path": "actions",
+   "status": "OK",
+   "doc": "array[1]",
+   "real": "array[1]"
+  },
+  {
+   "path": "workflow_id",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000174\"",
+   "real": "\"00000000-0000-4000-8000-000000000174\""
+  },
+  {
+   "path": "location_id",
+   "status": "OK",
+   "doc": "\"<locationId>\"",
+   "real": "\"<locationId>\""
+  }
+ ],
+ "realNode": {
+  "id": "<id064>",
+  "date_updated": "2026-07-16T23:19:29.649Z",
+  "date_added": "2026-07-16T23:19:29.649Z",
+  "deleted": false,
+  "active": false,
+  "actions": [
+   {
+    "workflow_id": "00000000-0000-4000-8000-000000000174",
+    "type": "add_to_workflow"
+   }
+  ],
+  "conditions": [
+   {
+    "operator": "custom-field-eq",
+    "field": "contact.customFields",
+    "value": "<dateFieldId>",
+    "title": "Contact date field",
+    "type": "select",
+    "id": "custom-field"
+   }
+  ],
+  "type": "custom_date_reminder",
+  "masterType": "highlevel",
+  "workflow_id": "00000000-0000-4000-8000-000000000174",
+  "location_id": "<locationId>",
+  "name": "Custom Date Reminder",
+  "match_year": true,
+  "belongs_to": "workflow",
+  "custom_date_reminder_config": {
+   "recordType": "contact",
+   "customDateFieldId": "<dateFieldId>",
+   "matchYear": true,
+   "offsetDays": 0,
+   "runHour": "8",
+   "timezone": "",
+   "last_run": ""
+  },
+  "schedule_config": {}
+ }
+}

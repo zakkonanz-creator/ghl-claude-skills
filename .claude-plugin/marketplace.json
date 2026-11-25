@@ -1,0 +1,12 @@
+{
+  "name": "ghl-claude-skills",
+  "description": "GoHighLevel skills for Claude Code.",
+  "owner": { "name": "Zak Konanz" },
+  "plugins": [
+    {
+      "name": "ghl-claude-skills",
+      "source": "./",
+      "description": "Know-how + a builder for GoHighLevel: the right path for each job, HighLevel's error codes, verified traps, HighLevel's AI as of Nov 2026, and workflows/forms built from plain English and checked against what you asked for."
+    }
+  ]
+}

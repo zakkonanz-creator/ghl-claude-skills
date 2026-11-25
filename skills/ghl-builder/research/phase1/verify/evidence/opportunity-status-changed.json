@@ -1,0 +1,95 @@
+{
+ "doc": "../raw/triggers/opportunity-status-changed.md",
+ "kind": "trigger",
+ "workflowId": "00000000-0000-4000-8000-000000000174",
+ "nodeId": "<id032>",
+ "source": "GET /workflow/<locationId>/trigger?workflowId=00000000-0000-4000-8000-000000000174",
+ "pass": true,
+ "rows": [
+  {
+   "path": "id",
+   "status": "OK",
+   "doc": "\"<id032>\"",
+   "real": "\"<id032>\""
+  },
+  {
+   "path": "active",
+   "status": "OK",
+   "doc": "false",
+   "real": "false"
+  },
+  {
+   "path": "conditions",
+   "status": "OK",
+   "doc": "array[2]",
+   "real": "array[2]"
+  },
+  {
+   "path": "type",
+   "status": "OK",
+   "doc": "\"opportunity_status_changed\"",
+   "real": "\"opportunity_status_changed\""
+  },
+  {
+   "path": "masterType",
+   "status": "OK",
+   "doc": "\"highlevel\"",
+   "real": "\"highlevel\""
+  },
+  {
+   "path": "name",
+   "status": "OK",
+   "doc": "\"Opportunity Status Changed\"",
+   "real": "\"Opportunity Status Changed\""
+  },
+  {
+   "path": "actions",
+   "status": "OK",
+   "doc": "array[1]",
+   "real": "array[1]"
+  },
+  {
+   "path": "location_id",
+   "status": "OK",
+   "doc": "\"<locationId>\"",
+   "real": "\"<locationId>\""
+  }
+ ],
+ "realNode": {
+  "id": "<id032>",
+  "date_updated": "2026-07-16T23:29:17.116Z",
+  "date_added": "2026-07-16T23:29:17.116Z",
+  "deleted": false,
+  "active": false,
+  "actions": [
+   {
+    "workflow_id": "00000000-0000-4000-8000-000000000174",
+    "type": "add_to_workflow"
+   }
+  ],
+  "conditions": [
+   {
+    "operator": "==",
+    "field": "opportunity.pipelineId",
+    "value": "<pipelineId>",
+    "title": "In pipeline",
+    "type": "select"
+   },
+   {
+    "operator": "==",
+    "field": "opportunity.status",
+    "value": "won",
+    "title": "Moved to status",
+    "type": "select",
+    "id": "moved-to-status"
+   }
+  ],
+  "type": "opportunity_status_changed",
+  "masterType": "highlevel",
+  "workflow_id": "00000000-0000-4000-8000-000000000174",
+  "location_id": "<locationId>",
+  "name": "Opportunity Status Changed",
+  "belongs_to": "workflow",
+  "schedule_config": {}
+ }
+}

@@ -1,0 +1,57 @@
+{
+ "doc": "../raw/actions/course-grant-offer.md",
+ "kind": "action",
+ "workflowId": "00000000-0000-4000-8000-000000000181",
+ "nodeId": "00000000-0000-4000-8000-000000000271",
+ "source": "https://firebasestorage.googleapis.com/v0/b/<bucket>/o/<path>?alt=media&token=<token><bucket>/o/<path>?alt=media&token=<token>",
+ "pass": true,
+ "rows": [
+  {
+   "path": "id",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000271\"",
+   "real": "\"00000000-0000-4000-8000-000000000271\""
+  },
+  {
+   "path": "order",
+   "status": "OK",
+   "doc": "6",
+   "real": "6"
+  },
+  {
+   "path": "attributes.type",
+   "status": "OK",
+   "doc": "\"membership_grant_offer\"",
+   "real": "\"membership_grant_offer\""
+  },
+  {
+   "path": "name",
+   "status": "OK",
+   "doc": "\"Course grant offer\"",
+   "real": "\"Course grant offer\""
+  },
+  {
+   "path": "type",
+   "status": "OK",
+   "doc": "\"membership_grant_offer\"",
+   "real": "\"membership_grant_offer\""
+  },
+  {
+   "path": "parentKey",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000219\"",
+   "real": "\"00000000-0000-4000-8000-000000000219\""
+  }
+ ],
+ "realNode": {
+  "id": "00000000-0000-4000-8000-000000000271",
+  "order": 6,
+  "attributes": {
+   "type": "membership_grant_offer"
+  },
+  "name": "Course grant offer",
+  "type": "membership_grant_offer",
+  "parentKey": "00000000-0000-4000-8000-000000000219",
+  "next": "00000000-0000-4000-8000-000000000270"
+ }
+}

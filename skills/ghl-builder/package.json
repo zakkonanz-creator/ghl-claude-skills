@@ -1,0 +1,18 @@
+{
+  "name": "ghl-builder",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Build, verify, and repair GoHighLevel workflows from a JSON spec through the builder's own API.",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "setup": "node scripts/setup.mjs",
+    "regression": "node scripts/regression-check.mjs"
+  },
+  "dependencies": {
+    "playwright": "1.61.1"
+  },
+  "license": "MIT"
+}

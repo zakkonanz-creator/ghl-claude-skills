@@ -1,0 +1,32 @@
+# --- Secrets / credentials (NEVER commit) ---
+*.token
+*token*.txt
+**/tokens.json
+.env
+.env.*
+
+# Raw network captures contain live bearer JWTs. NEVER commit.
+**/network-capture*.jsonl
+**/*.har
+
+# --- Dependencies ---
+node_modules/
+
+# --- Per-machine state and real build output ---
+research/phase2/
+research/phase3/
+research/phase5/regression-run-*.json
+form-builder/research/
+docs/temp/
+test-results/
+*.log
+
+# Per-location field registries are synced from your live account on each machine.
+registry/*.json
+!registry/global-fields.json
+!registry/do-not-build.json
+
+# --- Local editor / tooling state ---
+.DS_Store
+.claude/
+**/*.png

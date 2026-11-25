@@ -1,0 +1,78 @@
+{
+ "doc": "research/phase1/raw/actions/create-appointment-booking-note.md",
+ "kind": "action",
+ "workflowId": "00000000-0000-4000-8000-000000000195",
+ "nodeId": "00000000-0000-4000-8000-000000000268",
+ "source": "https://firebasestorage.googleapis.com/v0/b/<bucket>/o/<path>?alt=media&token=<token><bucket>/o/<path>?alt=media&token=<token>",
+ "pass": true,
+ "rows": [
+  {
+   "path": "id",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000268\"",
+   "real": "\"00000000-0000-4000-8000-000000000268\""
+  },
+  {
+   "path": "order",
+   "status": "OK",
+   "doc": "7",
+   "real": "7"
+  },
+  {
+   "path": "attributes.appointmentId",
+   "status": "OK",
+   "doc": "\"zzz-spike-appointment-id\"",
+   "real": "\"zzz-spike-appointment-id\""
+  },
+  {
+   "path": "attributes.body",
+   "status": "OK",
+   "doc": "\"zzz-spike appointment note\"",
+   "real": "\"zzz-spike appointment note\""
+  },
+  {
+   "path": "attributes.type",
+   "status": "OK",
+   "doc": "\"calendars_create_appointment_note\"",
+   "real": "\"calendars_create_appointment_note\""
+  },
+  {
+   "path": "name",
+   "status": "OK",
+   "doc": "\"Create appointment / booking note\"",
+   "real": "\"Create appointment / booking note\""
+  },
+  {
+   "path": "type",
+   "status": "OK",
+   "doc": "\"calendars_create_appointment_note\"",
+   "real": "\"calendars_create_appointment_note\""
+  },
+  {
+   "path": "workflowsActionType",
+   "status": "OK",
+   "doc": "\"INTERNAL\"",
+   "real": "\"INTERNAL\""
+  },
+  {
+   "path": "parentKey",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000269\"",
+   "real": "\"00000000-0000-4000-8000-000000000269\""
+  }
+ ],
+ "realNode": {
+  "id": "00000000-0000-4000-8000-000000000268",
+  "order": 7,
+  "attributes": {
+   "appointmentId": "zzz-spike-appointment-id",
+   "body": "zzz-spike appointment note",
+   "__customInputs__": {},
+   "type": "calendars_create_appointment_note"
+  },
+  "name": "Create appointment / booking note",
+  "type": "calendars_create_appointment_note",
+  "workflowsActionType": "INTERNAL",
+  "parentKey": "00000000-0000-4000-8000-000000000269"
+ }
+}

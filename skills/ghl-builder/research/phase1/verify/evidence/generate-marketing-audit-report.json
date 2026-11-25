@@ -1,0 +1,64 @@
+{
+ "doc": "research/phase1/raw/actions/generate-marketing-audit-report.md",
+ "kind": "action",
+ "workflowId": "00000000-0000-4000-8000-000000000202",
+ "nodeId": "00000000-0000-4000-8000-000000000261",
+ "source": "https://firebasestorage.googleapis.com/v0/b/<bucket>/o/<path>?alt=media&token=<token><bucket>/o/<path>?alt=media&token=<token>",
+ "pass": true,
+ "rows": [
+  {
+   "path": "id",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000261\"",
+   "real": "\"00000000-0000-4000-8000-000000000261\""
+  },
+  {
+   "path": "parent",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000204\"",
+   "real": "\"00000000-0000-4000-8000-000000000204\""
+  },
+  {
+   "path": "order",
+   "status": "OK",
+   "doc": "7",
+   "real": "7"
+  },
+  {
+   "path": "attributes.type",
+   "status": "OK",
+   "doc": "\"generate_marketing_audit_report\"",
+   "real": "\"generate_marketing_audit_report\""
+  },
+  {
+   "path": "name",
+   "status": "OK",
+   "doc": "\"Generate marketing audit report\"",
+   "real": "\"Generate marketing audit report\""
+  },
+  {
+   "path": "type",
+   "status": "OK",
+   "doc": "\"generate_marketing_audit_report\"",
+   "real": "\"generate_marketing_audit_report\""
+  },
+  {
+   "path": "parentKey",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000260\"",
+   "real": "\"00000000-0000-4000-8000-000000000260\""
+  }
+ ],
+ "realNode": {
+  "id": "00000000-0000-4000-8000-000000000261",
+  "parent": "00000000-0000-4000-8000-000000000204",
+  "order": 7,
+  "attributes": {
+   "type": "generate_marketing_audit_report"
+  },
+  "name": "Generate marketing audit report",
+  "type": "generate_marketing_audit_report",
+  "parentKey": "00000000-0000-4000-8000-000000000260",
+  "next": "00000000-0000-4000-8000-000000000282"
+ }
+}

@@ -1,0 +1,64 @@
+{
+ "doc": "research/phase1/raw/actions/add-to-google-ads.md",
+ "kind": "action",
+ "workflowId": "00000000-0000-4000-8000-000000000202",
+ "nodeId": "00000000-0000-4000-8000-000000000206",
+ "source": "https://firebasestorage.googleapis.com/v0/b/<bucket>/o/<path>?alt=media&token=<token><bucket>/o/<path>?alt=media&token=<token>",
+ "pass": true,
+ "rows": [
+  {
+   "path": "id",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000206\"",
+   "real": "\"00000000-0000-4000-8000-000000000206\""
+  },
+  {
+   "path": "parent",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000204\"",
+   "real": "\"00000000-0000-4000-8000-000000000204\""
+  },
+  {
+   "path": "order",
+   "status": "OK",
+   "doc": "3",
+   "real": "3"
+  },
+  {
+   "path": "attributes.type",
+   "status": "OK",
+   "doc": "\"google_adword\"",
+   "real": "\"google_adword\""
+  },
+  {
+   "path": "name",
+   "status": "OK",
+   "doc": "\"Add to Google Ads\"",
+   "real": "\"Add to Google Ads\""
+  },
+  {
+   "path": "type",
+   "status": "OK",
+   "doc": "\"google_adword\"",
+   "real": "\"google_adword\""
+  },
+  {
+   "path": "parentKey",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000203\"",
+   "real": "\"00000000-0000-4000-8000-000000000203\""
+  }
+ ],
+ "realNode": {
+  "id": "00000000-0000-4000-8000-000000000206",
+  "parent": "00000000-0000-4000-8000-000000000204",
+  "order": 3,
+  "attributes": {
+   "type": "google_adword"
+  },
+  "name": "Add to Google Ads",
+  "type": "google_adword",
+  "parentKey": "00000000-0000-4000-8000-000000000203",
+  "next": "00000000-0000-4000-8000-000000000253"
+ }
+}

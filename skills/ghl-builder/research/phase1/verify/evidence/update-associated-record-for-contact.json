@@ -1,0 +1,142 @@
+{
+ "doc": "research/phase1/raw/actions/update-associated-record-for-contact.md",
+ "kind": "action",
+ "workflowId": "00000000-0000-4000-8000-000000000182",
+ "nodeId": "00000000-0000-4000-8000-000000000255",
+ "source": "https://firebasestorage.googleapis.com/v0/b/<bucket>/o/<path>?alt=media&token=<token><bucket>/o/<path>?alt=media&token=<token>",
+ "pass": true,
+ "rows": [
+  {
+   "path": "id",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000255\"",
+   "real": "\"00000000-0000-4000-8000-000000000255\""
+  },
+  {
+   "path": "parent",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000185\"",
+   "real": "\"00000000-0000-4000-8000-000000000185\""
+  },
+  {
+   "path": "order",
+   "status": "OK",
+   "doc": "13",
+   "real": "13"
+  },
+  {
+   "path": "attributes.name",
+   "status": "OK",
+   "doc": "\"Update Associated ZZZ Spike B3 Record r",
+   "real": "\"Update Associated ZZZ Spike B3 Record r"
+  },
+  {
+   "path": "attributes.type",
+   "status": "OK",
+   "doc": "\"update_custom_object\"",
+   "real": "\"update_custom_object\""
+  },
+  {
+   "path": "attributes.requiredProperties",
+   "status": "OK",
+   "doc": "array[0]",
+   "real": "array[0]"
+  },
+  {
+   "path": "attributes.primaryDisplayProperty",
+   "status": "OK",
+   "doc": "\"\"",
+   "real": "\"\""
+  },
+  {
+   "path": "attributes.key",
+   "status": "OK",
+   "doc": "\"custom_objects.zzz_spike_b3_record\"",
+   "real": "\"custom_objects.zzz_spike_b3_record\""
+  },
+  {
+   "path": "attributes.fields",
+   "status": "OK",
+   "doc": "array[1]",
+   "real": "array[1]"
+  },
+  {
+   "path": "attributes.makeAssociation",
+   "status": "OK",
+   "doc": "false",
+   "real": "false"
+  },
+  {
+   "path": "attributes.associations",
+   "status": "OK",
+   "doc": "array[1]",
+   "real": "array[1]"
+  },
+  {
+   "path": "attributes.followers",
+   "status": "OK",
+   "doc": "array[0]",
+   "real": "array[0]"
+  },
+  {
+   "path": "attributes.clearOwner",
+   "status": "OK",
+   "doc": "false",
+   "real": "false"
+  },
+  {
+   "path": "attributes.clearFollowers",
+   "status": "OK",
+   "doc": "false",
+   "real": "false"
+  },
+  {
+   "path": "name",
+   "status": "OK",
+   "doc": "\"Update Associated ZZZ Spike B3 Record r",
+   "real": "\"Update Associated ZZZ Spike B3 Record r"
+  },
+  {
+   "path": "type",
+   "status": "OK",
+   "doc": "\"update_custom_object\"",
+   "real": "\"update_custom_object\""
+  },
+  {
+   "path": "parentKey",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000201\"",
+   "real": "\"00000000-0000-4000-8000-000000000201\""
+  }
+ ],
+ "realNode": {
+  "id": "00000000-0000-4000-8000-000000000255",
+  "parent": "00000000-0000-4000-8000-000000000185",
+  "order": 13,
+  "attributes": {
+   "name": "Update Associated ZZZ Spike B3 Record records",
+   "type": "update_custom_object",
+   "requiredProperties": [],
+   "primaryDisplayProperty": "",
+   "key": "custom_objects.zzz_spike_b3_record",
+   "fields": [
+    {
+     "fieldKey": "<id002>",
+     "value": "Updated by B3",
+     "dataType": "TEXT"
+    }
+   ],
+   "makeAssociation": false,
+   "associations": [
+    "000000000000000000000009"
+   ],
+   "followers": [],
+   "clearOwner": false,
+   "clearFollowers": false
+  },
+  "name": "Update Associated ZZZ Spike B3 Record records",
+  "type": "update_custom_object",
+  "parentKey": "00000000-0000-4000-8000-000000000201",
+  "next": "00000000-0000-4000-8000-000000000256"
+ }
+}

@@ -1,0 +1,71 @@
+{
+ "doc": "research/phase1/raw/actions/delete-contact.md",
+ "kind": "action",
+ "workflowId": "00000000-0000-4000-8000-000000000182",
+ "nodeId": "00000000-0000-4000-8000-000000000264",
+ "source": "https://firebasestorage.googleapis.com/v0/b/<bucket>/o/<path>?alt=media&token=<token><bucket>/o/<path>?alt=media&token=<token>",
+ "pass": true,
+ "rows": [
+  {
+   "path": "id",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000264\"",
+   "real": "\"00000000-0000-4000-8000-000000000264\""
+  },
+  {
+   "path": "parent",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000185\"",
+   "real": "\"00000000-0000-4000-8000-000000000185\""
+  },
+  {
+   "path": "order",
+   "status": "OK",
+   "doc": "16",
+   "real": "16"
+  },
+  {
+   "path": "attributes.type",
+   "status": "OK",
+   "doc": "\"internal-delete-contact\"",
+   "real": "\"internal-delete-contact\""
+  },
+  {
+   "path": "name",
+   "status": "OK",
+   "doc": "\"Delete contact\"",
+   "real": "\"Delete contact\""
+  },
+  {
+   "path": "type",
+   "status": "OK",
+   "doc": "\"internal-delete-contact\"",
+   "real": "\"internal-delete-contact\""
+  },
+  {
+   "path": "workflowsActionType",
+   "status": "OK",
+   "doc": "\"INTERNAL\"",
+   "real": "\"INTERNAL\""
+  },
+  {
+   "path": "parentKey",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000285\"",
+   "real": "\"00000000-0000-4000-8000-000000000285\""
+  }
+ ],
+ "realNode": {
+  "id": "00000000-0000-4000-8000-000000000264",
+  "parent": "00000000-0000-4000-8000-000000000185",
+  "order": 16,
+  "attributes": {
+   "type": "internal-delete-contact",
+   "__customInputs__": {}
+  },
+  "name": "Delete contact",
+  "type": "internal-delete-contact",
+  "workflowsActionType": "INTERNAL",
+  "parentKey": "00000000-0000-4000-8000-000000000285"
+ }
+}

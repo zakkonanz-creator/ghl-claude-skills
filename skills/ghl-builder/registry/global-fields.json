@@ -1,0 +1,629 @@
+{
+  "comment": "Global fields available on every account, read from the platform's own merge field catalogue. contactFields are the built-in contact fields; systemFields pull from calendars, appointments, users, invoices and the like. Per account custom fields and custom values live in <locationId>.json, not here.",
+  "source": "GET /custom-data/{conversations|emails}?locationId=<loc>&types=custom-values",
+  "syncedAt": "2026-08-27",
+  "disproven": {
+    "{{contact.full_name}}": {
+      "correctField": "{{contact.name}}",
+      "label": "Full Name",
+      "note": "Does not exist. Saves without error and resolves to nothing, so the message ships malformed.",
+      "evidence": "9 reviewer notes across B, D and E, 2026-08-27. The catalogue lists Full Name as {{contact.name}}."
+    },
+    "{{opportunity.monetary_value}}": {
+      "correctField": "{{opportunity.lead_value}}",
+      "evidence": "Resolves empty. 2026-08-18 reconciliation."
+    },
+    "{{opportunity.value}}": {
+      "correctField": "{{opportunity.lead_value}}",
+      "evidence": "Resolves empty. 2026-08-18 reconciliation."
+    },
+    "{{opportunity.opportunity_value}}": {
+      "correctField": "{{opportunity.lead_value}}",
+      "evidence": "Resolves empty. 2026-08-18 reconciliation."
+    },
+    "{{right_now.date}}": {
+      "correctField": "{{right_now.middle_endian_date}}",
+      "note": "There is no bare .date variant. The catalogue offers middle_endian_date (month/day/year) and little_endian_date (day/month/year). Pick by locale.",
+      "evidence": "Found by the field gate 2026-08-27 in A2, C and D. Consistent with reviewer notes on C and D reporting empty date pickers that had to be set to Current Date by hand."
+    },
+    "{{right_now}}": {
+      "correctField": "{{right_now.middle_endian_date}}",
+      "note": "Bare right_now is a group label in the picker, not a field. It resolves to nothing.",
+      "evidence": "Found by the field gate 2026-08-27 in D."
+    }
+  },
+  "provenElsewhere": {
+    "{{opportunity.lead_value}}": {
+      "note": "Not in the static catalogue but proven by live run. Re-resolves after a Find step.",
+      "evidence": "Workflow E accumulator, 2026-08-18 reconciliation."
+    }
+  },
+  "contactFields": {
+    "{{contact.name}}": {
+      "label": "Full Name",
+      "group": "Contact"
+    },
+    "{{contact.first_name}}": {
+      "label": "First Name",
+      "group": "Contact"
+    },
+    "{{contact.last_name}}": {
+      "label": "Last Name",
+      "group": "Contact"
+    },
+    "{{contact.email}}": {
+      "label": "Email",
+      "group": "Contact"
+    },
+    "{{contact.phone}}": {
+      "label": "Phone",
+      "group": "Contact"
+    },
+    "{{contact.company_name}}": {
+      "label": "Company Name",
+      "group": "Contact"
+    },
+    "{{contact.full_address}}": {
+      "label": "Full Address",
+      "group": "Contact"
+    },
+    "{{contact.address1}}": {
+      "label": "Address 1",
+      "group": "Contact"
+    },
+    "{{contact.city}}": {
+      "label": "City",
+      "group": "Contact"
+    },
+    "{{contact.state}}": {
+      "label": "State",
+      "group": "Contact"
+    },
+    "{{contact.postal_code}}": {
+      "label": "Postal Code",
+      "group": "Contact"
+    },
+    "{{contact.date_of_birth}}": {
+      "label": "Date of birth",
+      "group": "Contact"
+    },
+    "{{contact.source}}": {
+      "label": "Source",
+      "group": "Contact"
+    },
+    "{{contact.website}}": {
+      "label": "Website",
+      "group": "Contact"
+    },
+    "{{contact.phone_raw}}": {
+      "label": "Phone (raw format)",
+      "group": "Contact"
+    },
+    "{{contact.country}}": {
+      "label": "Country",
+      "group": "Contact"
+    },
+    "{{contact.id}}": {
+      "label": "ID",
+      "group": "Contact"
+    }
+  },
+  "systemFields": {
+    "{{location.name}}": {
+      "label": "Name",
+      "group": "Account"
+    },
+    "{{location.full_address}}": {
+      "label": "Full Address",
+      "group": "Account"
+    },
+    "{{location.address}}": {
+      "label": "Address Line 1",
+      "group": "Account"
+    },
+    "{{location.city}}": {
+      "label": "City",
+      "group": "Account"
+    },
+    "{{location.state}}": {
+      "label": "State",
+      "group": "Account"
+    },
+    "{{location.country}}": {
+      "label": "Country",
+      "group": "Account"
+    },
+    "{{location.postal_code}}": {
+      "label": "Postal Code",
+      "group": "Account"
+    },
+    "{{location.email}}": {
+      "label": "Email",
+      "group": "Account"
+    },
+    "{{location.phone}}": {
+      "label": "Phone",
+      "group": "Account"
+    },
+    "{{location.website}}": {
+      "label": "Website",
+      "group": "Account"
+    },
+    "{{location.logo_url}}": {
+      "label": "Logo URL",
+      "group": "Account"
+    },
+    "{{location.id}}": {
+      "label": "ID",
+      "group": "Account"
+    },
+    "{{appointment.start_time}}": {
+      "label": "Start Date Time",
+      "group": "Appointment"
+    },
+    "{{appointment.only_start_date}}": {
+      "label": "Start Date",
+      "group": "Appointment"
+    },
+    "{{appointment.only_start_time}}": {
+      "label": "Start Time",
+      "group": "Appointment"
+    },
+    "{{appointment.end_time}}": {
+      "label": "End Date Time",
+      "group": "Appointment"
+    },
+    "{{appointment.only_end_date}}": {
+      "label": "End Date",
+      "group": "Appointment"
+    },
+    "{{appointment.only_end_time}}": {
+      "label": "End Time",
+      "group": "Appointment"
+    },
+    "{{appointment.timezone}}": {
+      "label": "Timezone",
+      "group": "Appointment"
+    },
+    "{{appointment.cancellation_link}}": {
+      "label": "Cancellation Link",
+      "group": "Appointment"
+    },
+    "{{appointment.reschedule_link}}": {
+      "label": "Reschedule Link",
+      "group": "Appointment"
+    },
+    "{{appointment.meeting_location}}": {
+      "label": "Meeting Location",
+      "group": "Appointment"
+    },
+    "{{appointment.notes}}": {
+      "label": "Notes",
+      "group": "Appointment"
+    },
+    "{{appointment.add_to_google_calendar}}": {
+      "label": "Add to Google Calendar",
+      "group": "Appointment"
+    },
+    "{{appointment.add_to_ical_outlook}}": {
+      "label": "Add to iCal/Outlook",
+      "group": "Appointment"
+    },
+    "{{calendar.name}}": {
+      "label": "Name",
+      "group": "Calendar"
+    },
+    "{{business.name}}": {
+      "label": "Name",
+      "group": "Company"
+    },
+    "{{business.email}}": {
+      "label": "Email",
+      "group": "Company"
+    },
+    "{{business.address}}": {
+      "label": "Address",
+      "group": "Company"
+    },
+    "{{business.country}}": {
+      "label": "Country",
+      "group": "Company"
+    },
+    "{{business.city}}": {
+      "label": "City",
+      "group": "Company"
+    },
+    "{{business.description}}": {
+      "label": "Description",
+      "group": "Company"
+    },
+    "{{business.phone}}": {
+      "label": "Phone",
+      "group": "Company"
+    },
+    "{{business.postalCode}}": {
+      "label": "Postal Code",
+      "group": "Company"
+    },
+    "{{business.state}}": {
+      "label": "State",
+      "group": "Company"
+    },
+    "{{business.website}}": {
+      "label": "Website",
+      "group": "Company"
+    },
+    "{{message.body}}": {
+      "label": "Message Body",
+      "group": "Message"
+    },
+    "{{right_now.second}}": {
+      "label": "Second",
+      "group": "Right now"
+    },
+    "{{right_now.minute}}": {
+      "label": "Minute",
+      "group": "Right now"
+    },
+    "{{right_now.hour}}": {
+      "label": "Hour 24h format",
+      "group": "Right now"
+    },
+    "{{right_now.hour_ampm}}": {
+      "label": "Hour AM/PM format",
+      "group": "Right now"
+    },
+    "{{right_now.time}}": {
+      "label": "Time 24h format",
+      "group": "Right now"
+    },
+    "{{right_now.time_ampm}}": {
+      "label": "Time AM/PM format",
+      "group": "Right now"
+    },
+    "{{right_now.ampm}}": {
+      "label": "AM/PM",
+      "group": "Right now"
+    },
+    "{{right_now.day}}": {
+      "label": "Day",
+      "group": "Right now"
+    },
+    "{{right_now.day_of_week}}": {
+      "label": "Day of the week extended English",
+      "group": "Right now"
+    },
+    "{{right_now.month}}": {
+      "label": "Month",
+      "group": "Right now"
+    },
+    "{{right_now.month_english}}": {
+      "label": "Month extended English",
+      "group": "Right now"
+    },
+    "{{right_now.year}}": {
+      "label": "Year",
+      "group": "Right now"
+    },
+    "{{right_now.middle_endian_date}}": {
+      "label": "Date (month/day/year)",
+      "group": "Right now"
+    },
+    "{{right_now.little_endian_date}}": {
+      "label": "Date (day/month/year)",
+      "group": "Right now"
+    },
+    "{{user.name}}": {
+      "label": "Full Name",
+      "group": "User"
+    },
+    "{{user.first_name}}": {
+      "label": "First Name",
+      "group": "User"
+    },
+    "{{user.last_name}}": {
+      "label": "Last Name",
+      "group": "User"
+    },
+    "{{user.email}}": {
+      "label": "Email",
+      "group": "User"
+    },
+    "{{user.phone}}": {
+      "label": "Phone",
+      "group": "User"
+    },
+    "{{user.email_signature}}": {
+      "label": "Signature",
+      "group": "User"
+    },
+    "{{user.calendar_link}}": {
+      "label": "Calendar Link",
+      "group": "User"
+    },
+    "{{user.twilio_phone_number}}": {
+      "label": "Twilio Phone",
+      "group": "User"
+    },
+    "{{user.last_name_lower_case}}": {
+      "label": "Last Name (lower case)",
+      "group": "User"
+    },
+    "{{user.twilio_phone_number_raw}}": {
+      "label": "Twilio Phone (raw format)",
+      "group": "User"
+    },
+    "{{user.first_name_lower_case}}": {
+      "label": "First Name (lower case)",
+      "group": "User"
+    },
+    "{{invoice.name}}": {
+      "label": "Name",
+      "group": "Invoice"
+    },
+    "{{invoice.number}}": {
+      "label": "Number",
+      "group": "Invoice"
+    },
+    "{{invoice.issue_date}}": {
+      "label": "Issue Date",
+      "group": "Invoice"
+    },
+    "{{invoice.due_date}}": {
+      "label": "Due Date",
+      "group": "Invoice"
+    },
+    "{{invoice.sub_total}}": {
+      "label": "Sub Total",
+      "group": "Invoice"
+    },
+    "{{invoice.discount_amount}}": {
+      "label": "Discount Amount",
+      "group": "Invoice"
+    },
+    "{{invoice.tax_amount}}": {
+      "label": "Tax Amount",
+      "group": "Invoice"
+    },
+    "{{invoice.total_amount}}": {
+      "label": "Total Amount",
+      "group": "Invoice"
+    },
+    "{{invoice.title}}": {
+      "label": "Title",
+      "group": "Invoice"
+    },
+    "{{invoice.url}}": {
+      "label": "URL",
+      "group": "Invoice"
+    },
+    "{{invoice.currency_code}": {
+      "label": "Currency code",
+      "group": "Invoice"
+    },
+    "{{document.name}}": {
+      "label": "Name",
+      "group": "Documents & Contracts"
+    },
+    "{{document.url}}": {
+      "label": "URL",
+      "group": "Documents & Contracts"
+    },
+    "{{document.type}}": {
+      "label": "Type",
+      "group": "Documents & Contracts"
+    },
+    "{{document.totalAmount}}": {
+      "label": "Total Amount",
+      "group": "Documents & Contracts"
+    },
+    "{{document.currencyCode}}": {
+      "label": "Currency Code",
+      "group": "Documents & Contracts"
+    },
+    "{{document.currencySymbol}}": {
+      "label": "Currency Symbol",
+      "group": "Documents & Contracts"
+    },
+    "{{document.expirydate}}": {
+      "label": "Expiry Date",
+      "group": "Documents & Contracts"
+    },
+    "{{document.previewUrl}}": {
+      "label": "Preview URL",
+      "group": "Documents & Contracts"
+    },
+    "{{document.pdfLink}}": {
+      "label": "PDF URL",
+      "group": "Documents & Contracts"
+    },
+    "{{document.declinedReasons}}": {
+      "label": "Document Decline Reasons",
+      "group": "Documents & Contracts"
+    },
+    "{{document.declinedReasonBody}}": {
+      "label": "Document Decline Reason Body",
+      "group": "Documents & Contracts"
+    },
+    "{{campaign.event_date_time}}": {
+      "label": "Event Date & Time",
+      "group": "Campaign"
+    },
+    "{{campaign.event_date}}": {
+      "label": "Event Date",
+      "group": "Campaign"
+    },
+    "{{campaign.event_time}}": {
+      "label": "Event Time",
+      "group": "Campaign"
+    },
+    "{{email.unsubscribe_link}}": {
+      "label": "Unsubscribe link",
+      "group": "Email"
+    },
+    "{{membership_contact.email}}": {
+      "label": "Email",
+      "group": "Memberships"
+    },
+    "{{membership_contact.password}}": {
+      "label": "Password",
+      "group": "Memberships"
+    },
+    "{{membership_contact.login_url}}": {
+      "label": "Login Url",
+      "group": "Memberships"
+    },
+    "{{membership_contact.offer_title}}": {
+      "label": "Offer Title",
+      "group": "Memberships"
+    },
+    "{{membership_contact.category_url}}": {
+      "label": "Category Url",
+      "group": "Memberships"
+    },
+    "{{membership_contact.product_title}}": {
+      "label": "Product Title",
+      "group": "Memberships"
+    },
+    "{{membership_contact.category_title}}": {
+      "label": "Category Title",
+      "group": "Memberships"
+    },
+    "{{membership_contact.support_email}}": {
+      "label": "Support Email",
+      "group": "Memberships"
+    },
+    "{{membership_contact.support_phone}}": {
+      "label": "Support Phone",
+      "group": "Memberships"
+    },
+    "{{membership_contact.site_name}}": {
+      "label": "Site Name",
+      "group": "Memberships"
+    },
+    "{{order.number}}": {
+      "label": "Order Number",
+      "group": "Shopify"
+    },
+    "{{order.created_on}}": {
+      "label": "Created On",
+      "group": "Orders"
+    },
+    "{{order.total_discounts}}": {
+      "label": "Total Discount",
+      "group": "Shopify"
+    },
+    "{{order.discount_code}}": {
+      "label": "Discount Code",
+      "group": "Orders"
+    },
+    "{{order.total_price}}": {
+      "label": "Total Price",
+      "group": "Orders"
+    },
+    "{{order.subtotal_price}}": {
+      "label": "Sub-total Price",
+      "group": "Shopify"
+    },
+    "{{order.total_shipping_price}}": {
+      "label": "Total Shipping Price",
+      "group": "Shopify"
+    },
+    "{{order.total_cart_price}}": {
+      "label": "Total Cart Price",
+      "group": "Orders"
+    },
+    "{{order.order_status_url}}": {
+      "label": "Order Status URL",
+      "group": "Shopify"
+    },
+    "{{order.abandoned_checkout_url}}": {
+      "label": "Abandoned Checkout URL",
+      "group": "Shopify"
+    },
+    "{{order.shipping_address}}": {
+      "label": "Shipping Address",
+      "group": "Shopify"
+    },
+    "{{order.billing_address}}": {
+      "label": "Billing Address",
+      "group": "Shopify"
+    },
+    "{{order.has_discount}}": {
+      "label": "Has Discount",
+      "group": "Orders"
+    },
+    "{{order.currency_code}}": {
+      "label": "Currency Code",
+      "group": "Orders"
+    },
+    "{{order.currency}}": {
+      "label": "Currency",
+      "group": "Shopify"
+    },
+    "{{order.requires_shipping}}": {
+      "label": "Requires Shipping",
+      "group": "Shopify"
+    },
+    "{{order.source}}": {
+      "label": "Source",
+      "group": "Orders"
+    },
+    "{{order.payment_gateway}}": {
+      "label": "Payment Gateway",
+      "group": "Orders"
+    },
+    "{{order.total_discount}}": {
+      "label": "Total Discounts",
+      "group": "Orders"
+    },
+    "{{order.currency_symbol}}": {
+      "label": "Currency Symbol",
+      "group": "Orders"
+    },
+    "{{receipt.number}}": {
+      "label": "Number",
+      "group": "Receipts"
+    },
+    "{{receipt.date_paid}}": {
+      "label": "Date Paid",
+      "group": "Receipts"
+    },
+    "{{receipt.currency_symbol}}": {
+      "label": "Currency Symbol",
+      "group": "Receipts"
+    },
+    "{{receipt.currency_code}}": {
+      "label": "Currency Code",
+      "group": "Receipts"
+    },
+    "{{receipt.sub_total}}": {
+      "label": "Sub Total",
+      "group": "Receipts"
+    },
+    "{{receipt.discount_amount}}": {
+      "label": "Discount Amount",
+      "group": "Receipts"
+    },
+    "{{receipt.tax_amount}}": {
+      "label": "Tax Amount",
+      "group": "Receipts"
+    },
+    "{{receipt.total_amount}}": {
+      "label": "Total Amount",
+      "group": "Receipts"
+    },
+    "{{receipt.miscellaneous_charges}}": {
+      "label": "Miscellaneous Charges",
+      "group": "Receipts"
+    },
+    "{{receipt.title}}": {
+      "label": "Title",
+      "group": "Receipts"
+    },
+    "{{receipt.url}}": {
+      "label": "URL",
+      "group": "Receipts"
+    }
+  }
+}

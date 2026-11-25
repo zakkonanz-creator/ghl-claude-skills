@@ -1,0 +1,88 @@
+{
+ "doc": "research/phase1/raw/actions/remove-followers-from-opportunity.md",
+ "kind": "action",
+ "workflowId": "00000000-0000-4000-8000-000000000190",
+ "nodeId": "00000000-0000-4000-8000-000000000240",
+ "source": "https://firebasestorage.googleapis.com/v0/b/<bucket>/o/<path>?alt=media&token=<token><bucket>/o/<path>?alt=media&token=<token>",
+ "pass": true,
+ "rows": [
+  {
+   "path": "id",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000240\"",
+   "real": "\"00000000-0000-4000-8000-000000000240\""
+  },
+  {
+   "path": "parent",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000192\"",
+   "real": "\"00000000-0000-4000-8000-000000000192\""
+  },
+  {
+   "path": "order",
+   "status": "OK",
+   "doc": "0",
+   "real": "0"
+  },
+  {
+   "path": "attributes.users",
+   "status": "OK",
+   "doc": "array[1]",
+   "real": "array[1]"
+  },
+  {
+   "path": "attributes.isRemoveAllOpportunityFollowers",
+   "status": "OK",
+   "doc": "true",
+   "real": "true"
+  },
+  {
+   "path": "attributes.type",
+   "status": "OK",
+   "doc": "\"internal-remove-opportunities-followers",
+   "real": "\"internal-remove-opportunities-followers"
+  },
+  {
+   "path": "name",
+   "status": "OK",
+   "doc": "\"Remove follower(s) from opportunity\"",
+   "real": "\"Remove follower(s) from opportunity\""
+  },
+  {
+   "path": "type",
+   "status": "OK",
+   "doc": "\"internal-remove-opportunities-followers",
+   "real": "\"internal-remove-opportunities-followers"
+  },
+  {
+   "path": "workflowsActionType",
+   "status": "OK",
+   "doc": "\"INTERNAL\"",
+   "real": "\"INTERNAL\""
+  },
+  {
+   "path": "parentKey",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000192\"",
+   "real": "\"00000000-0000-4000-8000-000000000192\""
+  }
+ ],
+ "realNode": {
+  "id": "00000000-0000-4000-8000-000000000240",
+  "parent": "00000000-0000-4000-8000-000000000192",
+  "order": 0,
+  "attributes": {
+   "users": [
+    "<userId>"
+   ],
+   "isRemoveAllOpportunityFollowers": true,
+   "type": "internal-remove-opportunities-followers",
+   "__customInputs__": {}
+  },
+  "name": "Remove follower(s) from opportunity",
+  "type": "internal-remove-opportunities-followers",
+  "workflowsActionType": "INTERNAL",
+  "parentKey": "00000000-0000-4000-8000-000000000192",
+  "next": "00000000-0000-4000-8000-000000000241"
+ }
+}

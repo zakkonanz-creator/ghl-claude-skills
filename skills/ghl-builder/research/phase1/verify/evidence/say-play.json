@@ -1,0 +1,64 @@
+{
+ "doc": "../raw/actions/say-play.md",
+ "kind": "action",
+ "workflowId": "00000000-0000-4000-8000-000000000190",
+ "nodeId": "00000000-0000-4000-8000-000000000277",
+ "source": "https://firebasestorage.googleapis.com/v0/b/<bucket>/o/<path>?alt=media&token=<token><bucket>/o/<path>?alt=media&token=<token>",
+ "pass": true,
+ "rows": [
+  {
+   "path": "id",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000277\"",
+   "real": "\"00000000-0000-4000-8000-000000000277\""
+  },
+  {
+   "path": "parent",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000192\"",
+   "real": "\"00000000-0000-4000-8000-000000000192\""
+  },
+  {
+   "path": "order",
+   "status": "OK",
+   "doc": "6",
+   "real": "6"
+  },
+  {
+   "path": "attributes.type",
+   "status": "OK",
+   "doc": "\"ivr_say\"",
+   "real": "\"ivr_say\""
+  },
+  {
+   "path": "name",
+   "status": "OK",
+   "doc": "\"Say or play message\"",
+   "real": "\"Say or play message\""
+  },
+  {
+   "path": "type",
+   "status": "OK",
+   "doc": "\"ivr_say\"",
+   "real": "\"ivr_say\""
+  },
+  {
+   "path": "parentKey",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000194\"",
+   "real": "\"00000000-0000-4000-8000-000000000194\""
+  }
+ ],
+ "realNode": {
+  "id": "00000000-0000-4000-8000-000000000277",
+  "parent": "00000000-0000-4000-8000-000000000192",
+  "order": 6,
+  "attributes": {
+   "type": "ivr_say"
+  },
+  "name": "Say or play message",
+  "type": "ivr_say",
+  "parentKey": "00000000-0000-4000-8000-000000000194",
+  "next": "00000000-0000-4000-8000-000000000251"
+ }
+}

@@ -1,0 +1,106 @@
+{
+ "doc": "research/phase1/raw/actions/ai-agent.md",
+ "kind": "action",
+ "workflowId": "00000000-0000-4000-8000-000000000211",
+ "nodeId": "00000000-0000-4000-8000-000000000214",
+ "source": "https://firebasestorage.googleapis.com/v0/b/<bucket>/o/<path>?alt=media&token=<token><bucket>/o/<path>?alt=media&token=<token>",
+ "pass": true,
+ "rows": [
+  {
+   "path": "id",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000214\"",
+   "real": "\"00000000-0000-4000-8000-000000000214\""
+  },
+  {
+   "path": "stepIndex",
+   "status": "OK",
+   "doc": "1",
+   "real": "1"
+  },
+  {
+   "path": "parent",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000213\"",
+   "real": "\"00000000-0000-4000-8000-000000000213\""
+  },
+  {
+   "path": "order",
+   "status": "OK",
+   "doc": "2",
+   "real": "2"
+  },
+  {
+   "path": "attributes.prompt",
+   "status": "OK",
+   "doc": "\"Analyze the contact context and return ",
+   "real": "\"Analyze the contact context and return "
+  },
+  {
+   "path": "attributes.model",
+   "status": "OK",
+   "doc": "\"gpt-5.2\"",
+   "real": "\"gpt-5.2\""
+  },
+  {
+   "path": "attributes.tools",
+   "status": "OK",
+   "doc": "array[0]",
+   "real": "array[0]"
+  },
+  {
+   "path": "attributes.outputFormat",
+   "status": "OK",
+   "doc": "\"text\"",
+   "real": "\"text\""
+  },
+  {
+   "path": "attributes.outputDescription",
+   "status": "OK",
+   "doc": "\"\"",
+   "real": "\"\""
+  },
+  {
+   "path": "attributes.memoryEnabled",
+   "status": "OK",
+   "doc": "false",
+   "real": "false"
+  },
+  {
+   "path": "name",
+   "status": "OK",
+   "doc": "\"AI Agent\"",
+   "real": "\"AI Agent\""
+  },
+  {
+   "path": "type",
+   "status": "OK",
+   "doc": "\"ai_agent\"",
+   "real": "\"ai_agent\""
+  },
+  {
+   "path": "parentKey",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000283\"",
+   "real": "\"00000000-0000-4000-8000-000000000283\""
+  }
+ ],
+ "realNode": {
+  "id": "00000000-0000-4000-8000-000000000214",
+  "stepIndex": 1,
+  "parent": "00000000-0000-4000-8000-000000000213",
+  "order": 2,
+  "attributes": {
+   "prompt": "Analyze the contact context and return a concise recommended next step.",
+   "model": "gpt-5.2",
+   "tools": [],
+   "outputFormat": "text",
+   "outputDescription": "",
+   "memoryEnabled": false
+  },
+  "name": "AI Agent",
+  "type": "ai_agent",
+  "parentKey": "00000000-0000-4000-8000-000000000283",
+  "next": "00000000-0000-4000-8000-000000000212"
+ }
+}

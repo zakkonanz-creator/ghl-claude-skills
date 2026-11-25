@@ -1,0 +1,59 @@
+{
+ "doc": "../raw/actions/add-contact-tag.md",
+ "kind": "action",
+ "workflowId": "00000000-0000-4000-8000-000000000171",
+ "nodeId": "00000000-0000-4000-8000-000000000279",
+ "source": "https://firebasestorage.googleapis.com/v0/b/<bucket>/o/<path>?alt=media&token=<token><bucket>/o/<path>?alt=media&token=<token>",
+ "pass": true,
+ "rows": [
+  {
+   "path": "id",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000279\"",
+   "real": "\"00000000-0000-4000-8000-000000000279\""
+  },
+  {
+   "path": "order",
+   "status": "OK",
+   "doc": "3",
+   "real": "3"
+  },
+  {
+   "path": "name",
+   "status": "OK",
+   "doc": "\"Add Tag\"",
+   "real": "\"Add Tag\""
+  },
+  {
+   "path": "type",
+   "status": "OK",
+   "doc": "\"add_contact_tag\"",
+   "real": "\"add_contact_tag\""
+  },
+  {
+   "path": "attributes.tags",
+   "status": "OK",
+   "doc": "array[1]",
+   "real": "array[1]"
+  },
+  {
+   "path": "parentKey",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000280\"",
+   "real": "\"00000000-0000-4000-8000-000000000280\""
+  }
+ ],
+ "realNode": {
+  "id": "00000000-0000-4000-8000-000000000279",
+  "order": 3,
+  "attributes": {
+   "tags": [
+    "zzz-spike-tag"
+   ]
+  },
+  "name": "Add Tag",
+  "type": "add_contact_tag",
+  "parentKey": "00000000-0000-4000-8000-000000000280",
+  "next": "00000000-0000-4000-8000-000000000281"
+ }
+}

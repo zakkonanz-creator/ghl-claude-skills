@@ -1,0 +1,119 @@
+{
+ "doc": "research/phase1/raw/actions/meta-conversion-api.md",
+ "kind": "action",
+ "workflowId": "00000000-0000-4000-8000-000000000202",
+ "nodeId": "00000000-0000-4000-8000-000000000282",
+ "source": "https://firebasestorage.googleapis.com/v0/b/<bucket>/o/<path>?alt=media&token=<token><bucket>/o/<path>?alt=media&token=<token>",
+ "pass": true,
+ "rows": [
+  {
+   "path": "id",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000282\"",
+   "real": "\"00000000-0000-4000-8000-000000000282\""
+  },
+  {
+   "path": "parent",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000204\"",
+   "real": "\"00000000-0000-4000-8000-000000000204\""
+  },
+  {
+   "path": "order",
+   "status": "OK",
+   "doc": "8",
+   "real": "8"
+  },
+  {
+   "path": "attributes.type",
+   "status": "OK",
+   "doc": "\"facebook_conversion_api\"",
+   "real": "\"facebook_conversion_api\""
+  },
+  {
+   "path": "attributes.event_type",
+   "status": "OK",
+   "doc": "\"funnel_event\"",
+   "real": "\"funnel_event\""
+  },
+  {
+   "path": "attributes.access_token",
+   "status": "OK",
+   "doc": "\"zzz-spike-token\"",
+   "real": "\"zzz-spike-token\""
+  },
+  {
+   "path": "attributes.event_name",
+   "status": "OK",
+   "doc": "\"Lead\"",
+   "real": "\"Lead\""
+  },
+  {
+   "path": "attributes.pixel_id",
+   "status": "OK",
+   "doc": "\"zzz-spike-dataset\"",
+   "real": "\"zzz-spike-dataset\""
+  },
+  {
+   "path": "attributes.currency",
+   "status": "OK",
+   "doc": "\"USD\"",
+   "real": "\"USD\""
+  },
+  {
+   "path": "attributes.connection_type",
+   "status": "OK",
+   "doc": "\"INTEGRATION\"",
+   "real": "\"INTEGRATION\""
+  },
+  {
+   "path": "attributes.value",
+   "status": "OK",
+   "doc": "\"1\"",
+   "real": "\"1\""
+  },
+  {
+   "path": "attributes.test_event_code",
+   "status": "OK",
+   "doc": "\"TESTZZZ\"",
+   "real": "\"TESTZZZ\""
+  },
+  {
+   "path": "name",
+   "status": "OK",
+   "doc": "\"Meta Conversion API\"",
+   "real": "\"Meta Conversion API\""
+  },
+  {
+   "path": "type",
+   "status": "OK",
+   "doc": "\"facebook_conversion_api\"",
+   "real": "\"facebook_conversion_api\""
+  },
+  {
+   "path": "parentKey",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000261\"",
+   "real": "\"00000000-0000-4000-8000-000000000261\""
+  }
+ ],
+ "realNode": {
+  "id": "00000000-0000-4000-8000-000000000282",
+  "parent": "00000000-0000-4000-8000-000000000204",
+  "order": 8,
+  "attributes": {
+   "type": "facebook_conversion_api",
+   "event_type": "funnel_event",
+   "access_token": "zzz-spike-token",
+   "event_name": "Lead",
+   "pixel_id": "zzz-spike-dataset",
+   "currency": "USD",
+   "connection_type": "INTEGRATION",
+   "value": "1",
+   "test_event_code": "TESTZZZ"
+  },
+  "name": "Meta Conversion API",
+  "type": "facebook_conversion_api",
+  "parentKey": "00000000-0000-4000-8000-000000000261"
+ }
+}

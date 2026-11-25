@@ -1,0 +1,56 @@
+{
+ "doc": "research/phase1/raw/actions/stripe-one-time-charge.md",
+ "kind": "action",
+ "workflowId": "00000000-0000-4000-8000-000000000195",
+ "nodeId": "00000000-0000-4000-8000-000000000269",
+ "source": "https://firebasestorage.googleapis.com/v0/b/<bucket>/o/<path>?alt=media&token=<token><bucket>/o/<path>?alt=media&token=<token>",
+ "pass": true,
+ "rows": [
+  {
+   "path": "id",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000269\"",
+   "real": "\"00000000-0000-4000-8000-000000000269\""
+  },
+  {
+   "path": "order",
+   "status": "OK",
+   "doc": "6",
+   "real": "6"
+  },
+  {
+   "path": "attributes.type",
+   "status": "OK",
+   "doc": "\"stripe_one_time_charge\"",
+   "real": "\"stripe_one_time_charge\""
+  },
+  {
+   "path": "name",
+   "status": "OK",
+   "doc": "\"Stripe one-time charge\"",
+   "real": "\"Stripe one-time charge\""
+  },
+  {
+   "path": "type",
+   "status": "OK",
+   "doc": "\"stripe_one_time_charge\"",
+   "real": "\"stripe_one_time_charge\""
+  },
+  {
+   "path": "parentKey",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000306\"",
+   "real": "\"00000000-0000-4000-8000-000000000306\""
+  }
+ ],
+ "realNode": {
+  "id": "00000000-0000-4000-8000-000000000269",
+  "order": 6,
+  "attributes": {
+   "type": "stripe_one_time_charge"
+  },
+  "name": "Stripe one-time charge",
+  "type": "stripe_one_time_charge",
+  "parentKey": "00000000-0000-4000-8000-000000000306"
+ }
+}

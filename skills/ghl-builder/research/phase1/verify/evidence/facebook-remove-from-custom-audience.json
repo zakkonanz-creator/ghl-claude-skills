@@ -1,0 +1,64 @@
+{
+ "doc": "research/phase1/raw/actions/facebook-remove-from-custom-audience.md",
+ "kind": "action",
+ "workflowId": "00000000-0000-4000-8000-000000000202",
+ "nodeId": "00000000-0000-4000-8000-000000000260",
+ "source": "https://firebasestorage.googleapis.com/v0/b/<bucket>/o/<path>?alt=media&token=<token><bucket>/o/<path>?alt=media&token=<token>",
+ "pass": true,
+ "rows": [
+  {
+   "path": "id",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000260\"",
+   "real": "\"00000000-0000-4000-8000-000000000260\""
+  },
+  {
+   "path": "parent",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000204\"",
+   "real": "\"00000000-0000-4000-8000-000000000204\""
+  },
+  {
+   "path": "order",
+   "status": "OK",
+   "doc": "6",
+   "real": "6"
+  },
+  {
+   "path": "attributes.type",
+   "status": "OK",
+   "doc": "\"facebook_remove_from_custom_audience\"",
+   "real": "\"facebook_remove_from_custom_audience\""
+  },
+  {
+   "path": "name",
+   "status": "OK",
+   "doc": "\"Remove from customer audience - Faceboo",
+   "real": "\"Remove from customer audience - Faceboo"
+  },
+  {
+   "path": "type",
+   "status": "OK",
+   "doc": "\"facebook_remove_from_custom_audience\"",
+   "real": "\"facebook_remove_from_custom_audience\""
+  },
+  {
+   "path": "parentKey",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000254\"",
+   "real": "\"00000000-0000-4000-8000-000000000254\""
+  }
+ ],
+ "realNode": {
+  "id": "00000000-0000-4000-8000-000000000260",
+  "parent": "00000000-0000-4000-8000-000000000204",
+  "order": 6,
+  "attributes": {
+   "type": "facebook_remove_from_custom_audience"
+  },
+  "name": "Remove from customer audience - Facebook",
+  "type": "facebook_remove_from_custom_audience",
+  "parentKey": "00000000-0000-4000-8000-000000000254",
+  "next": "00000000-0000-4000-8000-000000000261"
+ }
+}

@@ -1,0 +1,102 @@
+{
+ "doc": "research/phase1/raw/triggers/start-ivr-trigger.md",
+ "kind": "trigger",
+ "workflowId": "00000000-0000-4000-8000-000000000190",
+ "nodeId": "<id027>",
+ "source": "GET /workflow/<locationId>/trigger?workflowId=00000000-0000-4000-8000-000000000190",
+ "pass": true,
+ "rows": [
+  {
+   "path": "id",
+   "status": "OK",
+   "doc": "\"<id027>\"",
+   "real": "\"<id027>\""
+  },
+  {
+   "path": "active",
+   "status": "OK",
+   "doc": "false",
+   "real": "false"
+  },
+  {
+   "path": "actions",
+   "status": "OK",
+   "doc": "array[1]",
+   "real": "array[1]"
+  },
+  {
+   "path": "conditions",
+   "status": "OK",
+   "doc": "array[1]",
+   "real": "array[1]"
+  },
+  {
+   "path": "type",
+   "status": "OK",
+   "doc": "\"ivr_incoming_call\"",
+   "real": "\"ivr_incoming_call\""
+  },
+  {
+   "path": "masterType",
+   "status": "OK",
+   "doc": "\"highlevel\"",
+   "real": "\"highlevel\""
+  },
+  {
+   "path": "workflow_id",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000190\"",
+   "real": "\"00000000-0000-4000-8000-000000000190\""
+  },
+  {
+   "path": "location_id",
+   "status": "OK",
+   "doc": "\"<locationId>\"",
+   "real": "\"<locationId>\""
+  },
+  {
+   "path": "name",
+   "status": "OK",
+   "doc": "\"Start IVR Trigger\"",
+   "real": "\"Start IVR Trigger\""
+  },
+  {
+   "path": "belongs_to",
+   "status": "OK",
+   "doc": "\"workflow\"",
+   "real": "\"workflow\""
+  }
+ ],
+ "realNode": {
+  "id": "<id027>",
+  "date_updated": "2026-07-17T02:02:53.576Z",
+  "date_added": "2026-07-17T02:02:53.576Z",
+  "deleted": false,
+  "active": false,
+  "actions": [
+   {
+    "workflow_id": "00000000-0000-4000-8000-000000000190",
+    "type": "add_to_workflow"
+   }
+  ],
+  "conditions": [
+   {
+    "id": "inbound-twilio-number",
+    "operator": "contains-any",
+    "field": "inbound_number",
+    "value": [
+     "+12025550100"
+    ],
+    "title": "In phone number",
+    "type": "multiselect"
+   }
+  ],
+  "type": "ivr_incoming_call",
+  "masterType": "highlevel",
+  "workflow_id": "00000000-0000-4000-8000-000000000190",
+  "location_id": "<locationId>",
+  "name": "Start IVR Trigger",
+  "belongs_to": "workflow",
+  "schedule_config": {}
+ }
+}

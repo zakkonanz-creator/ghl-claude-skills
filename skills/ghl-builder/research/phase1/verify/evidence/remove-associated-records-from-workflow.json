@@ -1,0 +1,95 @@
+{
+ "doc": "research/phase1/raw/actions/remove-associated-records-from-workflow.md",
+ "kind": "action",
+ "workflowId": "00000000-0000-4000-8000-000000000182",
+ "nodeId": "00000000-0000-4000-8000-000000000285",
+ "source": "https://firebasestorage.googleapis.com/v0/b/<bucket>/o/<path>?alt=media&token=<token><bucket>/o/<path>?alt=media&token=<token>",
+ "pass": true,
+ "rows": [
+  {
+   "path": "id",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000285\"",
+   "real": "\"00000000-0000-4000-8000-000000000285\""
+  },
+  {
+   "path": "parent",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000185\"",
+   "real": "\"00000000-0000-4000-8000-000000000185\""
+  },
+  {
+   "path": "order",
+   "status": "OK",
+   "doc": "15",
+   "real": "15"
+  },
+  {
+   "path": "attributes.associatedObject",
+   "status": "OK",
+   "doc": "\"custom_objects.zzz_spike_b3_record\"",
+   "real": "\"custom_objects.zzz_spike_b3_record\""
+  },
+  {
+   "path": "attributes.associationLabel",
+   "status": "OK",
+   "doc": "array[1]",
+   "real": "array[1]"
+  },
+  {
+   "path": "attributes.WorkflowId",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000169\"",
+   "real": "\"00000000-0000-4000-8000-000000000169\""
+  },
+  {
+   "path": "attributes.type",
+   "status": "OK",
+   "doc": "\"remove_associated_records_from_workflow",
+   "real": "\"remove_associated_records_from_workflow"
+  },
+  {
+   "path": "name",
+   "status": "OK",
+   "doc": "\"Remove associated records from workflow",
+   "real": "\"Remove associated records from workflow"
+  },
+  {
+   "path": "type",
+   "status": "OK",
+   "doc": "\"remove_associated_records_from_workflow",
+   "real": "\"remove_associated_records_from_workflow"
+  },
+  {
+   "path": "workflowsActionType",
+   "status": "OK",
+   "doc": "\"INTERNAL\"",
+   "real": "\"INTERNAL\""
+  },
+  {
+   "path": "parentKey",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000256\"",
+   "real": "\"00000000-0000-4000-8000-000000000256\""
+  }
+ ],
+ "realNode": {
+  "id": "00000000-0000-4000-8000-000000000285",
+  "parent": "00000000-0000-4000-8000-000000000185",
+  "order": 15,
+  "attributes": {
+   "associatedObject": "custom_objects.zzz_spike_b3_record",
+   "associationLabel": [
+    "000000000000000000000009"
+   ],
+   "WorkflowId": "00000000-0000-4000-8000-000000000169",
+   "type": "remove_associated_records_from_workflow",
+   "__customInputs__": {}
+  },
+  "name": "Remove associated records from workflow",
+  "type": "remove_associated_records_from_workflow",
+  "workflowsActionType": "INTERNAL",
+  "parentKey": "00000000-0000-4000-8000-000000000256",
+  "next": "00000000-0000-4000-8000-000000000264"
+ }
+}

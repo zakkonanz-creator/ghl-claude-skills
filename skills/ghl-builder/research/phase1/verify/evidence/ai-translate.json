@@ -1,0 +1,107 @@
+{
+ "doc": "research/phase1/raw/actions/ai-translate.md",
+ "kind": "action",
+ "workflowId": "00000000-0000-4000-8000-000000000211",
+ "nodeId": "00000000-0000-4000-8000-000000000283",
+ "source": "https://firebasestorage.googleapis.com/v0/b/<bucket>/o/<path>?alt=media&token=<token><bucket>/o/<path>?alt=media&token=<token>",
+ "pass": true,
+ "rows": [
+  {
+   "path": "id",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000283\"",
+   "real": "\"00000000-0000-4000-8000-000000000283\""
+  },
+  {
+   "path": "stepIndex",
+   "status": "OK",
+   "doc": "1",
+   "real": "1"
+  },
+  {
+   "path": "parent",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000213\"",
+   "real": "\"00000000-0000-4000-8000-000000000213\""
+  },
+  {
+   "path": "order",
+   "status": "OK",
+   "doc": "1",
+   "real": "1"
+  },
+  {
+   "path": "attributes.from",
+   "status": "OK",
+   "doc": "\"English\"",
+   "real": "\"English\""
+  },
+  {
+   "path": "attributes.to",
+   "status": "OK",
+   "doc": "\"Spanish\"",
+   "real": "\"Spanish\""
+  },
+  {
+   "path": "attributes.inputText",
+   "status": "OK",
+   "doc": "\"Hello, how are you?\"",
+   "real": "\"Hello, how are you?\""
+  },
+  {
+   "path": "attributes.type",
+   "status": "OK",
+   "doc": "\"workflow_ai_translate_content\"",
+   "real": "\"workflow_ai_translate_content\""
+  },
+  {
+   "path": "attributes.prompt",
+   "status": "OK",
+   "doc": "\"Translate the below Text from English t",
+   "real": "\"Translate the below Text from English t"
+  },
+  {
+   "path": "name",
+   "status": "OK",
+   "doc": "\"AI translate\"",
+   "real": "\"AI translate\""
+  },
+  {
+   "path": "type",
+   "status": "OK",
+   "doc": "\"workflow_ai_translate_content\"",
+   "real": "\"workflow_ai_translate_content\""
+  },
+  {
+   "path": "workflowsActionType",
+   "status": "OK",
+   "doc": "\"INTERNAL\"",
+   "real": "\"INTERNAL\""
+  },
+  {
+   "path": "parentKey",
+   "status": "OK",
+   "doc": "\"00000000-0000-4000-8000-000000000324\"",
+   "real": "\"00000000-0000-4000-8000-000000000324\""
+  }
+ ],
+ "realNode": {
+  "id": "00000000-0000-4000-8000-000000000283",
+  "stepIndex": 1,
+  "parent": "00000000-0000-4000-8000-000000000213",
+  "order": 1,
+  "attributes": {
+   "from": "English",
+   "to": "Spanish",
+   "inputText": "Hello, how are you?",
+   "type": "workflow_ai_translate_content",
+   "__customInputs__": {},
+   "prompt": "Translate the below Text from English to Spanish \n\nText:\nHello, how are you?\n Only return the translated text in response without any other text."
+  },
+  "name": "AI translate",
+  "type": "workflow_ai_translate_content",
+  "workflowsActionType": "INTERNAL",
+  "parentKey": "00000000-0000-4000-8000-000000000324",
+  "next": "00000000-0000-4000-8000-000000000214"
+ }
+}
